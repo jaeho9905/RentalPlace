@@ -83,6 +83,8 @@ public class BookController {
 	@GetMapping("/book-detail")
 	public String book_detail(Model model, Criteria cri, @RequestParam String book_isbn) {
 
+		
+		
 		// isbn이 null이 아닐 때
 		if (book_isbn != null && book_isbn != "") {
 			try {
@@ -117,9 +119,69 @@ public class BookController {
 
 		}
 		model.addAttribute("cri", cri);
+		
+		List<BookDTO> list1 = new ArrayList<BookDTO>();
+		model.addAttribute("list1", list1);
 		return "/search/sub1/book_detail";
 	}
 
+	
+	
+	// 도서 구매 출력
+			@GetMapping("/book_buy")
+			public String book_buy(Model model, @RequestParam  String book_isbn) {
+
+				System.out.println(book_isbn);
+				BookDTO book = new BookDTO();
+				List<BookDTO> list = new ArrayList<BookDTO>();
+				
+				System.out.println("번호는: "+book_isbn + ".");
+				System.out.println("번호는: "+list + ".");
+				// isbn이 null이 아닐 때
+				if (book_isbn != null && book_isbn != "") {
+					try {
+
+						book = api.search_detail(book_isbn);
+
+						if (book.getBook_title() != null) {
+
+							System.out.println("선택 책 제목 : " + book.getBook_title());
+							model.addAttribute("book", book);
+
+							// 대출 중인 도서의 수를 가져옴
+							int count = bookService.count(book_isbn);
+							count = 2 - count;
+							model.addAttribute("count", count);
+
+						} else {
+
+							System.out.println("잘못된 값 입력");
+							return "redirect:/search/book";
+
+						}
+
+					} catch (ParseException e) {
+						e.printStackTrace();
+					}
+
+				} else {
+					
+					System.out.println("빈 검색어 입력");
+					return "redirect:/search/book";
+
+				}
+				System.out.println(book_isbn);
+				model.addAttribute("book", book);
+				return "/buy/book_buy";
+				
+			}
+	
+	
+	
+	
+	
+	
+	
 	// 책 대출
 	@PostMapping("/loan")
 	public String loan(Model model, Criteria cri, BookDTO book, @RequestParam String detail, Principal principal) {

@@ -172,7 +172,7 @@
 													<input type="hidden" name="page" value="${pageMaker.cri.page }">
 													<input type="hidden" name="type" value="${pageMaker.cri.type }">
 													<input type="hidden" name="keyword" value="${pageMaker.cri.keyword }">
-													<input type="hidden" name="book_isbn" value="${list.book_isbn }">
+													<input type="hidden" name="book_isbn" value="${list.book_isbn}">
 													<button class="btn2">도서 정보</button>
 												</form>
                                             </td>
