@@ -49,4 +49,19 @@ public class BookServiceImpl implements BookService {
 	public int loan_check(String user_id, String book_isbn) {
 		return mapper.loan_check(user_id, book_isbn);
 	}
+
+	
+	// 찜하기 체크하기
+	@Override
+	public int like_check(String user_id, String book_isbn) {
+		return mapper.like_check(user_id, book_isbn);
+	}
+
+	// 찜 등록하기 
+	@Override
+	public void like(BookDTO dto) {
+		mapper.like(dto);
+	}
+	
+	
 }

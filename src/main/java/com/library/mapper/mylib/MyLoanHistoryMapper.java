@@ -16,5 +16,14 @@ public interface MyLoanHistoryMapper {
 	// 대출 수 출력
 	public int get_total(@Param("user_id") String user_id, @Param("start_date") String start_date,
 			@Param("end_date") String end_date);
+	
+	
+	
+	//<!--=========== 찜하기 추기 =================-->
+	// 대출 내역 조회
+		public List<BookDTO> like_history(@Param("user_id") String user_id, @Param("cri") Criteria cri);
+
+		// 대출 수 출력
+		public int get_total_like(@Param("user_id") String user_id);
 
 }

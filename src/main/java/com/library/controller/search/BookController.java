@@ -149,7 +149,7 @@ public class BookController {
 		if (bookService.count(book.getBook_isbn()) != 2) {
 
 			// 대출
-			bookService.loan(book);
+			bookService.loan(book); //insert into loan_history
 
 			// 대출자 대출 중 도서수 증가
 			bookService.increase_count(book.getUser_id());
@@ -214,6 +214,75 @@ public class BookController {
 
 		}
 	}
+	
+	//============================== 찜하기 추가 ==========================================
+	// 대출자 상태 체크
+		@ResponseBody
+		@PostMapping("/likeChk")
+		public String likeChk(String book_isbn, Principal principal) throws Exception {
+
+			// 로그인 된 user_id 받아오기
+			String id = principal.getName();
+
+			System.out.println(id);
+			System.out.println("likeChk() 진입");
+
+
+			// 대출하려는 회원이 대출 중인 도서인지 체크
+			int loan_check = bookService.like_check(id, book_isbn);
+
+			if (loan_check == 1) {
+
+				return "alreadyLike";
+
+			} else {
+
+				// 아직 좋아요 안한 책이라면 success 리턴
+				return "success";
+
+				} 
+		}
+	
+		
+	// 찜하기
+	@PostMapping("/like")
+	public String like(Model model, Criteria cri, BookDTO book, @RequestParam String detail, Principal principal) {
+
+		// 로그인 된 user_id 받아오기
+		String id = principal.getName();
+
+		// id 세팅
+		book.setUser_id(id);
+
+		System.out.println("\n======================== 찜하기 ========================");
+		System.out.println("아이디 : " + book.getUser_id());
+		System.out.println("찜한 책 제목 : " + book.getBook_title());
+		System.out.println("찜한 책 ISBN : " + book.getBook_isbn());
+		System.out.println("keyword : " + cri.getKeyword());
+		System.out.println("========================================================\n");
+
+		String keyword;
+
+		try {
+			keyword = URLEncoder.encode(cri.getKeyword(), "UTF-8");
+		} catch (UnsupportedEncodingException e) {
+			return "redirect:/search/book";
+		}
+		
+		// 대출
+		bookService.like(book); //insert into loan_history
+
+		if (detail.equals("true")) {
+
+			return "redirect:/search/best-book-detail?book_isbn=" + book.getBook_isbn();
+
+		} else {
+			return "redirect:/search/book-detail?amount=" + cri.getAmount() + "&page=" + cri.getPage() + "&type="
+					+ cri.getType() + "&keyword=" + keyword + "&book_isbn=" + book.getBook_isbn();
+		}
+
+	}
+	
 
 	// 대출베스트 출력
 	@GetMapping("/best-book")

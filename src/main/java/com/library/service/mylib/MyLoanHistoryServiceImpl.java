@@ -27,5 +27,19 @@ public class MyLoanHistoryServiceImpl implements MyLoanHistoryService {
 		return mapper.get_total(user_id, start_date, end_date);
 	}
 
+	
+	
+	//<!--=========== 찜하기 추기 =================-->
+	// 찜한 내역 조회
+	@Override
+	public List<BookDTO> like_history(String user_id, Criteria cri) {
+		return mapper.like_history(user_id, cri);
+	}
 
+	@Override
+	public int get_total_like(String user_id) {
+		return mapper.get_total_like(user_id);
+	}
+	
+	
 }

@@ -24,4 +24,10 @@ public interface BookService {
 	
 	// 회원이 대출 중인 도서인지 체크
 	public int loan_check(String user_id, String book_isbn);
+	
+	// 찜하기한건지 체크 (회원이 이미 찜한 도서인지 체크)
+	public int like_check(String user_id, String book_isbn);
+	
+	// 찜 등록 하기 
+	public void like(BookDTO dto);
 }
