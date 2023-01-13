@@ -27,9 +27,15 @@ public interface BookMapper {
 	// 회원이 대출 중인 도서인지 체크
 	public int loan_check(@Param("user_id")String user_id, @Param("book_isbn")String book_isbn);
 	
+	
+	
+	////////////////////////// 찜하기 추가 //////////////////////////////
 	// 회원이 이미 찜한 도서인지 체크
 	public int like_check(@Param("user_id")String user_id, @Param("book_isbn")String book_isbn);
 	
-	// 도서 대출
+	// 찜하기 등록
 	public void like(BookDTO dto);
+	
+	// 찜한 도서 삭제
+	public void delete_like_book(@Param("book_isbn") String book_isbn);
 }

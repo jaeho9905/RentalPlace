@@ -53,6 +53,8 @@
 		 where user_id = #{user_id} and book_isbn = #{book_isbn} and return_status = false 
 	</select>
 	
+	
+	<!--=========================== 찜하기 추가 =========================  -->
 	<!-- 이미 찜한 도서인지 체크 -->
 	<select id="like_check" resultType="int">
 		select count(*)
@@ -68,5 +70,12 @@
 		(#{user_id}, #{user_email}, #{book_title}, #{book_author}, #{book_isbn}, #{book_cover}, 
 		#{book_pubDate}, #{book_publisher})
 	</insert>
+	
+	<!-- 찜한 도서 삭제하기 -->
+	<delete id="delete_like_book">
+		delete
+		  from like_history
+		 where book_isbn = #{book_isbn} 
+	</delete>
 	
 </mapper>  

@@ -98,7 +98,6 @@
                                 <table>
                                     <thead>
                                         <tr>
-                                        	<th style=""></th>
                                         	<th style="">책이미지</th>
                                             <th style="">도서명</th>
                                             <th style="">저자</th>
@@ -111,7 +110,6 @@
                                     
 	                                    <c:forEach var="like_history" items="${like_history}">
 										<tr>
-											<td><input type="checkbox" /></td> 
 											<td class="">
                                                 <img src="${like_history.book_cover }" style="width: 200px;">
                                             </td> 
@@ -120,8 +118,11 @@
 											<td>${like_history.book_pubDate }</td>
 											<td>${like_history.book_publisher }</td>
 											<td>
-												<button type="button" id="deleteBtn" value="삭제하기">삭제하기</button>
-												<button type="button" id="addBagBtn" value="장바구니 담기">장바구니</button>
+												<form action="/search/delete-like" method="post" onsubmit="return false;" class="likeForm">
+                                                	<input type="hidden" name="book_isbn" value="${like_history.book_isbn }">
+						                        	<input type="submit" class="btn deleteBtn" value="삭제" style="margin-bottom:3px;">
+						                        </form>
+												<button type="button" class="btn addBagBtn" value="장바구니 담기" style="width:80px;">장바구니</button>
 											</td>
 										</tr>
 										</c:forEach>
@@ -186,7 +187,20 @@
 				moveForm.submit();
 			});
 			
-			 
+			
+			/* 삭제하기 추가 */
+			
+			let likeForm = $(".likeForm");
+			
+			$(".deleteBtn").click(function(){
+				if (confirm("찜한 도서를 삭제하시겠습니까?")){
+					alert("삭제되었습니다.");
+					likeForm.attr("onsubmit", "return true;");
+					likeForm.submit();
+				} else {
+					alert("삭제가 취소되었습니다.");
+				}
+			})
 		});
 		
 	</script>	

@@ -51,6 +51,9 @@ public class BookServiceImpl implements BookService {
 	}
 
 	
+	
+	
+	//////////////////////////찜하기 추가 //////////////////////
 	// 찜하기 체크하기
 	@Override
 	public int like_check(String user_id, String book_isbn) {
@@ -63,5 +66,9 @@ public class BookServiceImpl implements BookService {
 		mapper.like(dto);
 	}
 	
-	
+	// 찜한 도서 삭제
+	@Override
+	public void delete_like_book(String book_isbn) {
+		mapper.delete_like_book(book_isbn);
+	}
 }

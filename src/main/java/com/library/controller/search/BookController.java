@@ -217,31 +217,31 @@ public class BookController {
 	
 	//============================== 찜하기 추가 ==========================================
 	// 대출자 상태 체크
-		@ResponseBody
-		@PostMapping("/likeChk")
-		public String likeChk(String book_isbn, Principal principal) throws Exception {
+	@ResponseBody
+	@PostMapping("/likeChk")
+	public String likeChk(String book_isbn, Principal principal) throws Exception {
 
-			// 로그인 된 user_id 받아오기
-			String id = principal.getName();
+		// 로그인 된 user_id 받아오기
+		String id = principal.getName();
 
-			System.out.println(id);
-			System.out.println("likeChk() 진입");
+		System.out.println(id);
+		System.out.println("likeChk() 진입");
 
 
-			// 대출하려는 회원이 대출 중인 도서인지 체크
-			int loan_check = bookService.like_check(id, book_isbn);
+		// 대출하려는 회원이 대출 중인 도서인지 체크
+		int loan_check = bookService.like_check(id, book_isbn);
 
-			if (loan_check == 1) {
+		if (loan_check == 1) {
 
-				return "alreadyLike";
+			return "alreadyLike";
 
-			} else {
+		} else {
 
-				// 아직 좋아요 안한 책이라면 success 리턴
-				return "success";
+			// 아직 좋아요 안한 책이라면 success 리턴
+			return "success";
 
-				} 
-		}
+			} 
+	}
 	
 		
 	// 찜하기
@@ -283,7 +283,16 @@ public class BookController {
 
 	}
 	
+	// 찜한 도서 삭제
+	@PostMapping("/delete-like")
+	public String delete_rec(@RequestParam String book_isbn) {
+		bookService.delete_like_book(book_isbn);
+		return "redirect:/mylib/like-history";
+	}
+	//============================== 찜하기 추가 ==========================================
 
+	
+	
 	// 대출베스트 출력
 	@GetMapping("/best-book")
 	public String best_book(Model model, Criteria cri, DateDTO date) {
