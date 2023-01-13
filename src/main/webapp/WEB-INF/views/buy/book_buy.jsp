@@ -209,7 +209,7 @@
 									<input type="checkbox"><p>동의합니다.<span>(전자상거래법 제 8조 제 2항)</span></p>
 								</fieldset>
 								
-								<button>결제 하기</button>
+								<button id="apibtn">결제 하기</button>
 							</form>
 						</div>
 						<!--join_container 전체-->
@@ -260,6 +260,24 @@
 					$("form").submit();
 				}
 
+			});
+			
+			/* 결제 */
+			$("#apibtn").click(function(){
+				$.ajax({
+					url:'/buy/book_buy_api',
+					dataType:'json',
+					success:function(data){
+
+						var box = data.next_redirect_pc_url;
+						var name = "credit"
+						var option = "width = 500, height = 650, top = 100, left = 200,location = no ";
+						window.open(box,name,option);
+					},
+					error:function(error){
+						alert(error);
+					}
+				});
 			});
 		});
 	</script>
