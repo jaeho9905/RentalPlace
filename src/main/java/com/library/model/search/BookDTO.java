@@ -42,6 +42,9 @@ public class BookDTO {
 
 	// 대출 일
 	private String loan_date;
+	
+	// 구매 일
+//  private String buy_date;
 
 	// 반납 일
 	private String return_date;

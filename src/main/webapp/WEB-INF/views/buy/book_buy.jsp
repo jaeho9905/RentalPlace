@@ -209,6 +209,8 @@
 									<input type="checkbox"><p>동의합니다.<span>(전자상거래법 제 8조 제 2항)</span></p>
 								</fieldset>
 								
+								
+								<input type="hidden" name="amount" value="${cri.amount }">
 								<button id="apibtn">결제 하기</button>
 							</form>
 						</div>
@@ -262,8 +264,52 @@
 
 			});
 			
+			
+			
+			$(function() {
+				$(".sub1").addClass("active");
+				 
+				$("#apibtn").click(function() {
+					
+					let email = $('.user_email').val(); 
+					let book_isbn = $('.book_isbn').val(); 
+					
+					if(email == "") {
+						alert("로그인 후 이용해주세요");
+						location.href="/member/login";
+					} else {
+						
+						if (confirm("결제하시겠습니까?")) {
+						
+							let data = {
+			           				book_isbn: book_isbn
+			           		};
+							
+							$.ajax({
+								url:'/buy/book_buy_api',
+								dataType:'json',
+								success:function(data){
+
+									var box = data.next_redirect_pc_url;
+									var name = "credit"
+									var option = "width = 500, height = 650, top = 100, left = 200,location = no ";
+									window.open(box,name,option);
+								},
+								error:function(error){
+									alert(error);
+								}
+							});
+						
+						}
+						
+						
+					} 
+						
+				});
+			});
+			
 			/* 결제 */
-			$("#apibtn").click(function(){
+			/* $("#apibtn").click(function(){
 				$.ajax({
 					url:'/buy/book_buy_api',
 					dataType:'json',
@@ -278,7 +324,7 @@
 						alert(error);
 					}
 				});
-			});
+			}); */
 		});
 	</script>
 

@@ -100,10 +100,6 @@
 	                   	 	<c:if test="${not empty book}">
 		                    	<%-- <c:set var="list" value="${list}"/> --%>
 									<form action="/buy/book_buy" method="get">
-										<%-- <input type="hidden" name="amount" value="${pageMaker.cri.amount }">
-										<input type="hidden" name="page" value="${pageMaker.cri.page }">
-										<input type="hidden" name="type" value="${pageMaker.cri.type }">
-										<input type="hidden" name="keyword" value="${pageMaker.cri.keyword }"> --%>
 										<input type="hidden" name="book_isbn" value="${book.book_isbn}">
 										<button class="btn2">구매</button>
 									</form>
