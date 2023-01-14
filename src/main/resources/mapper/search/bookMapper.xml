@@ -25,7 +25,6 @@
 					, book_pubDate, book_publisher, book_author
 		 from loan_history 
 		where loan_date between concat(#{year}, '-', #{month}, '-01') and concat(#{year}, '-', #{month}, '-31' )
-			  and return_status = true 
 		group by book_isbn 
 		order by total_count desc 
 		limit 10;
