@@ -18,7 +18,7 @@
 		<button id="main">주문목록으로 가기</button>
 	</form> -->
 	
-	<form id="loan" onsubmit="return false;" method="post">
+	<form onsubmit="return false;" method="post">
 	   	<sec:authorize access="isAuthenticated()">
 			<input type="hidden" class="user_email" name="user_email"
 				value=<sec:authentication property="principal.dto.user_email"/>>
@@ -44,16 +44,62 @@
 	
 	
 	
-	<script>
+<script>
 	$(function(){
 		$("#main").on("click",function(){
-			console.log("작");
 			self.close();
 			window.open("/buy/book_buylist");
 		});
 	});
 	
 </script>
+<!-- <script type="text/javascript">
+	$(function() {
+		/* $(".sub1").addClass("active"); //왼쪽 카테고리 '도서검색' 활성화 */
+		 
+		$("#main").click(function() {
+			
+			let email = $('.user_email').val(); 
+			let book_isbn = $('.book_isbn').val(); 
+			
+			if(email == "") {
+				alert("로그인 후 이용해주세요");
+				location.href="/member/login";
+			} else {
+				
+				if (confirm("주문목록으로 가시겠습니까?")) {
+				
+					let data = {
+	           				book_isbn: book_isbn
+	           		};
+					
+					$.ajax({
+	           			type: "post",
+	           			url: "/search/likeChk",
+	           			data: data,
+	           			success: function(result) {
+	           				
+	           				if (result == "success") {
+	           					alert("내 구매목록에 등록되었습니다.");
+	           					$("#loan").attr("action", "/buy/buybook?detail=not");
+	           					$("#loan").attr("onsubmit", "return true;");
+	           					$("#loan").submit();
+	       						
+	           				}
+	           			}
+	           		});
+				
+				}
+				
+				self.close();
+				window.open("/buy/book_buylist");
+			} 
+				
+		});
+		
+		
+	});
+	</script> -->
 </body>
 </html>
 

@@ -56,7 +56,7 @@
                     <div class="doc">
                         <div class="wrapper-bbs" style="">
 
-                            <!--검색-->
+                            <%-- <!--검색-->
                             <div class="search">
                                 <form action="" onsubmit="return false;">
                                 	
@@ -71,9 +71,9 @@
                                     <button id="search_btn" class="btn">검색</button>
                                 </form>
                                
-                            </div>
+                            </div> --%>
                             
-                            <!-- 도서 수 -->
+                            <%-- <!-- 도서 수 -->
                             <div class="inline">
                                 <form action="">
                                 	
@@ -115,7 +115,7 @@
                                     <button id="list_btn" class="btn">이동</button>
                                 </form>
 
-                            </div>
+                            </div> --%>
 
                             <!-- 테이블 -->
                             <div class="table-wrap">

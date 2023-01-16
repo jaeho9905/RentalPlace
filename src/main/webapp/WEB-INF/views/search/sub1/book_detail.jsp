@@ -99,9 +99,9 @@
                     <!-- 추가 -->
 	                   	 	<c:if test="${not empty book}">
 		                    	<%-- <c:set var="list" value="${list}"/> --%>
-									<form action="/buy/book_buy" method="get">
+									<form action="/buy/book_buy" method="post">
 										<input type="hidden" name="book_isbn" value="${book.book_isbn}">
-										<button class="btn2">구매</button>
+										<button id="buy">구매</button>
 									</form>
 							</c:if>
 						<span>　</span>
@@ -213,7 +213,97 @@
 			});
 		});
 	</script>
+		<!-- <script>
+		$(function() {
+			/* $(".sub1").addClass("active");
+
+			let moveForm = $(".moveForm");
+
+			$(".pageInfo a").on(
+					"click",
+					function(e) {
+						e.preventDefault();
+						moveForm.find("input[name = 'page']").val(
+								$(this).attr("href"));
+						moveForm.submit();
+
+					});
+
+			// 검색 버튼을 누를 시 공백이면 alert
+			$("#search_btn").on("click", function(e) {
+				let keyword = $("input[name='keyword']").val();
+				if (keyword == "") {
+					alert("검색어를 입력해주세요.");
+				} else {
+					$("form").attr("onsubmit", "return true");
+					$("form").submit();
+				}
+
+			}); */
 			
+			
+			
+			$(function() {
+				$(".sub1").addClass("active");
+				 
+				$("#buy").click(function() {
+					
+					let email = $('.user_email').val(); 
+					let book_isbn = $('.book_isbn').val(); 
+					
+					if(email == "") {
+						alert("로그인 후 이용해주세요");
+						location.href="/member/login";
+					} else {
+						
+						if (confirm("결제하시겠습니까?")) {
+						
+							let data = {
+			           				book_isbn: book_isbn
+			           		};
+							
+							$.ajax({
+								url:'/buy/book_buy_api',
+								dataType:'json',
+								success:function(data){
+
+									var box = data.next_redirect_pc_url;
+									var name = "credit"
+									var option = "width = 500, height = 650, top = 100, left = 200,location = no ";
+									window.open(box,name,option);
+								},
+								error:function(error){
+									alert(error);
+								}
+							});
+						
+						}
+						
+						
+					} 
+						
+				});
+			});
+			
+			/* 결제 */
+			/* $("#apibtn").click(function(){
+				$.ajax({
+					url:'/buy/book_buy_api',
+					dataType:'json',
+					success:function(data){
+
+						var box = data.next_redirect_pc_url;
+						var name = "credit"
+						var option = "width = 500, height = 650, top = 100, left = 200,location = no ";
+						window.open(box,name,option);
+					},
+					error:function(error){
+						alert(error);
+					}
+				});
+			}); */
+		});
+	</script>	 -->
 
 </body>
 </html>

@@ -96,7 +96,7 @@
 							<p class="information">
 								<strong class="point">*</strong> 는 필수입력 항목을 나타냅니다.
 							</p>
-							<form action="join.asp" method="post" id="join">
+							<form action="/buy/buybook" method="post" id="join">
 								<fieldset class="join1">
 									<legend>필수 입력 항목</legend>
 									<p class="box_i">
@@ -117,7 +117,7 @@
 
 									<p class="box_i">
 										<label for="u_id"><strong class="point">*</strong>수령인</label><input
-											type="text" id="u_id" required>
+											type="text" id="u_id" >
 										
 									</p>
 
@@ -132,38 +132,38 @@
 
 									<p class="box_i">
 										<label for="pwd1"><strong class="point">*</strong>배송 주소</label><input
-											type="password" id="pwd1" required>
+											type="password" id="pwd1" >
 										<input type="button"
 											value="주소 찾기" class="zip_btn">
 									</p>
 									<p class="box_i">
-										<label for="pwd2"><strong class="point">*</strong>도로명 주소</label><input type="password" id="pwd2" required>
+										<label for="pwd2"><strong class="point">*</strong>도로명 주소</label><input type="password" id="pwd2" >
 									</p>
 
 									<p class="box_i">
-										<label for="pwd2"><strong class="point">*</strong>지번 주소</label><input type="password" id="pwd2" required>
+										<label for="pwd2"><strong class="point">*</strong>지번 주소</label><input type="password" id="pwd2" >
 									</p>
 
 									<p class="box_i">
 										<label for="zip1"><strong class="point">*</strong>우편번호</label><input
-											type="text" id="zip1" required> - <input type="text"
-											id="zip2" required><input type="button"
+											type="text" id="zip1" > - <input type="text"
+											id="zip2" ><input type="button"
 											value="우편번호 찾기" class="zip_btn">
 									</p>
 
 
 									<p class="box_i">
 										<label for="tel1"><strong class="point">*</strong>휴대폰</label><input
-											type="tel" id="tel1" title="지역번호 입력" required> - <input
-											type="tel" id="tel2" title="전화번호 앞자리" required> - <input
-											type="tel" id="tel3" title="전화번호 뒷자리" required>
+											type="tel" id="tel1" title="지역번호 입력" > - <input
+											type="tel" id="tel2" title="전화번호 앞자리" > - <input
+											type="tel" id="tel3" title="전화번호 뒷자리" >
 									</p>
 									
 									<p class="box_i">
 										<label for="tel1"><strong class="point">*</strong>일반전화</label><input
-											type="tel" id="tel1" title="지역번호 입력" required> - <input
-											type="tel" id="tel2" title="전화번호 앞자리" required> - <input
-											type="tel" id="tel3" title="전화번호 뒷자리" required>
+											type="tel" id="tel1" title="지역번호 입력"> - <input
+											type="tel" id="tel2" title="전화번호 앞자리"> - <input
+											type="tel" id="tel3" title="전화번호 뒷자리" >
 									</p>
 									<p></p>
 								</fieldset>
@@ -210,8 +210,19 @@
 								</fieldset>
 								
 								
+								<%-- <input type="hidden" name="amount" value="${cri.amount }"> --%>
+								<input type="hidden" name="book_title" value="${book.book_title }">
+								<input type="hidden" name="book_author" value="${book.book_author }">
+								<input type="hidden" class="book_isbn" name="book_isbn" value="${book.book_isbn }">
+								<input type="hidden" name="book_cover" value="${book.book_cover }">
+								<input type="hidden" name="book_pubDate" value="${book.book_pubDate }">
+								<input type="hidden" name="book_publisher" value="${book.book_publisher }">
 								<input type="hidden" name="amount" value="${cri.amount }">
+								<input type="hidden" name="page" value="${cri.page }">
+								<input type="hidden" name="type" value="${cri.type }">
+								<input type="hidden" name="keyword" value="${cri.keyword }">
 								<button id="apibtn">결제 하기</button>
+								<button id="test">테스트</button>
 							</form>
 						</div>
 						<!--join_container 전체-->
@@ -266,7 +277,7 @@
 			
 			
 			
-			$(function() {
+			 $(function() {
 				$(".sub1").addClass("active");
 				 
 				$("#apibtn").click(function() {
@@ -306,7 +317,7 @@
 					} 
 						
 				});
-			});
+			}); 
 			
 			/* 결제 */
 			/* $("#apibtn").click(function(){
@@ -327,6 +338,52 @@
 			}); */
 		});
 	</script>
-
+<!-- 	 <script type="text/javascript">
+	$(function() {
+		$(".sub1").addClass("active"); //왼쪽 카테고리 '도서검색' 활성화
+		 
+		$("#test").click(function() {
+			
+			let email = $('.user_email').val(); 
+			let book_isbn = $('.book_isbn').val(); 
+			
+			if(email == "") {
+				alert("로그인 후 이용해주세요");
+				location.href="/member/login";
+			} else {
+				
+				if (confirm("도서를 찜하시겠습니까?")) {
+				
+					let data = {
+	           				book_isbn: book_isbn
+	           		};
+					
+					$.ajax({
+	           			type: "post",
+	           			url: "/buy/test",
+	           			data: data,
+	           			success: function(result) {
+	           				
+	           				if (result == "success") {
+	           					alert("내 찜리스트에 등록되었습니다.");
+	           					$("#loan").attr("action", "/buy/buybook?detail=not");
+	           					$("#loan").attr("onsubmit", "return true;");
+	           					$("#loan").submit();
+	       						
+	           				} else if (result == "alreadyLike"){
+	           					alert("이미 찜한 도서입니다.");
+	           				} 
+	           			}
+	           		});
+				
+				}
+				
+				
+			} 
+				
+		});
+	});
+	</script> 
+ -->
 </body>
 </html>

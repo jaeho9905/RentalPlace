@@ -5,12 +5,12 @@ import java.io.DataOutputStream;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.OutputStream;
+import java.io.UnsupportedEncodingException;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.net.URLEncoder;
 import java.security.Principal;
 import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.Date;
 import java.util.List;
 
 import javax.net.ssl.HttpsURLConnection;
@@ -20,6 +20,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -27,7 +28,8 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import com.library.model.search.BookDTO;
 import com.library.page.Criteria;
 import com.library.page.ViewPage;
-import com.library.service.buy.BuyHistoryService;
+import com.library.service.buy.BuyService;
+import com.library.service.buy.MyBuyHistoryService;
 import com.library.service.search.AladinApi;
 import com.library.service.search.BookService;
 
@@ -42,10 +44,13 @@ public class BuyController {
 	private BookService bookService;
 	
 	@Autowired
-	private BuyHistoryService service;
+	private MyBuyHistoryService service;
+	
+	@Autowired
+	private BuyService buyservice;
 
 	// 도서 구매 출력
-	@GetMapping("/book_buy")
+	@PostMapping("/book_buy")
 	public String book_buy(Model model, @RequestParam String book_isbn) {
 
 		System.out.println(book_isbn);
@@ -53,7 +58,6 @@ public class BuyController {
 		List<BookDTO> list = new ArrayList<BookDTO>();
 
 		System.out.println("번호는: " + book_isbn + ".");
-		System.out.println("번호는: " + list + ".");
 		// isbn이 null이 아닐 때
 		if (book_isbn != null && book_isbn != "") {
 			try {
@@ -65,7 +69,7 @@ public class BuyController {
 					System.out.println("선택 책 제목 : " + book.getBook_title());
 					model.addAttribute("book", book);
 
-					// 대출 중인 도서의 수를 가져옴
+					// 구매한 도서의 수를 가져옴
 					int count = bookService.count(book_isbn);
 					count = 2 - count;
 					model.addAttribute("count", count);
@@ -137,40 +141,34 @@ public class BuyController {
 	
 	
 	
+/*	
 	public String date(String type) {
 		Date now = new Date();
 		Calendar cal = Calendar.getInstance();
-
 		cal.setTime(now);
-
 		int year = cal.get(Calendar.YEAR) - 1;
 		int month = cal.get(Calendar.MONTH) + 1;
 		int day = cal.get(Calendar.DAY_OF_MONTH);
-
 		String strMonth = Integer.toString(month);
 		String strDay = Integer.toString(day);
-
 		if (strMonth.length() == 1) {
 			strMonth = "0" + strMonth;
 		}
-
 		if (strDay.length() == 1) {
 			strDay = "0" + strDay;
 		}
-
 		// 현재 날짜 -1년
 		String start_date = year + "-" + strMonth + "-" + strDay;
-
 		// 현재 날짜
 		String end_date = year + 1 + "-" + strMonth + "-" + strDay;
-
 		if (type.equals("start")) {
 			return start_date;
 		} else {
 			return end_date;
 		}
 	}
-	
+
+*/	
 	
 	// 도서 구매 내역 출력
 		@GetMapping("/book_buylist")
@@ -183,17 +181,13 @@ public class BuyController {
 				// 로그인 된 user_id 받아오기
 				String id = principal.getName();
 
-
 				// 회원의 구매 내역 받아오기
 				List<BookDTO> buy_history = service.buy_history(id, cri);
-
 				// 구매 내역
 				model.addAttribute("buy_history", buy_history);
-
 				// 대출 건수
-				int total = service.get_total(id);
+				int total = service.get_total_buy(id);
 				model.addAttribute("total", total);
-
 				// 페이징 정보
 				ViewPage vp = new ViewPage(cri, total);
 				model.addAttribute("pageMaker", vp);
@@ -203,11 +197,54 @@ public class BuyController {
 
 		}
 	
+		@PostMapping("/buybook")
+		public String buy(Model model, Criteria cri, BookDTO book, @RequestParam String detail, Principal principal) {
+
+			System.out.println("책 구매하기");
+			
+			// 로그인 된 user_id 받아오기
+			String id = principal.getName();
+
+			// id 세팅
+			book.setUser_id(id);
+
+			System.out.println("\n======================== 구매 ========================");
+			System.out.println("아이디 : " + book.getUser_id());
+			System.out.println("구매 책 제목 : " + book.getBook_title());
+			System.out.println("구매한 책 ISBN : " + book.getBook_isbn());
+			System.out.println("keyword : " + cri.getKeyword());
+			System.out.println("========================================================\n");
+
+			String keyword;
+
+			try {
+				keyword = URLEncoder.encode(cri.getKeyword(), "UTF-8");
+			} catch (UnsupportedEncodingException e) {
+				return "redirect:/search/book";
+			}
+
+			// 대출
+			buyservice.buy(book); //insert into buy_history
+
+			if (detail.equals("true")) {
+
+				return "redirect:/search/best-book-detail?book_isbn=" + book.getBook_isbn();
+
+			} else {
+				return "redirect:/search/book-detail?amount=" + cri.getAmount() + "&page=" + cri.getPage() + "&type="
+						+ cri.getType() + "&keyword=" + keyword + "&book_isbn=" + book.getBook_isbn();
+			}
+
+		}
+/*	
+		@PostMapping("/buybook")
+		public String buy() {
+			System.out.println("책 구매하기");
+			
+			return "/search/book";
+		}
 	
-	
-	
-	
-	
+*/	
 	
 		/*
 		 * @RequestMapping("/book_buy_result_api")
@@ -239,4 +276,29 @@ public class BuyController {
 		 * 
 		 * }
 		 */
+		@ResponseBody
+		@PostMapping("/test")
+		public String likeChk(String book_isbn, Principal principal) throws Exception {
+
+			// 로그인 된 user_id 받아오기
+			String id = principal.getName();
+
+			System.out.println(id);
+			System.out.println("likeChk() 진입");
+
+
+			// 대출하려는 회원이 대출 중인 도서인지 체크
+			int loan_check = 2;
+
+			if (loan_check == 1) {
+
+				return "alreadyLike";
+
+			} else {
+
+				// 아직 좋아요 안한 책이라면 success 리턴
+				return "success";
+
+				} 
+		}
 }
