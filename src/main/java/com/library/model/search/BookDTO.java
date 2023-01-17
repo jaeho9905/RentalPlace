@@ -44,7 +44,7 @@ public class BookDTO {
 	private String loan_date;
 	
 	// 구매 일
-//  private String buy_date;
+    private String buy_date;
 
 	// 반납 일
 	private String return_date;
@@ -54,6 +54,9 @@ public class BookDTO {
 
 	// 도서 가격(AladinAPI에서 받아올 때)
 	private int priceStandard;
+	
+	// 구매 가격
+	private int resultpriceStandard;
 	
 	// 도서
 	private String description;

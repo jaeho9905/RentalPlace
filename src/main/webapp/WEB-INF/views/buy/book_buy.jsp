@@ -8,11 +8,16 @@
 <html>
 <head>
 <title>라온도서관 > 자료검색 > 도서검색</title>
+
+
+
+
 </head>
 <link rel="stylesheet" href="/resources/css/search/book.css">
 <link rel="stylesheet" href="/resources/css/search/book_detail.css">
 <link rel="stylesheet" href="/resources/css/header.css">
 <link rel="stylesheet" href="/resources/css/footer.css">
+<link rel="stylesheet" href="/resources/css/buy/buy.css">
 <script src="https://code.jquery.com/jquery-3.6.0.js"
 	integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
 	crossorigin="anonymous"></script>
@@ -93,136 +98,111 @@
 						</div>
 						<div id="join_container">
 							<h3>정보 입력</h3>
-							<p class="information">
-								<strong class="point">*</strong> 는 필수입력 항목을 나타냅니다.
-							</p>
-							<form action="/buy/buybook" method="post" id="join">
-								<fieldset class="join1">
-									<legend>필수 입력 항목</legend>
-									<p class="box_i">
-										<span class="box_s"><strong class="point">*배송방법</strong>
-										</span>
-										<input	type="radio" name="receive" id="normal">
-										<label for="normal" class="radio_t">일반 배송</label>
-										<input type="radio"	name="receive" id="overseas">
-										<label for="overseas" class="radio_t">해외 배송</label>
-										<input type="radio"	name="receive" id="convenience">
-										<label for="convenience" class="radio_t">편의점 배송</label>
+							<form method="post" id="buy">
+								<fieldset>
+									<legend>정보 입력</legend>
+									<p>
+										<strong class="point">*</strong> 는 필수입력 항목을 나타냅니다.
+									</p>
+									<p class="shipping">
+										<label class="tit"><strong class="point">* </strong>배송방법</label>
+										<input	type="radio" name="shipping" id="normal" checked>
+										<label for="normal"  class="tit">일반 배송</label>
+										<span><input type="radio"	name="shipping" id="overseas"></span>
+										<label for="overseas"  class="tit">해외 배송</label>
+										<input type="radio"	name="shipping" id="convenience">
+										<label for="convenience"  class="tit">편의점 배송</label>
 									</p>
 
-									<!-- <p class="box_t">
-										<strong class="point">주의!</strong> 아이디는 영문자와 숫자만을 사용하여 4글자이상
-										16글자 이하로 작성해 주세요.
-									</p> -->
-
-									<p class="box_i">
-										<label for="u_id"><strong class="point">*</strong>수령인</label><input
-											type="text" id="u_id" >
+									<p>
+										<label class="tit"><strong class="point">*</strong>수령인</label>
+										<input type="text" id="user_id" >
 										
-									</p>
-
-									<!-- <p class="box_t">
-										<strong class="point">주의!</strong> 비밀번호는 보안을 위해 영문자, 숫자 및 특수문자
-										등을 조합하여 작성하시기 바랍니다.
-									</p>
-									<p class="box_t">
-										<strong class="point">주의!</strong> 비밀번호는 보안을 위해 4글자 이상으로 작성해
-										주세요.
-									</p> -->
-
-									<p class="box_i">
-										<label for="pwd1"><strong class="point">*</strong>배송 주소</label><input
-											type="password" id="pwd1" >
-										<input type="button"
-											value="주소 찾기" class="zip_btn">
-									</p>
-									<p class="box_i">
-										<label for="pwd2"><strong class="point">*</strong>도로명 주소</label><input type="password" id="pwd2" >
-									</p>
-
-									<p class="box_i">
-										<label for="pwd2"><strong class="point">*</strong>지번 주소</label><input type="password" id="pwd2" >
-									</p>
-
-									<p class="box_i">
-										<label for="zip1"><strong class="point">*</strong>우편번호</label><input
-											type="text" id="zip1" > - <input type="text"
-											id="zip2" ><input type="button"
-											value="우편번호 찾기" class="zip_btn">
-									</p>
-
-
-									<p class="box_i">
-										<label for="tel1"><strong class="point">*</strong>휴대폰</label><input
-											type="tel" id="tel1" title="지역번호 입력" > - <input
-											type="tel" id="tel2" title="전화번호 앞자리" > - <input
-											type="tel" id="tel3" title="전화번호 뒷자리" >
 									</p>
 									
-									<p class="box_i">
-										<label for="tel1"><strong class="point">*</strong>일반전화</label><input
-											type="tel" id="tel1" title="지역번호 입력"> - <input
-											type="tel" id="tel2" title="전화번호 앞자리"> - <input
-											type="tel" id="tel3" title="전화번호 뒷자리" >
+									<p>
+										<label class="tit"><strong class="point">*</strong>우편번호</label>
+										<input type="text" class="form-control m-input" name="postcode" id="postcode" readonly />
+										<button type="button" id="post" class="btn btn-info m-btn--air" onclick="execDaumPostcode()">우편번호 찾기</button>
 									</p>
-									<p></p>
-								</fieldset>
-								
-								<fieldset class="join3">
-									<legend>결제 방법</legend>
-									<p class="text_wrap">
+									<p>
+										<label class="tit"><strong class="point">*</strong>도로명 주소</label>
+										<input type="text" class="form-control m-input m--margin-top-10" name="address" id="address" readonly />
 										
 									</p>
-									<p class="box_i">
-										<input type="radio" name="agree" id="chk1" value="1">
-										<label for="chk1">신용카드</label>
-										<input type="radio" name="agree" id="chk2" value="2">
-										<label for="chk2">계좌이체</label>
-										<input type="radio" name="agree" id="chk2" value="2">
-										<label for="chk2">무통장 입금</label>
-										<input type="radio" name="agree" id="chk2" value="2">
-										<label for="chk2">휴대폰</label>
-										<input type="radio" name="agree" id="chk2" value="2">
-										<label for="chk2">카카오페이</label>
-										<input type="radio" name="agree" id="chk2" value="2">
-										<label for="chk2">PAYCO</label>
+
+									<p>
+										<label class="tit"><strong class="point">*</strong>상세 주소</label>
+										<input type="text" class="form-control m-input m--margin-top-10" name="detailAddress" />
+									</p>
+
+									<p>
+										<label class="tit"><strong class="point">*</strong>휴대폰</label>
+										<input type="tel" id="tel1" title="지역번호 입력" > - 
+										<input type="tel" id="tel2" title="전화번호 앞자리" > - 
+										<input type="tel" id="tel3" title="전화번호 뒷자리" >
+									</p>
+									
+									<p>
+										<label class="tit">일반전화</label>
+										<input type="tel" id="tel1" title="지역번호 입력"> - 
+										<input type="tel" id="tel2" title="전화번호 앞자리"> - 
+										<input type="tel" id="tel3" title="전화번호 뒷자리" >
+									</p>
+								</fieldset>
+								
+								<fieldset>
+									<legend>결제 방법</legend>
+									<p>
+										<input type="radio" name="kakaopay" id="kakaopay" checked>
+										<label for="kakaopay" >카카오페이</label>
+
 									</p>
 									<hr/>
 									<p>선물 포장
-										<input type="radio" name="agree" id="chk1" value="1">
-										<label for="chk1">안함</label>
-										<input type="radio" name="agree" id="chk2" value="2">
-										<label for="chk2">요청</label><span>(1,000원)</span>
+										<input type="radio" name="present" id="no">
+										<label for="no">안함</label>
+										<input type="radio" name="present" id="yes">
+										<label for="yes">요청</label><span>(1,000원)</span>
 									</p>
 									<p>영수증
-										<input type="radio" name="agree" id="chk1" value="1">
+										<input type="radio" name="receipt" id="chk1">
 										<label for="chk1">가격표시</label>
-										<input type="radio" name="agree" id="chk2" value="2">
+										<input type="radio" name="receipt" id="chk2">
 										<label for="chk2">가격 표시 안함</label>
 									</p>
 									<p>택배사 직원에게</p>
-									<input	type="text" id="u_id" >
+									<input	type="text" class="msg" maxlength='30' placeholder="30자 이내로 작성해주세요">
 									<p>받는분께 메시지</p>
-									<input	type="text" id="u_id" >
-									<p>최종 결제금액 <fmt:formatNumber value="${book.priceStandard }"	type="currency" />원</p>
-									<span>주문하실 상품, 가격, 배송정보, 할인정보 등을 확인하였으며, 구매에 동의하시겠습니까?</span>
-									<input type="checkbox"><p>동의합니다.<span>(전자상거래법 제 8조 제 2항)</span></p>
+									<input	type="text" class="msg" maxlength='30' placeholder="30자 이내로 작성해주세요">
+									<p>최종 결제금액 
+									<%-- <c:if test=></c:if> --%>
+									<fmt:formatNumber value="${book.resultpriceStandard }"	type="currency" />
+									원  (배달료 2500원 추가)</p>
+									<span id="agree">주문하실 상품, 가격, 배송정보, 할인정보 등을 확인하였으며, 구매에 동의하시겠습니까?</span>
+									<p id="checkbox"><input type="checkbox"><span>동의합니다.(전자상거래법 제 8조 제 2항)</span></p>
 								</fieldset>
 								
 								
-								<%-- <input type="hidden" name="amount" value="${cri.amount }"> --%>
-								<input type="hidden" name="book_title" value="${book.book_title }">
-								<input type="hidden" name="book_author" value="${book.book_author }">
-								<input type="hidden" class="book_isbn" name="book_isbn" value="${book.book_isbn }">
-								<input type="hidden" name="book_cover" value="${book.book_cover }">
-								<input type="hidden" name="book_pubDate" value="${book.book_pubDate }">
-								<input type="hidden" name="book_publisher" value="${book.book_publisher }">
-								<input type="hidden" name="amount" value="${cri.amount }">
-								<input type="hidden" name="page" value="${cri.page }">
-								<input type="hidden" name="type" value="${cri.type }">
-								<input type="hidden" name="keyword" value="${cri.keyword }">
+								<sec:authorize access="isAuthenticated()">
+									<input type="hidden" class="user_email" name="user_email" value=<sec:authentication property="principal.dto.user_email"/>>
+								</sec:authorize>
+
+								<sec:authorize access="isAnonymous()">
+									<input type="hidden" class="user_email" name="user_email">
+								</sec:authorize>
+								<input type="hidden" name="book_title" value="${book.book_title}">
+								<input type="hidden" name="book_author" value="${book.book_author}">
+								<input type="hidden" class="book_isbn" name="book_isbn" value="${book.book_isbn}">
+								<input type="hidden" name="book_cover" value="${book.book_cover}">
+								<input type="hidden" name="book_pubDate" value="${book.book_pubDate}">
+								<input type="hidden" name="book_publisher" value="${book.book_publisher}">
+								<input type="hidden" name="amount" value="${cri.amount}">
+								<input type="hidden" name="page" value="${cri.page}">
+								<input type="hidden" name="type" value="${cri.type}">
+								<input type="hidden" name="keyword" value="${cri.keyword}">
 								<button id="apibtn">결제 하기</button>
-								<button id="test">테스트</button>
+								
 							</form>
 						</div>
 						<!--join_container 전체-->
@@ -249,34 +229,6 @@
 	<jsp:include page="../footer.jsp"></jsp:include>
 	<script>
 		$(function() {
-			$(".sub1").addClass("active");
-
-			let moveForm = $(".moveForm");
-
-			$(".pageInfo a").on(
-					"click",
-					function(e) {
-						e.preventDefault();
-						moveForm.find("input[name = 'page']").val(
-								$(this).attr("href"));
-						moveForm.submit();
-
-					});
-
-			// 검색 버튼을 누를 시 공백이면 alert
-			$("#search_btn").on("click", function(e) {
-				let keyword = $("input[name='keyword']").val();
-				if (keyword == "") {
-					alert("검색어를 입력해주세요.");
-				} else {
-					$("form").attr("onsubmit", "return true");
-					$("form").submit();
-				}
-
-			});
-			
-			
-			
 			 $(function() {
 				$(".sub1").addClass("active");
 				 
@@ -310,6 +262,24 @@
 									alert(error);
 								}
 							});
+							
+							$.ajax({
+			           			type: "post",
+			           			url: "/buy/buyChk",
+			           			data: data,
+			           			success: function(result) {
+			           				
+			           				if (result == "success") {
+			           					alert("결제페이지로 넘어갑니다.");
+			           					$("#buy").attr("action", "/buy/buybook?detail=not");
+			           					$("#buy").attr("onsubmit", "return true;");
+			           					$("#buy").submit();
+			       						
+			           				} else if (result == "alreadyBuy"){
+			           					alert("이미 찜한 도서입니다.");
+			           				} 
+			           			}
+			           		});
 						
 						}
 						
@@ -338,52 +308,20 @@
 			}); */
 		});
 	</script>
-<!-- 	 <script type="text/javascript">
-	$(function() {
-		$(".sub1").addClass("active"); //왼쪽 카테고리 '도서검색' 활성화
-		 
-		$("#test").click(function() {
-			
-			let email = $('.user_email').val(); 
-			let book_isbn = $('.book_isbn').val(); 
-			
-			if(email == "") {
-				alert("로그인 후 이용해주세요");
-				location.href="/member/login";
-			} else {
-				
-				if (confirm("도서를 찜하시겠습니까?")) {
-				
-					let data = {
-	           				book_isbn: book_isbn
-	           		};
-					
-					$.ajax({
-	           			type: "post",
-	           			url: "/buy/test",
-	           			data: data,
-	           			success: function(result) {
-	           				
-	           				if (result == "success") {
-	           					alert("내 찜리스트에 등록되었습니다.");
-	           					$("#loan").attr("action", "/buy/buybook?detail=not");
-	           					$("#loan").attr("onsubmit", "return true;");
-	           					$("#loan").submit();
-	       						
-	           				} else if (result == "alreadyLike"){
-	           					alert("이미 찜한 도서입니다.");
-	           				} 
-	           			}
-	           		});
-				
-				}
-				
-				
-			} 
-				
-		});
-	});
-	</script> 
- -->
+	<script src="http://dmaps.daum.net/map_js_init/postcode.v2.js?autoload=false"></script>
+
+	<script>
+		/** 우편번호 찾기 */
+		function execDaumPostcode() {
+		    daum.postcode.load(function(){
+		        new daum.Postcode({
+		            oncomplete: function(data) {
+		              $("#postcode").val(data.zonecode);
+		              $("#address").val(data.roadAddress);
+		            }
+		        }).open();
+		    });
+		}
+	</script>
 </body>
 </html>

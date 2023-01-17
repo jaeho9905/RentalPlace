@@ -53,8 +53,10 @@ public class BuyController {
 	@PostMapping("/book_buy")
 	public String book_buy(Model model, @RequestParam String book_isbn) {
 
-		System.out.println(book_isbn);
+		
 		BookDTO book = new BookDTO();
+		
+		
 		List<BookDTO> list = new ArrayList<BookDTO>();
 
 		System.out.println("번호는: " + book_isbn + ".");
@@ -99,17 +101,31 @@ public class BuyController {
 	}
 	
 	
-	@RequestMapping("/book_buy_api")
+	@GetMapping("/book_buy_api")
 	@ResponseBody
-	public String kakaopay() {
+	public String kakaopay(@RequestParam(required = false) String book_isbn) {
+		
+
+		
 		try {
+			
+			
+			  BookDTO book = new BookDTO();
+			  
+				/* book = api.search_detail(book_isbn); */
+			/*  System.out.println("apiapiapiapiapiapiapiapiapiapiapiapi선택 책 제목 : " +  book.getBook_title());*/
+			 
+			 
+			
+			
 			URL url = new URL("https://kapi.kakao.com/v1/payment/ready");
 			HttpsURLConnection con = (HttpsURLConnection) url.openConnection();
 			con.setRequestMethod("POST");
 			con.setRequestProperty("Authorization", "KakaoAK 7ab27b00537b3367f4963eaca8eed02f");
 			con.setRequestProperty("Content-type", "application/x-www-form-urlencoded;charset=utf-8");
 			con.setDoOutput(true);
-			String parameter = "cid=TC0ONETIME&partner_order_id=partner_order_id&partner_user_id=partner_user_id&item_name=초코파이&quantity=1&total_amount=2200&tax_free_amount=0&approval_url=http://localhost:8092/success&fail_url=http://localhost:8092/fail&cancel_url=http://localhost:8092/cancel";
+			String parameter = 
+					"cid=TC0ONETIME&partner_order_id=partner_order_id&partner_user_id=partner_user_id&item_name=orange&quantity=1&total_amount=2100&tax_free_amount=0&approval_url=http://localhost:8092/success&fail_url=http://localhost:8092/fail&cancel_url=http://localhost:8092/cancel";
 			OutputStream output = con.getOutputStream();
 			DataOutputStream toput = new DataOutputStream(output);
 			toput.writeBytes(parameter);
@@ -177,7 +193,7 @@ public class BuyController {
 		
 
 				System.out.println("buy_history 진입");
-
+				
 				// 로그인 된 user_id 받아오기
 				String id = principal.getName();
 
@@ -198,10 +214,10 @@ public class BuyController {
 		}
 	
 		@PostMapping("/buybook")
-		public String buy(Model model, Criteria cri, BookDTO book, @RequestParam String detail, Principal principal) {
+		public String buy(BookDTO book, @RequestParam String detail, Principal principal) {
 
-			System.out.println("책 구매하기");
-			
+			System.out.println("책 구매하기  책 제목:");
+			System.out.println(book.getBook_title());
 			// 로그인 된 user_id 받아오기
 			String id = principal.getName();
 
@@ -212,31 +228,56 @@ public class BuyController {
 			System.out.println("아이디 : " + book.getUser_id());
 			System.out.println("구매 책 제목 : " + book.getBook_title());
 			System.out.println("구매한 책 ISBN : " + book.getBook_isbn());
-			System.out.println("keyword : " + cri.getKeyword());
 			System.out.println("========================================================\n");
 
-			String keyword;
+			
 
-			try {
-				keyword = URLEncoder.encode(cri.getKeyword(), "UTF-8");
-			} catch (UnsupportedEncodingException e) {
-				return "redirect:/search/book";
-			}
-
-			// 대출
+			// 구매
 			buyservice.buy(book); //insert into buy_history
 
-			if (detail.equals("true")) {
+			/*
+			 * if (detail.equals("true")) {
+			 * 
+			 * return "redirect:/search/best-book-detail?book_isbn=" + book.getBook_isbn();
+			 * 
+			 * } else {
+			 * 
+			 * return "redirect:/search/book-detail?amount=" + cri.getAmount() + "&page=" +
+			 * cri.getPage() + "&type=" + cri.getType() + "&keyword=" + keyword +
+			 * "&book_isbn=" + book.getBook_isbn();
+			 * 
+			 * }
+			 */
 
-				return "redirect:/search/best-book-detail?book_isbn=" + book.getBook_isbn();
+			return "redirect:/search/book-detail?book_isbn=" + book.getBook_isbn();
+		}
+		
+		@ResponseBody
+		@PostMapping("/buyChk")
+		public String buyChk(String book_isbn, Principal principal) throws Exception {
+
+			// 로그인 된 user_id 받아오기
+			String id = principal.getName();
+
+			System.out.println(id);
+			System.out.println("buyChk() 진입");
+
+
+			// 대출하려는 회원이 대출 중인 도서인지 체크
+			/* int buy_check = buyservice.buy_check(id, book_isbn); */
+			int buy_check = 2;
+			if (buy_check == 1) {
+
+				return "alreadyBuy";
 
 			} else {
-				return "redirect:/search/book-detail?amount=" + cri.getAmount() + "&page=" + cri.getPage() + "&type="
-						+ cri.getType() + "&keyword=" + keyword + "&book_isbn=" + book.getBook_isbn();
-			}
 
+				// 아직 좋아요 안한 책이라면 success 리턴
+				return "success";
+
+				} 
 		}
-/*	
+	/*
 		@PostMapping("/buybook")
 		public String buy() {
 			System.out.println("책 구매하기");
@@ -244,7 +285,7 @@ public class BuyController {
 			return "/search/book";
 		}
 	
-*/	
+	*/
 	
 		/*
 		 * @RequestMapping("/book_buy_result_api")
@@ -288,9 +329,9 @@ public class BuyController {
 
 
 			// 대출하려는 회원이 대출 중인 도서인지 체크
-			int loan_check = 2;
+			int buy_check = 2;
 
-			if (loan_check == 1) {
+			if (buy_check == 1) {
 
 				return "alreadyLike";
 

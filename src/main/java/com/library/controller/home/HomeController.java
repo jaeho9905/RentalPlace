@@ -129,7 +129,23 @@ public class HomeController {
 	}
 	
 	@GetMapping("success")
-	public String success() {
+	public String success(BookDTO book) {
+		System.out.println("=========================================================");
+		System.out.println("=========================================================");
+		System.out.println("api에서 나오는 제목은 "+book.getBook_author());
+		System.out.println("api에서 나오는 제목은 "+book.getBook_cover());
+		System.out.println("api에서 나오는 제목은 "+book.getBook_isbn());
+		System.out.println("api에서 나오는 제목은 "+book.getBook_pubDate());
+		System.out.println("api에서 나오는 제목은 "+book.getBook_publisher());
+		System.out.println("api에서 나오는 제목은 "+book.getBook_title());
+		System.out.println("api에서 나오는 제목은 "+book.getBuy_date());
+		System.out.println("api에서 나오는 제목은 "+book.getCount());
+		System.out.println("api에서 나오는 제목은 "+book.getDescription());
+		System.out.println("api에서 나오는 제목은 "+book.getLoan_no());
+		System.out.println("api에서 나오는 제목은 "+book.getTotal());
+		System.out.println("api에서 나오는 제목은 "+book.getReturn_period());
+		System.out.println("=========================================================");
+		System.out.println("=========================================================");
 		return "buy/success";
 	}
 	@GetMapping("cancel")

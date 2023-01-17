@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>라온도서관 > 나의도서관 > 도서관련 > 대출내역조회</title>
+<title>라온도서관 > 나의도서관 > 도서관련 > 구매내역조회</title>
 <link rel="stylesheet" href="/resources/css/mylib/sub1/loan_history.css">
 <link rel="stylesheet" href="/resources/css/header.css">
 <link rel="stylesheet" href="/resources/css/footer.css">
@@ -24,7 +24,7 @@
             <div class="doc-info">
                 <!-- doc title -->
                 <div class="doc-title">
-                    <h3>대출내역조회</h3>
+                    <h3>구매내역조회</h3>
                     <ul>
                         <!-- 홈 btn img -->
                         <li class="first" style="background-image: none;">
@@ -56,67 +56,6 @@
                     <div class="doc">
                         <div class="wrapper-bbs" style="">
 
-                            <%-- <!--검색-->
-                            <div class="search">
-                                <form action="" onsubmit="return false;">
-                                	
-                               		<b>시작일</b>
-                               		<input type="date" class="start_date" name="start_date" 
-                               			value="${start_date }" max="9999-12-31">
-                               			
-                               		<b>종료일</b>
-                               		<input type="date" class="end_date" name="end_date" 
-                               			value="${end_date }" max="9999-12-31">
-                                	
-                                    <button id="search_btn" class="btn">검색</button>
-                                </form>
-                               
-                            </div> --%>
-                            
-                            <%-- <!-- 도서 수 -->
-                            <div class="inline">
-                                <form action="">
-                                	
-                                    <span style="margin-right: 10px;"> 구매 권수 : <b>${total }</b> 건</span>
-                                    <select name="amount">
-                                    	
-	                                    <c:if test="${pageMaker.cri.amount == 10 }">
-	                                    <option value="10" selected="selected">10건씩 보기</option>
-	                                    <option value="20">20건씩 보기</option>
-	                                    <option value="30">30건씩 보기</option>
-	                                    <option value="40">40건씩 보기</option>
-	                                    </c:if>
-	                                    
-	                                    <c:if test="${pageMaker.cri.amount == 20 }">
-	                                    <option value="10">10건씩 보기</option>
-	                                    <option value="20" selected="selected">20건씩 보기</option>
-	                                    <option value="30">30건씩 보기</option>
-	                                    <option value="40">40건씩 보기</option>
-	                                    </c:if>
-	                                    
-	                                    <c:if test="${pageMaker.cri.amount == 30 }">
-	                                    <option value="10">10건씩 보기</option>
-	                                    <option value="20">20건씩 보기</option>
-	                                    <option value="30" selected="selected">30건씩 보기</option>
-	                                    <option value="40">40건씩 보기</option>
-	                                    </c:if>
-	                                    
-	                                    <c:if test="${pageMaker.cri.amount == 40 }">
-	                                    <option value="10">10건씩 보기</option>
-	                                    <option value="20">20건씩 보기</option>
-	                                    <option value="30">30건씩 보기</option>
-	                                    <option value="40" selected="selected">40건씩 보기</option>
-	                                    </c:if>
-                                        
-                                    </select>
-                                    <input type="hidden" name="page" value="1">
-                                    <input type="hidden" name="start_date" value="${start_date }">
-									<input type="hidden" name="end_date" value="${end_date }">
-                                    <button id="list_btn" class="btn">이동</button>
-                                </form>
-
-                            </div> --%>
-
                             <!-- 테이블 -->
                             <div class="table-wrap">
                             	<c:if test="${not empty buy_history }">
@@ -134,9 +73,9 @@
                                     
 	                                    <c:forEach var="buy_history" items="${buy_history}">
 										<tr>
-											<td>${buy_history.book_title }</td> 
+											<td>${buy_history.book_title}</td> 
 											<td>${buy_history.book_author}</td>
-											<td>${buy_history.loan_date }</td>
+											<td>${buy_history.buy_date}</td>
 											
 											<c:if test="${empty buy_history.return_date }">
 											<td><span style="color:red; font-weight: bold">미반납</span></td>
@@ -146,7 +85,7 @@
 											<td>${buy_history.return_date }</td>
 											</c:if>
 											
-											<td>${buy_history.return_period }</td>
+											<td>${buy_history.return_period}</td>
 											
 										</tr>
 										</c:forEach>

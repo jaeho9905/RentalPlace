@@ -18,5 +18,11 @@ public class BuyServiceImpl implements BuyService{
 		
 	}
 
+	@Override
+	public int buy_check(String user_id, String book_isbn) {
+		return mapper.buy_check(user_id, book_isbn);
+	}
+
+	
 	
 }
