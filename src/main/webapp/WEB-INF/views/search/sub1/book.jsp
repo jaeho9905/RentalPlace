@@ -144,7 +144,7 @@
 										<tbody>
 											<c:forEach var="list" items="${list}">
 												<tr>
-													<td class=""><img src="${list.book_cover }"
+													<td class="book_cover" style="cursor:pointer;"><img src="${list.book_cover }"
 														style="width: 135px;"></td>
 													<td style="text-align: left">
 													<form action="/search/book-detail" method="get" id="title_form">
@@ -298,7 +298,7 @@
 			//책제목 클릭 시 상세페이지로
 			let titleForm = $("#title_form");
 
-			$(".book_title a").on(
+			$(".book_title a, .book_cover img").on(
 					"click",
 					function(e) {
 						e.preventDefault();

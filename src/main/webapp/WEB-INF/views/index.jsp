@@ -13,6 +13,7 @@
     <link rel="stylesheet" type="text/css" href="/resources/css/index/main_header.css">
     <link rel="stylesheet" type="text/css" href="/resources/css/index/main.css">
     <link rel="stylesheet" type="text/css" href="/resources/css/index/footer.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/index/jquery.bxslider.css">
     <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
     <!-- xeion = 아이콘 사용을 위한 CDN -->
     <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
@@ -23,13 +24,41 @@
     <script type="text/javascript" src="/resources/js/index/main-header.js"></script>
     <script type="text/javascript" src="/resources/js/index/main.js"></script>
     <script type="text/javascript" src="/resources/js/index/tab.js"></script>
+	<script type="text/javascript" src="/resources/js/index/jquery.bxslider.min.js"></script> 
 </head>
 <body>
 
     <div id="warp">
-        <div id="header">
-            <div class="tnb">
-                <div class="main-section">
+    
+    	<div class="tnb">
+                                
+                <!-- 로고 -->
+                <h1 class="logo">
+                    <a id="logoLink" href="/" title="이젠북컴퍼니 메인화면" role="button"><span
+                            class="hide"></span></a>
+                </h1>
+            	
+            	<!-- 검색박스 -->
+     	        <div class="searchbox">
+                      <div class="box">
+                      	<form action="/search/book" method="get" id="search_form">
+                      		<select id="op-01" class="select-op" title="검색창 옵션" name="type">
+                               <option value="Title">도서명</option>
+                               <option value="Author">저자명</option>
+                           </select>
+                           <input id="inputForm" class="mainInput" type="text" placeholder="검색어를 입력하세요."
+                               title="검색창" name="keyword" autocomplete="off">
+                           <div class="btn-box">
+                               <a class="search-btn" onclick="submit();">
+                                   <span class="hide">검색</span>
+                               </a>
+                           </div>
+                      	</form>
+                      </div>
+                  </div>
+     	
+            
+               <!--  <div class="main-section"> -->
                     <div class="util">
                     	<sec:authorize access="isAnonymous()">
                         <a href="/member/login">로그인</a><span class="text-bar"></span>
@@ -38,7 +67,7 @@
                         
                         <!-- 로그인 시 -->
 						<sec:authorize access="isAuthenticated()">
-						<span style="color: #fff; font-weight: bold; font-size: 0.875em;">
+						<span style="color: black; font-weight: bold; font-size: 0.875em;">
 							<sec:authentication property="principal.dto.user_name"/>님
 						</span>
 						<span class="text-bar"></span>
@@ -53,15 +82,19 @@
 					    </sec:authorize>
 						</sec:authorize>
                     </div>
-                </div>
+
+                <!-- </div> -->
             </div>
+        <div id="header">
+			
+
             <!-- 하단 nav(본 메뉴) 작업 시작하기 -->
             <div class="gnb">
                 <div class="container">
-                    <h1 class="logo">
-                        <a id="logoLink" href="/" title="라온도서관 메인화면" role="button"><span
-                                class="hide">대구광역시립라온도서관</span></a>
-                    </h1>
+                    <!-- <h1 class="logo">
+                        <a id="logoLink" href="/" title="이젠북컴퍼니 메인화면" role="button"><span
+                                class="hide"></span></a>
+                    </h1> -->
                     <ul class="gnb-ul">
                         <li class="gnb-li">
                             <a class="Depth" href="/search/book">
@@ -127,36 +160,81 @@
                             </ul>
                         </li>
                     </ul>
-                    <a id="site-map-Link" class="site-map" href="#a" title="사이트맵">
+<!--                     <a id="site-map-Link" class="site-map" href="#a" title="사이트맵">
                         <img src="/resources/imges/index/sitemap1.png" alt="사이트맵">
-                    </a>
+                    </a> -->
                 </div>
             </div>
-            <!-- Quick메뉴 -->
-            <div class="search-area">
-                <div class="container">
-                    <div class="search-wrap">
-                        <div class="searchbox">
-                            <div class="box">
-                            	<form action="/search/book" method="get" id="search_form">
-                            		<select id="op-01" class="select-op" title="검색창 옵션" name="type">
-	                                    <option value="Title">도서명</option>
-	                                    <option value="Author">저자명</option>
-	                                </select>
-	                                <input id="inputForm" class="mainInput" type="text" placeholder="검색어를 입력하세요."
-	                                    title="검색창" name="keyword" autocomplete="off">
-	                                <div class="btn-box">
-	                                    <a class="search-btn" onclick="submit();">
-	                                        <span class="hide">검색</span>
-	                                    </a>
-	                                </div>
-                            	</form>
-                            </div>
+           
+            
+            <!----------------------------- 배너 슬라이더 추가 -->
+<!--         	<div id="header">
+			    <ul class="top_bg">
+			        <li class="top_bg1"></li>
+			        <li class="top_bg2"></li>
+			        <li class="top_bg3"></li>
+			    </ul>photo
+			    <p>
+			        <button type="button" class="prev">&lt;</button>
+			        <button type="button" class="next">&gt;</button>
+			    </p>
+			    <ul id="bx-pager1">
+			        <li><button type="button" title="1번버튼" data-n="1" class="btn btn1 active">1</button></li>
+			        <li><button type="button" title="2번버튼" data-n="2" class="btn btn2">2</button></li>
+			        <li><button type="button" title="3번버튼" data-n="3" class="btn btn3">3</button></li>
+			    </ul>btn_wrap
+			</div>  wrap -->
+			
+<%--             <!-- Quick메뉴 -->
+            <div class="Quick-area">
+                <h2>주요 서비스 안내</h2>
+                <ul class="icons">
+                    <li>
+                        <div class="icon_img">
+                            <a href="/search/book"><img src="/resources/imges/index/infornation.png">
                         </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Quick메뉴 -->
+                        <class="contents1_bold">자료검색</class></a>
+                    <li>
+                        <div class="icon_img">
+                            <a href="/mylib/hope"><img src="/resources/imges/index/book.png">
+                        </div>
+                        <class="contents1_bold">희망도서신청</class></a>
+                    </li>
+                    <li>
+                        <div class="icon_img">
+                            <a href="/mylib/loan-history"><img src="/resources/imges/index/my-info.png">
+                        </div>
+                        <class="contents1_bold">대출내역조회</class></a>
+                    </li>
+                    <li>
+                        <div class="icon_img">
+                            <a href="/board/calendar"><img src="/resources/imges/index/calendar.png">
+                        </div>
+                        <class="contents1_bold">도서관 일정</class></a>
+                    </li>
+                    <li>
+                        <div class="icon_img">
+                            <a href="#a"><img src="/resources/imges/index/library.png">
+                        </div>
+                        <class="contents1_bold">이용안내</class></a>
+                    </li>
+                    <li>
+                        <div class="icon_img">
+                            <a href="/mylib/reservationRoomPage"><img src="/resources/imges/index/reservation.png">
+                        </div>
+                        <class="contents1_bold">자리예약하기</class></a>
+                    </li>
+                </ul>
+            </div> --%>
+        </div><!-- header -->
+        <!-- 헤더영역 끝 -->
+        
+        
+        
+        <!-- 메인영역 시작-->
+        <div id="main">
+        
+        	<!-- Quick메뉴 -->
             <div class="Quick-area">
                 <h2>주요 서비스 안내</h2>
                 <ul class="icons">
@@ -197,10 +275,9 @@
                     </li>
                 </ul>
             </div>
-        </div>
-        <!-- 헤더영역 끝 -->
-        <!-- 메인영역 시작-->
-        <div id="main">
+        
+        
+        
             <!-- <main 01> : 공지사항 / 좌석예약 -->
             <div class="library-info">
                 <div class="inner">
@@ -475,6 +552,8 @@
             </div>
         </div>
         <!-- main 작업 영역 종료 -->
+        
+        
         <!-- footer영역 작업 시작 -->
         <div id="footer">
             <div class="bottom">
@@ -522,4 +601,17 @@
 		}
 	}
 </script>
+
+<script>
+  $(document).ready(function(){
+      var slider = $(".top_bg").bxSlider({ 
+          auto : true, mode : 'fade', pagerCustom : '#bx-pager1',
+      });
+  
+      $(document).on('click mouseover','#bx-pager1',function(){
+          slider.startAuto();
+      });
+  });
+  </script>
+ 
 </html>

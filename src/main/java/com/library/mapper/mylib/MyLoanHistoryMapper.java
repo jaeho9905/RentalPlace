@@ -20,10 +20,10 @@ public interface MyLoanHistoryMapper {
 	
 	
 	//<!--=========== 찜하기 추기 =================-->
-	// 대출 내역 조회
-		public List<BookDTO> like_history(@Param("user_id") String user_id, @Param("cri") Criteria cri);
+	// 찜한 내역 조회
+	public List<BookDTO> like_history(@Param("user_id") String user_id, @Param("cri") Criteria cri);
 
-		// 대출 수 출력
-		public int get_total_like(@Param("user_id") String user_id);
+	// 찜한 도서 수 출력
+	public int get_total_like(@Param("user_id") String user_id);
 
 }

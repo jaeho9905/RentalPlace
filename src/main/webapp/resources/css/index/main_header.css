@@ -40,52 +40,79 @@ select, button {
     /* position: fixed; */
     z-index: 0;
     width: 100%;
+    height:500px;
     top: 0;
     left: 0;
-    min-width: 100%;
-    background: center;
+    min-width: 100%; 
+    /* border:1px solid red; */
+    margin-top:10px;
 }
 
 
 #header {
-    background-image: url(/resources/imges/index/main.jpg);
-    background-repeat: no-repeat 0 0;
-    background-size: cover;
-
+    background: url(/resources/imges/index/book_banner_03.jpg) no-repeat;
+    background-size:cover; 
 }
+/* ====================배너 사진 추가==================  */
+/* .top_bg1{
+    width:100%; height: 500px;
+    background:
+    url(/resources/imges/index/book_banner_01.png) no-repeat; 
+    background-size: cover;
+}
+.top_bg2{
+    width:100%; height: 500px;
+    background:
+    url(/resources/imges/index/book_banner_02.jpg) no-repeat; 
+    background-size: cover;
+    min-width: 100%;
+}
+.top_bg3{
+    width:100%; height: 500px;
+    background:
+    url(/resources/imges/index/book_banner_03.jpg) no-repeat; 
+    background-size: cover;
+    min-width: 100%;
+} */
 
 
 /* ----------- 상단 nav가 위치한 부분 전체를 감싸는 부분 -------------- */
 .tnb {
-    position: relative;
-    margin: 0 auto;
-    overflow: hidden;
+    margin: 10px auto;
+    width:950px;
+    height:60px;
+    /* overflow: hidden; */
     box-sizing: border-box;
     text-align: center;
     z-index: 999999;
+  /*   border:1px solid black; */
 }
 
 
-.main-section {
+/* .main-section {
     position: relative;
     max-width: 78.75em;
     margin: 0 auto;
-}
+    border:1px solid white;
+} */
 
 /* ----------- 진짜 상단 nav -------------- */
 .tnb .util {
-    float: right;
+    float:right;
+    width:260px;
     height: 2.5em;
     line-height: 2.5em;
     font-style: normal;
+    padding-top:8px;
+    /* border:1px solid red; */
     /* background: wheat; */
 }
 
 
 /* ----------- 상단 nav 메뉴 각각의 요소를 하나씩 감싸는 부분-------------- */
 .tnb .util a {
-    font-size: 0.875em;
-    color:#fff;
+    font-size: 1em;
+    color:black;
     font-weight: bold;
     text-decoration: none;
     display: inline-block;
@@ -99,8 +126,8 @@ select, button {
     height: 0.6875em;
     width: 0.0625em;
     margin: 0 0.625em;
-    color: #fff;
-    background: #e5e5e5;
+    color: black;
+    background: black;
     /* background: red; */
     opacity: 0.5;
     position: relative;
@@ -113,6 +140,7 @@ select, button {
 .gnb {
     height: 4.5625em;
     margin-top: 10px;
+   /*  border:1px solid black; */
     /* border-top: 0.1875em #d7d7d7 solid;    
     border-bottom: 0.1875em #d7d7d7 solid; */
     /* background-color: #FFF;     */
@@ -121,17 +149,18 @@ select, button {
 
 /* ----------- 하단 nav가 시작하는 부분 -------------- */
 .container {
-    max-width: 78.75em;
+    width: 800px;
     height: 4.5625em;
-    margin: 0 auto;
-    /* border: 1px solid lightgreen; */
+    margin: 0 auto; 
     display: block;
+    /* border:1px solid black; */
 }
 
 
 /* ----------- logo -------------- */
 .logo {
     float: left;
+    margin-right:75px;
     /* border: 1px dashed darkgray; */
 }
 
@@ -139,7 +168,7 @@ select, button {
 .logo > a {
     background-repeat: no-repeat;
     /* background-image: url('/images/raon-white.png'); */
-    background-image: url(/resources/imges/index/raon-white.png);
+    background-image: url(/resources/imges/index/raon-logo-black.png);
     background-size: cover;
     width: 12.375em;
     height: 4.3125em;
@@ -164,12 +193,12 @@ a:link {
     display: inline-block;
     vertical-align: top;
     height: 4.5625em;
-    width: 57.88em;
-    margin-right: 4.7%;
-    text-align: right;
+    width:800px;
+    text-align: center;
     /*background-color: lavenderblush;*/
     transform: none;
     list-style: outside;
+    /* border:1px solid blue; */
 }
 
 
@@ -180,24 +209,26 @@ a:link {
     text-align: center;
     position: relative;
     font-weight: bold;
+    margin:auto 15px;
     /* border: 1px solid #fff; */
 }
-
-
 .gnb-li > a {
-    color: #fff;
+    color: black;
     font-weight: bold;
     line-height: 54px;
     font-size: 1.25em;
     /* border:1px dashed tomato; */
 }
-
+.gnb-li > a:first-child{
+	margin-left:15px;
+}
+.gnb-li > a:last-child{
+	margin-right:0px;
+}
 
 .gnb-li > a > span.active {
-    background: white;
-    opacity: 0.6;
-    color: black;
-    border-radius: 5px;
+    color: brown;
+    border-bottom:2px solid #c79d6a;
     /* border:2px solid darkgray; */
 }
 
@@ -294,95 +325,85 @@ img, input, select {
 
 
 /* ----------- 메인검색창 설정영역  -------------- */
-.search-area {
+/* .search-area {
     margin-top: 108px;
     background-repeat: no-repeat;
-    width: 100%;
-    height: 200px;
+    height: 100px;
+    width:600px;
     position: relative;
     padding-top: 85px;
     box-sizing: border-box;
-    /* border: 1px solid red; */
-}
+    border: 1px solid red; 
+} */
 
-
+/* 
 .search-wrap {
     position: relative;
     max-width: 54.6875em;
-    width: 100%;
     margin: 0 auto;
-    /*border: 1px solid yellow;*/
-}
+    border: 1px solid yellow;
+} */
 
 
 /* ----------- cf_ 현재 검색창은 opacity : 현재 투명도 80%로 설정 중  -------------- */
 .searchbox {
+	position: relative;
     box-sizing: border-box;
-    padding: 15px;
     opacity : 0.9;
-    max-width: 54.6875em;
-    width: 100%;
-    border-radius: 0.8125em;
-    position: relative;
-    background-color: rgba(244, 244, 244, 0.5);
-    /*border: 1px dashed turquoise;*/
+    width: 460px;
+    border-radius: 10px;
+    float:left;
+    border:1px solid #c79d6a;
 }
-
-
 .searchbox > .box {
     background: #fff;
     padding: 0.625em 0;
+    border-radius: 0.8125em;
+    height:35px;
     /* border: 1px solid blue;*/
 }
-
 
 .searchbox select {
     font-size: 1.125em;
     height: 2.5em;
-    width: 8.75em;
+    width: 7em;
     color: #363636;
     background-repeat: no-repeat;
     border-right: 1px solid #aaaaaa;
     padding-left: 1.5625em;
-    background-position: 77%;
+    /* background-position: 45%;  */
+    border:none;
 }
 
-
 .searchbox input {
-    width: 70%;
+    width: 300px;
     height: 2.8125em;
     box-sizing: border-box;
     padding-left: 2.1875em;
-    background: none;
+    background-color: ivory;
     font-size: 1.125em;
     font-weight: bold;
     color: #3d3d3d;
+    border:none;
 }
-
-
 input[type="text"] {
     border-radius: 0px 0px;
 }
 
-
 .btn-box {
     position: absolute;
-    right: 30px;
+    right: 15px;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(-50%); 
 }
-
-
 .btn-box a {
     vertical-align: middle;
     background-repeat: no-repeat;
 }
-
-
 .search-btn {
     background-image: url(/resources/imges/index/search2.png);
-    width: 32px;
-    height: 32px;
+    width: 35px;
+    height: 35px;
 }
 
 
