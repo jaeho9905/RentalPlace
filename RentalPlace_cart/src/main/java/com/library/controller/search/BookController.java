@@ -442,10 +442,10 @@ public class BookController {
 
 		}
 		@PostMapping("/cart-history/update")
-		public String updateCartPOST( @RequestParam int cart_id, int bookCount) {
+		public String updateCartPOST(@RequestParam(required=false) int cart_id, @RequestParam(required=false) int bookCount ) {
 			
-			bookService.modifyCount(cart_id);
-			bookService.modifyCount(bookCount);
+			bookService.modifyCount(cart_id,bookCount);
+		
 			 
 			return "redirect:/mylib/cart-history";
 

@@ -114,23 +114,27 @@
 
 
 													<td>
-														<div>
-															<input type="text" class="quantity_input"
-																value="${cart.bookCount }">
-															<button type="button" id="plus_btn" value="추가">+</button>
-															<button type="button" id="minus_btn" value="감소">-</button>
-															
-												<form action="/search/cart-history/update" method="post" onsubmit="return false;" class="CartModi">
-                                                	<input type="hidden" name="bookCount" value="${cart.bookCount }">
-                                                	<input type="hidden" name="cart_id" value="${cart.cart_id }">
-						                        	<input type="submit" class="btn modifyBtn" value="변경" style="margin-bottom:3px;">
-						                        </form>
-						                       
 													
-														</div>
-
+																	
+															<input type="text" class="quantity_input" value="${cart.bookCount }">
+																<button type="button" id="plus_btn" >+</button>
+																<button type="button" id="minus_btn">-</button>
+																<!-- <button type="button" class="quantity_modify_btn" value="변경" >변경</button>	 -->	
+                                                			
+													<%-- <form action="/search/cart-history/update" method="post" class="quantity_update_form">
+														<input type="hidden" class="bookCount" value="${cart.bookCount }">
+														<input type="hidden" class="cart_id" value="${cart.cart_id }">
+													</form> --%>
+												<form action="/search/cart-history/update" method="post" onsubmit="return false;" class="CartUp">
+                                                	 <input type="hidden" name="cart_id" value="${cart.cart_id }"> 
+                                                	<input type="hidden" name="bookCount" value="${cart.bookCount }"> 
+						                        	<button type="button" class="btn updateBtn" value="변경" style="margin-bottom:3px;">변경</button>
+						                        </form>									
+													
+					
 													</td>
-
+															
+						                       
 
 													<td>${cart.priceStandard }원</td>
 													<td>${cart.book_publisher }</td>
@@ -208,26 +212,44 @@
 					});
 
 			$("#plus_btn").on("click", function() {
-				let quantity = $(this).parent("div").find("input").val();
-				$(this).parent("div").find("input").val(++quantity);
+				let quantity = $(this).parent("td").find("input").val();
+				$(this).parent("td").find("input").val(++quantity);
 			});
 			$("#minus_btn").on("click", function() {
-				let quantity = $(this).parent("div").find("input").val();
+				let quantity = $(this).parent("td").find("input").val();
 				if (quantity > 1) {
-					$(this).parent("div").find("input").val(--quantity);
+					$(this).parent("td").find("input").val(--quantity);
 				}
 			});
-			let CartModi = $(".CartModi");
 			
-			$(".modifyBtn").click(function(){
+			 let quantity_update_form =$(".quantity_update_form");
+				
+			/* $(".quantity_modify_btn").on("click", function(){
+				
+				
+				 
+			
 				if (confirm("수량을 변경하시겠습니까?")){
-					alert("변경되었습니다.");
-					CartModi.attr("onsubmit", "return true;");
-					CartModi.submit();
-				} else {
+					
+					alert("변경되었습니다.")
+					
+					quantity_update_form.submit();
+				}else {
 					alert("변경이 취소되었습니다.");
 				}
+			}); */
+			let CartUp = $(".CartUp");
+			$(".updateBtn").click(function(){
+				if (confirm("수량을 변경하시겠습니까?")){
+					alert("변경되었습니다.");
+					CartUp.attr("onsubmit", "return true;");
+					CartUp.submit();
+				} else {
+					alert("삭제가 취소되었습니다.");
+				}
 			});
+
+			
 			let CartDel = $(".CartDel");
 			
 			$(".deleteBtn").click(function(){

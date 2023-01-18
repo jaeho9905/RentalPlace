@@ -38,7 +38,7 @@ public interface BookService {
 	// 장바구니 안에 제품이 있는지 체크 (회원이 이미 장바구니에 넣은 도서인지 체크)
 	public int cart_check(String user_id, String book_isbn);
 	
-	public int modifyCount(int cart_id);
+	public int modifyCount(int cart_id, int bookCount);
 	
 	public int deleteCart(int cart_id);
 

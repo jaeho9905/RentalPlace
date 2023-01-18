@@ -25,21 +25,21 @@ public interface BookMapper {
 	public void increase_count(String user_id);
 
 	// 회원이 대출 중인 도서인지 체크
-	public int loan_check(@Param("user_id")String user_id, @Param("book_isbn")String book_isbn);
-	
+	public int loan_check(@Param("user_id") String user_id, @Param("book_isbn") String book_isbn);
+
 	// 회원이 이미 찜한 도서인지 체크
-	public int like_check(@Param("user_id")String user_id, @Param("book_isbn")String book_isbn);
-	
+	public int like_check(@Param("user_id") String user_id, @Param("book_isbn") String book_isbn);
+
 	// 도서 대출
 	public void like(BookDTO dto);
-	
+
 	/*------------------------------- 장바구니 구현-------------------------------------- */
 	public void cart(BookDTO dto);
-	
-	public int cart_check(@Param("user_id")String user_id, @Param("book_isbn")String book_isbn);
-	
-	public int modifyCount(@Param("cart_id")int cart_id);
-	
-	public int deleteCart(@Param("cart_id")int cart_id);
-	
+
+	public int cart_check(@Param("user_id") String user_id, @Param("book_isbn") String book_isbn);
+
+	public int modifyCount (@Param("cart_id")int cart_id, @Param("bookCount")int bookCount  /* BookDTO book */);
+
+	public int deleteCart(@Param("cart_id") int cart_id);
+
 }
