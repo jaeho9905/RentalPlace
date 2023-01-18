@@ -5,10 +5,8 @@ import java.io.DataOutputStream;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.OutputStream;
-import java.io.UnsupportedEncodingException;
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.net.URLEncoder;
 import java.security.Principal;
 import java.util.ArrayList;
 import java.util.List;
@@ -49,17 +47,17 @@ public class BuyController {
 	@Autowired
 	private BuyService buyservice;
 
+	boolean i = false;
 	// 도서 구매 출력
-	@PostMapping("/book_buy")
+	@GetMapping("/book_buy")
 	public String book_buy(Model model, @RequestParam String book_isbn) {
 
-		
+		System.out.println("book_buy 실행");
 		BookDTO book = new BookDTO();
 		
 		
 		List<BookDTO> list = new ArrayList<BookDTO>();
 
-		System.out.println("번호는: " + book_isbn + ".");
 		// isbn이 null이 아닐 때
 		if (book_isbn != null && book_isbn != "") {
 			try {
@@ -93,7 +91,6 @@ public class BuyController {
 			return "redirect:/search/book";
 
 		}
-		System.out.println(book_isbn);
 		model.addAttribute("book", book);
 
 		return "/buy/book_buy";
@@ -101,22 +98,12 @@ public class BuyController {
 	}
 	
 	
-	@GetMapping("/book_buy_api")
+	@RequestMapping("/book_buy_api")
 	@ResponseBody
-	public String kakaopay(@RequestParam(required = false) String book_isbn) {
-		
-
+	public String kakaopay() {
 		
 		try {
-			
-			
-			  BookDTO book = new BookDTO();
-			  
-				/* book = api.search_detail(book_isbn); */
-			/*  System.out.println("apiapiapiapiapiapiapiapiapiapiapiapi선택 책 제목 : " +  book.getBook_title());*/
-			 
-			 
-			
+
 			
 			URL url = new URL("https://kapi.kakao.com/v1/payment/ready");
 			HttpsURLConnection con = (HttpsURLConnection) url.openConnection();
@@ -124,25 +111,32 @@ public class BuyController {
 			con.setRequestProperty("Authorization", "KakaoAK 7ab27b00537b3367f4963eaca8eed02f");
 			con.setRequestProperty("Content-type", "application/x-www-form-urlencoded;charset=utf-8");
 			con.setDoOutput(true);
-			String parameter = 
-					"cid=TC0ONETIME&partner_order_id=partner_order_id&partner_user_id=partner_user_id&item_name=orange&quantity=1&total_amount=2100&tax_free_amount=0&approval_url=http://localhost:8092/success&fail_url=http://localhost:8092/fail&cancel_url=http://localhost:8092/cancel";
+			
+			
+
+				
+			
+			
+			String parameter = "cid=TC0ONETIME&partner_order_id=partner_order_id&partner_user_id=partner_user_id&item_name=test&quantity=1&total_amount=50000&tax_free_amount=0&approval_url=http://localhost:8092/success&fail_url=http://localhost:8092/fail&cancel_url=http://localhost:8092/cancel";
 			OutputStream output = con.getOutputStream();
 			DataOutputStream toput = new DataOutputStream(output);
 			toput.writeBytes(parameter);
 			toput.close();
-			
 			int result = con.getResponseCode();
-			
 			InputStream input;
 			if(result == 200) {
 				input = con.getInputStream();
+				System.out.println(input);
 			} else {
 				input = con.getErrorStream();
 			}
 			
 			InputStreamReader reader = new InputStreamReader(input);
 			BufferedReader buffer = new BufferedReader(reader);
-			return buffer.readLine();
+			
+
+				return buffer.readLine();
+
 		} catch(MalformedURLException e) {
 			e.printStackTrace();
 		} catch (Exception e) {
@@ -191,7 +185,7 @@ public class BuyController {
 		public String book_buylist(Model model, Criteria cri, Principal principal) {
 
 		
-
+				
 				System.out.println("buy_history 진입");
 				
 				// 로그인 된 user_id 받아오기
@@ -213,14 +207,13 @@ public class BuyController {
 
 		}
 	
-		@PostMapping("/buybook")
-		public String buy(BookDTO book, @RequestParam String detail, Principal principal) {
+		@GetMapping("/buybook")
+		public String buy(BookDTO book, /* @RequestParam String detail, */ Principal principal) {
 
-			System.out.println("책 구매하기  책 제목:");
-			System.out.println(book.getBook_title());
+			
 			// 로그인 된 user_id 받아오기
 			String id = principal.getName();
-
+			System.out.println("책이름: " + book.getBook_title());
 			// id 세팅
 			book.setUser_id(id);
 
@@ -249,7 +242,7 @@ public class BuyController {
 			 * }
 			 */
 
-			return "redirect:/search/book-detail?book_isbn=" + book.getBook_isbn();
+			return "redirect:/buy/book_buy?book_isbn=" + book.getBook_isbn();
 		}
 		
 		@ResponseBody
@@ -259,8 +252,7 @@ public class BuyController {
 			// 로그인 된 user_id 받아오기
 			String id = principal.getName();
 
-			System.out.println(id);
-			System.out.println("buyChk() 진입");
+			
 
 
 			// 대출하려는 회원이 대출 중인 도서인지 체크

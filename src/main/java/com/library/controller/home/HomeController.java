@@ -11,6 +11,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import com.library.model.admin.BannerDTO;
 import com.library.model.board.CalendarDTO;
@@ -22,6 +23,7 @@ import com.library.service.admin.BannerService;
 import com.library.service.board.CalendarService;
 import com.library.service.board.NoticeService;
 import com.library.service.mylib.ReservationRoomService;
+import com.library.service.search.AladinApi;
 import com.library.service.search.BookService;
 import com.library.service.search.RecommendService;
 import com.library.util.DateUtil;
@@ -29,6 +31,9 @@ import com.library.util.DateUtil;
 @Controller
 public class HomeController {
 
+	@Autowired
+	private AladinApi api;
+	
 	@Autowired
 	private NoticeService noticeService;
 
@@ -129,23 +134,10 @@ public class HomeController {
 	}
 	
 	@GetMapping("success")
-	public String success(BookDTO book) {
-		System.out.println("=========================================================");
-		System.out.println("=========================================================");
-		System.out.println("api에서 나오는 제목은 "+book.getBook_author());
-		System.out.println("api에서 나오는 제목은 "+book.getBook_cover());
-		System.out.println("api에서 나오는 제목은 "+book.getBook_isbn());
-		System.out.println("api에서 나오는 제목은 "+book.getBook_pubDate());
-		System.out.println("api에서 나오는 제목은 "+book.getBook_publisher());
-		System.out.println("api에서 나오는 제목은 "+book.getBook_title());
-		System.out.println("api에서 나오는 제목은 "+book.getBuy_date());
-		System.out.println("api에서 나오는 제목은 "+book.getCount());
-		System.out.println("api에서 나오는 제목은 "+book.getDescription());
-		System.out.println("api에서 나오는 제목은 "+book.getLoan_no());
-		System.out.println("api에서 나오는 제목은 "+book.getTotal());
-		System.out.println("api에서 나오는 제목은 "+book.getReturn_period());
-		System.out.println("=========================================================");
-		System.out.println("=========================================================");
+	public String success() {
+		
+		
+		
 		return "buy/success";
 	}
 	@GetMapping("cancel")

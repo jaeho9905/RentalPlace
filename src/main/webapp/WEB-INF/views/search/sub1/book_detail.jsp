@@ -99,10 +99,10 @@
                     <!-- 추가 -->
 	                   	 	<c:if test="${not empty book}">
 		                    	<%-- <c:set var="list" value="${list}"/> --%>
-									<form action="/buy/book_buy" method="post">
-										<input type="hidden" name="book_title" value="${book.book_title }">
-										<input type="hidden" name="book_author" value="${book.book_author }">
+									<form action="/buy/book_buy" method="get">
 										<input type="hidden" class="book_isbn" name="book_isbn" value="${book.book_isbn }">
+										<%-- <input type="hidden" name="book_title" value="${book.book_title }">
+										<input type="hidden" name="book_author" value="${book.book_author }">
 										<input type="hidden" name="book_cover" value="${book.book_cover }">
 										<input type="hidden" name="book_pubDate" value="${book.book_pubDate }">
 										<input type="hidden" name="book_publisher" value="${book.book_publisher }">
@@ -110,6 +110,7 @@
 										<input type="hidden" name="page" value="${cri.page }">
 										<input type="hidden" name="type" value="${cri.type }">
 										<input type="hidden" name="keyword" value="${cri.keyword }">
+										<input type="hidden" name="priceStandard" value="${book.resultpriceStandard}"> --%>
 										<button id="buy" class=" btn2">구매</button>
 									</form>
 							</c:if>
