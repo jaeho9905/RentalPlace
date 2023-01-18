@@ -25,7 +25,21 @@
     <script type="text/javascript" src="/resources/js/index/main.js"></script>
     <script type="text/javascript" src="/resources/js/index/tab.js"></script>
 	<script type="text/javascript" src="/resources/js/index/jquery.bxslider.min.js"></script> 
+	
+<script>
+  $(document).ready(function(){
+      var slider = $(".top_bg").bxSlider({ 
+          auto : true, mode:'horizontal', speed: 500, pagerCustom : '#bx-pager1',
+      });
+  
+      $(document).on('click mouseover','#bx-pager1',function(){
+          slider.startAuto();
+      });
+  
+  });
+ </script>
 </head>
+
 <body>
 
     <div id="warp">
@@ -85,8 +99,8 @@
 
                 <!-- </div> -->
             </div>
+            
         <div id="header">
-			
 
             <!-- 하단 nav(본 메뉴) 작업 시작하기 -->
             <div class="gnb">
@@ -164,7 +178,7 @@
                         <img src="/resources/imges/index/sitemap1.png" alt="사이트맵">
                     </a> -->
                 </div>
-            </div>
+            </div><!-- gnb -->
            
             
             <!----------------------------- 배너 슬라이더 추가 -->
@@ -185,47 +199,33 @@
 			    </ul>btn_wrap
 			</div>  wrap -->
 			
-<%--             <!-- Quick메뉴 -->
-            <div class="Quick-area">
-                <h2>주요 서비스 안내</h2>
-                <ul class="icons">
-                    <li>
-                        <div class="icon_img">
-                            <a href="/search/book"><img src="/resources/imges/index/infornation.png">
-                        </div>
-                        <class="contents1_bold">자료검색</class></a>
-                    <li>
-                        <div class="icon_img">
-                            <a href="/mylib/hope"><img src="/resources/imges/index/book.png">
-                        </div>
-                        <class="contents1_bold">희망도서신청</class></a>
-                    </li>
-                    <li>
-                        <div class="icon_img">
-                            <a href="/mylib/loan-history"><img src="/resources/imges/index/my-info.png">
-                        </div>
-                        <class="contents1_bold">대출내역조회</class></a>
-                    </li>
-                    <li>
-                        <div class="icon_img">
-                            <a href="/board/calendar"><img src="/resources/imges/index/calendar.png">
-                        </div>
-                        <class="contents1_bold">도서관 일정</class></a>
-                    </li>
-                    <li>
-                        <div class="icon_img">
-                            <a href="#a"><img src="/resources/imges/index/library.png">
-                        </div>
-                        <class="contents1_bold">이용안내</class></a>
-                    </li>
-                    <li>
-                        <div class="icon_img">
-                            <a href="/mylib/reservationRoomPage"><img src="/resources/imges/index/reservation.png">
-                        </div>
-                        <class="contents1_bold">자리예약하기</class></a>
-                    </li>
-                </ul>
-            </div> --%>
+			<div id="header2">
+				<ul class="top_bg">
+		          <li class="top_bg1">
+		              <div class="top_bg1_inner">
+		                  <p>TRICK OR TREAT</p> 
+		                  <p>바닐라 펌킨과 함께하는 일주일</p>
+		                  <p><a href="#">자세히보기</a></p>
+		              </div>  
+		          </li><!-- top_bg1 -->
+		          <li class="top_bg2">
+		              <div class="top_bg2_inner">
+		                  <p>NEW FOUNDATION</p> 
+		                  <p>프레쉬 누드 파운데이션</p>
+		                  <p><a href="#">자세히보기</a></p>
+		              </div> 
+		          </li><!-- top_bg2 -->
+		          <li class="top_bg3">
+		              <div class="top_bg3_inner">
+		                  <p>NEW IN</p> 
+		                  <p>신제품 스킨 모아보기</p>
+		                  <p><a href="#">자세히보기</a></p>
+		              </div> 
+		          </li><!-- top_bg2 -->
+      		</ul>	
+			
+			</div><!-- header2 -->
+
         </div><!-- header -->
         <!-- 헤더영역 끝 -->
         

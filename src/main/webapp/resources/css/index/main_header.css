@@ -38,42 +38,59 @@ select, button {
 /* =========== 상단 nav 메뉴 각각의 요소를 하나씩 감싸는 부분 ============ */
 #header {
     /* position: fixed; */
-    z-index: 0;
     width: 100%;
     height:500px;
     top: 0;
     left: 0;
     min-width: 100%; 
-    /* border:1px solid red; */
+    /* border:1px solid red;  */
     margin-top:10px;
 }
 
 
-#header {
+/* #header {
     background: url(/resources/imges/index/book_banner_03.jpg) no-repeat;
     background-size:cover; 
+} */
+
+
+#header2{
+	width:100%; 
+	/* border:1px solid blue; */
+	height:450px;
+	min-width: 100%; 
+	background-size:cover; 
+	z-index: 1;
+    top: 0;
+    left: 0;
+    /* margin-top:-50px; */
 }
-/* ====================배너 사진 추가==================  */
-/* .top_bg1{
-    width:100%; height: 500px;
-    background:
-    url(/resources/imges/index/book_banner_01.png) no-repeat; 
-    background-size: cover;
-}
-.top_bg2{
-    width:100%; height: 500px;
-    background:
-    url(/resources/imges/index/book_banner_02.jpg) no-repeat; 
-    background-size: cover;
-    min-width: 100%;
-}
-.top_bg3{
-    width:100%; height: 500px;
+
+/* ====================배너슬라이드 추가==================  */
+/* top_bg */
+.top_bg{width:100%;}
+.top_bg1{
+    height: 450px;
     background:
     url(/resources/imges/index/book_banner_03.jpg) no-repeat; 
-    background-size: cover;
+    min-width: 100%; 
+    background-size:cover; 
+}
+.top_bg2{
+    height: 450px;
+    background:
+    url(/resources/imges/index/book_banner_04.jpg) no-repeat; 
     min-width: 100%;
-} */
+    background-size:cover; 
+}
+.top_bg3{
+    width:100%; height: 450px;
+    background:
+    url(/resources/imges/index/book_banner_05.jpg) no-repeat; 
+    min-width: 100%;
+    background-size:cover; 
+}
+
 
 
 /* ----------- 상단 nav가 위치한 부분 전체를 감싸는 부분 -------------- */
@@ -88,23 +105,17 @@ select, button {
   /*   border:1px solid black; */
 }
 
-
-/* .main-section {
-    position: relative;
-    max-width: 78.75em;
-    margin: 0 auto;
-    border:1px solid white;
-} */
-
 /* ----------- 진짜 상단 nav -------------- */
 .tnb .util {
     float:right;
-    width:260px;
+    width:230px;
     height: 2.5em;
     line-height: 2.5em;
     font-style: normal;
     padding-top:8px;
-    /* border:1px solid red; */
+    /* border:1px solid red;  */ 
+    margin-top:5px;
+    text-align:right;
     /* background: wheat; */
 }
 
@@ -119,7 +130,7 @@ select, button {
     margin-top: 0;
     /* border:1px solid tomato; */
 }
-
+.tnb .util a:last-child{margin-right:0;}
 
 /* ----------- 상단 nav의 각각 요소를 부분 짓는 하나의 쉼표(|) 역할 -------------- */
 .text-bar {
@@ -140,7 +151,9 @@ select, button {
 .gnb {
     height: 4.5625em;
     margin-top: 10px;
-   /*  border:1px solid black; */
+    /* border:1px solid black;  */
+    z-index: 100;
+    /* background-color:skyblue; */
     /* border-top: 0.1875em #d7d7d7 solid;    
     border-bottom: 0.1875em #d7d7d7 solid; */
     /* background-color: #FFF;     */
@@ -160,7 +173,7 @@ select, button {
 /* ----------- logo -------------- */
 .logo {
     float: left;
-    margin-right:75px;
+    margin-right:100px;
     /* border: 1px dashed darkgray; */
 }
 
@@ -252,37 +265,39 @@ a:link {
     padding-top: 0.75em;
     min-height: 15.625em;
     display: none;
-    color: #fff;
+    color:brown;
+    background-color:rgba( 255, 255, 241, 0.3 );
 }
 
 
 .sm01 {
-    width: 10.125em;
-    margin-left: -0.625em;
+    width: 10.2em;
 }
 
 
 .sm02 {
-    width: 10.125em;
-    margin-left: -0.625em;
+    width: 10.36em;
+    margin-left:-16px;
+    padding-left:15px;
 }
 
-
 .sm03 {
-    width: 10.125em;
-    margin-left: -0.625em;
+    width: 10.2em;
+    margin-left:-15.5px;
+    padding-left:13px;
 }
 
 
 .sm04 {
-    width: 10.125em;
-    margin-left: -0.625em;
+    width: 10.5em;
+    margin-left:-18.5px;
+    padding-left:25px;
 }
-
 
 .sm05 {
     width: 10.125em;
-    margin-left: -0.625em;
+    margin-left:-19.5px;
+    padding-left:23px;
 }
 
 
@@ -293,12 +308,12 @@ a:link {
 
 .sub-menu > a {
     font-size: 0.875em;
-    color: #000000;
+    color: brown;
 }
 
 
 .sub-menu .sub-active {
-    color: yellow;
+    color: ivory;
     top: 100%;
     content: '';
     /* background: #fff; */
@@ -350,10 +365,10 @@ img, input, select {
 	position: relative;
     box-sizing: border-box;
     opacity : 0.9;
-    width: 460px;
+    width: 450px;
     border-radius: 10px;
     float:left;
-    border:1px solid #c79d6a;
+    border:2px solid #c79d6a;
 }
 .searchbox > .box {
     background: #fff;
@@ -370,7 +385,7 @@ img, input, select {
     color: #363636;
     background-repeat: no-repeat;
     border-right: 1px solid #aaaaaa;
-    padding-left: 1.5625em;
+   /*  padding-left: 1.5625em; */
     /* background-position: 45%;  */
     border:none;
 }
