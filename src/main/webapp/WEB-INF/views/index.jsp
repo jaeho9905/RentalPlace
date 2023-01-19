@@ -203,23 +203,29 @@
 				<ul class="top_bg">
 		          <li class="top_bg1">
 		              <div class="top_bg1_inner">
-		                  <p>TRICK OR TREAT</p> 
-		                  <p>바닐라 펌킨과 함께하는 일주일</p>
-		                  <p><a href="#">자세히보기</a></p>
+		                  <p>NEW BOOK</p> 
+		                  <p>&lt;Stick 스틱!&gt;</p>
+		                  <span>15주년 기념판</span>
+		                  <p><a href="http://localhost:8092/search/book-detail?amount=10&page=1&
+		                  type=Title&keyword=%EC%8A%A4%ED%8B%B1&book_isbn=9788901266091">자세히보기</a></p>
 		              </div>  
 		          </li><!-- top_bg1 -->
 		          <li class="top_bg2">
 		              <div class="top_bg2_inner">
-		                  <p>NEW FOUNDATION</p> 
-		                  <p>프레쉬 누드 파운데이션</p>
-		                  <p><a href="#">자세히보기</a></p>
+		                  <p>BEST SELLER</p> 
+		                  <p>&lt;원 청&gt; </p>
+		                  <span>잃어버린 도시</span>
+		                  <p><a href="http://localhost:8092/search/book-detail?amount=10&page=1&
+		                  type=Title&keyword=%EC%9B%90%EC%B2%AD&book_isbn=9791156751298">자세히보기</a></p>
 		              </div> 
 		          </li><!-- top_bg2 -->
 		          <li class="top_bg3">
 		              <div class="top_bg3_inner">
-		                  <p>NEW IN</p> 
-		                  <p>신제품 스킨 모아보기</p>
-		                  <p><a href="#">자세히보기</a></p>
+		                  <p>BEST WRITER</p> 
+		                  <p>&lt;작 별 인 사&gt; </p>
+		                  <span>9년만의 신작</span>
+		                  <p><a href="http://localhost:8092/search/book-detail?amount=10&page=1&
+		                  type=Title&keyword=%EC%9E%91%EB%B3%84%EC%9D%B8%EC%82%AC&book_isbn=9791191114225">자세히보기</a></p>
 		              </div> 
 		          </li><!-- top_bg2 -->
       		</ul>	
@@ -236,13 +242,12 @@
         
         	<!-- Quick메뉴 -->
             <div class="Quick-area">
-                <h2>주요 서비스 안내</h2>
                 <ul class="icons">
                     <li>
                         <div class="icon_img">
-                            <a href="/search/book"><img src="/resources/imges/index/infornation.png">
+                            <a href="/search/book"><img src="/resources/imges/info/books.png">
                         </div>
-                        <class="contents1_bold">자료검색</class></a>
+                        <class="contents1_bold">구매내역조회</class></a>
                     <li>
                         <div class="icon_img">
                             <a href="/mylib/hope"><img src="/resources/imges/index/book.png">

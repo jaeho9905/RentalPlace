@@ -1,5 +1,6 @@
 /* 전체 기준 픽셀 : 1920px */
-
+/* FONT */
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 
 .hide {
     overflow: hidden;
@@ -63,23 +64,27 @@ select, button {
 	z-index: 1;
     top: 0;
     left: 0;
+    position: relative;
     /* margin-top:-50px; */
 }
 
 /* ====================배너슬라이드 추가==================  */
 /* top_bg */
-.top_bg{width:100%;}
+
+.top_bg{
+	width:100%;
+}
 .top_bg1{
     height: 450px;
     background:
-    url(/resources/imges/index/book_banner_03.jpg) no-repeat; 
+    url(/resources/imges/index/book_banner_01.png) no-repeat; 
     min-width: 100%; 
     background-size:cover; 
 }
 .top_bg2{
     height: 450px;
     background:
-    url(/resources/imges/index/book_banner_04.jpg) no-repeat; 
+    url(/resources/imges/index/book_banner_03.jpg) no-repeat; 
     min-width: 100%;
     background-size:cover; 
 }
@@ -91,6 +96,60 @@ select, button {
     background-size:cover; 
 }
 
+/* top_bg1_inner  글자내용*/
+.top_bg1_inner,.top_bg2_inner,.top_bg3_inner{
+    width: 650px;
+    position: absolute;top:80px;left:65%;
+    transform: translate(-50%,0);
+     text-align:right;
+}
+/* 영어 타이틀 */
+.top_bg>li>div>p:first-child{
+    font-family: 'Anton', sans-serif;
+    font-size: 90px;
+    color:ivory;
+    letter-spacing: 2px;
+    font-weight:bold;
+    /* border:1px solid black; */
+}
+/* 바닐라 펌킨과 함께하는... */
+.top_bg>li>div>p:nth-child(2){
+    font-size: 35px;
+    color:black;
+    letter-spacing: 7px;
+    margin-right:10px;
+    font-weight:bold;
+    margin-bottom:5px;
+    /* border:1px solid black; */
+}
+.top_bg2_inner>p:nth-child(2){
+	padding-right:30px;
+}
+.top_bg>li>div>span{
+	font-size: 25px;
+	color:black;
+	margin-right:40px;
+	margin-bottom:40px;
+	letter-spacing:5px;
+}
+/* 자세히 보기 */
+.top_bg>li>div>p:nth-child(4) a{
+    border: 3px solid black;
+    width:100px;height:20px;
+    font-size: 15px;
+    color:black;
+    padding: 5px 5px;
+    font-weight: bold;
+    text-align:center;
+    margin-right:45px;
+    margin-top:40px;
+    /* border:1px solid black; */
+    float:right;
+}
+.top_bg>li>div>p:nth-child(4) a:hover{
+    color:#ffffff;
+    border:3px solid #ffffff;
+}
 
 
 /* ----------- 상단 nav가 위치한 부분 전체를 감싸는 부분 -------------- */
@@ -181,10 +240,10 @@ select, button {
 .logo > a {
     background-repeat: no-repeat;
     /* background-image: url('/images/raon-white.png'); */
-    background-image: url(/resources/imges/index/raon-logo-black.png);
+    background-image: url(/resources/imges/index/ezen-logo-black.png);
     background-size: cover;
-    width: 12.375em;
-    height: 4.3125em;
+    width: 14.1em;
+    height: 6.3em;
     background-position: center;
 }
 
@@ -266,7 +325,7 @@ a:link {
     min-height: 15.625em;
     display: none;
     color:brown;
-    background-color:rgba( 255, 255, 241, 0.3 );
+    background-color:rgba( 255, 255, 241, 0.5 );
 }
 
 
@@ -309,11 +368,12 @@ a:link {
 .sub-menu > a {
     font-size: 0.875em;
     color: brown;
+    margin:10px 0;
 }
 
 
 .sub-menu .sub-active {
-    color: ivory;
+    color: black;
     top: 100%;
     content: '';
     /* background: #fff; */
@@ -369,6 +429,7 @@ img, input, select {
     border-radius: 10px;
     float:left;
     border:2px solid #c79d6a;
+    margin-top:12px;
 }
 .searchbox > .box {
     background: #fff;
@@ -427,7 +488,6 @@ input[type="text"] {
     width:100%;
     height:auto;
     /* border: 3px solid gold; */
-    margin-top: 10%;
     margin-bottom: 2%;
 }
 
@@ -435,9 +495,13 @@ input[type="text"] {
 .Quick-area > h2{
     text-align: center;
     /* border: 3px dashed red; */
-    color: white;
+    color: brown;
+    font-size:20px;
+    border-bottom:2px solid ivory;
+    width:150px;
+    margin:30px auto;
+    padding-bottom:15px;
 }
-
   
 .icons{
     display: flex;
@@ -454,12 +518,21 @@ input[type="text"] {
     margin-bottom: 49px;
     height:auto;
     text-align: center;
-    color: white;
+    color: black;
     font-size: 14px;
     /* border: 1px solid white; */
      /* font-weight: bold; */
 }
-
+.icon_img>a{
+	width:70px;height:70px;
+	background-color:#eaeaea;
+	border-radius:35%;
+	display:block;
+}
+.icon_img>a>img{
+	width:49px;height:49px;
+	padding:10px;
+}
   
 .icons > li:not(:last-child){
     margin-right: 8%;

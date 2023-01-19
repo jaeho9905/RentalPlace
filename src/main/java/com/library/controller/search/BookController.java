@@ -23,6 +23,7 @@ import com.library.page.ViewPage;
 import com.library.service.search.AladinApi;
 import com.library.service.search.BookService;
 import com.library.util.DateUtil;
+import com.sun.tools.javac.code.Preview;
 
 @Controller
 @RequestMapping("/search")
@@ -33,6 +34,7 @@ public class BookController {
 
 	@Autowired
 	private BookService bookService;
+
 
 	// 검색 도서 출력
 	@GetMapping("/book")
@@ -116,6 +118,8 @@ public class BookController {
 			return "redirect:/search/book";
 
 		}
+
+		
 		model.addAttribute("cri", cri);
 		return "/search/sub1/book_detail";
 	}
@@ -270,7 +274,7 @@ public class BookController {
 		}
 		
 		// 대출
-		bookService.like(book); //insert into loan_history
+		bookService.like(book); //insert into loan_historyx
 
 		if (detail.equals("true")) {
 
