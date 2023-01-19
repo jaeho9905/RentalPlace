@@ -2,7 +2,6 @@ package com.library.mapper.review;
 
 import java.util.List;
 
-<<<<<<< HEAD
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 
@@ -10,11 +9,6 @@ import com.library.model.review.ReviewBoardDTO;
 import com.library.page.Criteria;
 
 @Mapper
-=======
-import com.library.model.review.ReviewBoardDTO;
-import com.library.page.Criteria;
-
->>>>>>> 409999c778d5b4b42c16ef162d890bb0cf9c2646
 public interface ReviewBoardMapper {
 
 	/* 게시물 본문 / 조회수 */
@@ -30,11 +24,7 @@ public interface ReviewBoardMapper {
 	
 
 	/* 게시판(페이징) / 총 게시물 / 게시판 정렬 */
-<<<<<<< HEAD
 	public List<ReviewBoardDTO> getListPage(Criteria cri, @Param("book_isbn")Long book_isbn);
-=======
-	public List<ReviewBoardDTO> getListPage(Criteria cri);
->>>>>>> 409999c778d5b4b42c16ef162d890bb0cf9c2646
 	public int getTotal(Criteria cri);
 	public void reset();
 	

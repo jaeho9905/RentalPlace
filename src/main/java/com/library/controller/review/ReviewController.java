@@ -21,11 +21,7 @@ import com.library.page.Criteria;
 import com.library.page.ViewPage;
 import com.library.service.review.ReviewAnswerBoardService;
 import com.library.service.review.ReviewBoardService;
-<<<<<<< HEAD
 
-=======
-import com.library.util.XssUtil;
->>>>>>> 409999c778d5b4b42c16ef162d890bb0cf9c2646
 
 @Controller
 @RequestMapping("/review/*")
@@ -39,16 +35,11 @@ public class ReviewController {
 
 	/* 묻고답하기 게시판 */
 	@GetMapping("/reviewBoardList")
-<<<<<<< HEAD
 	public String reviewBoardList( Model model, Criteria cri, @RequestParam("book_isbn")long book_isbn) {
 
 		List<ReviewBoardDTO> reviewBoardList = eBoardService.getListPage(cri,book_isbn);
-=======
-	public String reviewBoardList(Model model, Criteria cri) {
-
-		List<ReviewBoardDTO> reviewBoardList = eBoardService.getListPage(cri);
->>>>>>> 409999c778d5b4b42c16ef162d890bb0cf9c2646
 		model.addAttribute("reviewBoardList", reviewBoardList);
+		System.out.println("====reviewBoardList" + reviewBoardList.size());
 		int total = eBoardService.getTotal(cri);
 		model.addAttribute("total", total);
 		ViewPage vp = new ViewPage(cri, total);
@@ -101,37 +92,34 @@ public class ReviewController {
 		return "/review/reviewBoardWrite";
 	}
 
-<<<<<<< HEAD
 	
 	
 	/* 게시물 작성 */
 	
-	@GetMapping("/reviewBoardInsert")
-	public String reviewBoardInsert(@RequestParam("book_isbn")Long book_isbn, @RequestParam("review_no")Long ureview_no, ReviewBoardDTO dto) {
-=======
-	/* 게시물 작성 */
 	@PostMapping("/reviewBoardInsert")
-	public String reviewBoardInsert(@RequestParam("book_isbn2") String ureview_no,ReviewBoardDTO dto) {
->>>>>>> 409999c778d5b4b42c16ef162d890bb0cf9c2646
+	public String reviewBoardInsert(@RequestParam("book_isbn")Long book_isbn, 
+			@RequestParam("review_content") String review_content, Criteria cri, ReviewBoardDTO dto,Principal principal) {
 
 		// 로그인 된 user_id 받아오기
-		Object principal = SecurityContextHolder.getContext().getAuthentication().getPrincipal();
-		UserDetails userDetails = (UserDetails) principal;
-		String id = userDetails.getUsername();
+		String id = principal.getName();
 
-<<<<<<< HEAD
 		
-		  dto.setWriter_id(id); dto.setBook_isbn(ureview_no);
+		String keyword;
+
+		try {
+			keyword = URLEncoder.encode(cri.getKeyword(), "UTF-8");
+		} catch (UnsupportedEncodingException e) {
+			return "redirect:/search/book";
+		}
+		
+		
+		  dto.setWriter_id(id); dto.setBook_isbn(book_isbn);
+		  dto.setReview_content(review_content);
 		  eBoardService.reviewBoardInsert(dto);
 		
 
-		return "redirect:/search/sub1/book-detail?book_isbn="+ureview_no;
-=======
-		dto.setWriter_id(id);
-		eBoardService.reviewBoardInsert(dto);
-
-		return "redirect:/search/book-detail?book_isbn="+ureview_no;
->>>>>>> 409999c778d5b4b42c16ef162d890bb0cf9c2646
+		  return "redirect:/search/book-detail?amount=" + cri.getAmount() + "&page=" + cri.getPage() + "&type="
+			+ cri.getType() + "&keyword=" + keyword + "&book_isbn=" + book_isbn;
 	}
 
 	/* 게시물 수정 page */

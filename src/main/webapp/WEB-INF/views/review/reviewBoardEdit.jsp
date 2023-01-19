@@ -92,10 +92,6 @@
                                 <form action="/review/reviewBoardUpdate" method="post" onsubmit="return false;">
                                 	<input type="hidden" name="review_no" value="${dto.review_no}" >
                                 	<input type="hidden" name="writer_id" value="writer_id">
-<<<<<<< HEAD
-=======
-                                    <input type="hidden" name="writer_name" value="writer_name">
->>>>>>> 409999c778d5b4b42c16ef162d890bb0cf9c2646
                                     <input type="hidden" name="amount" value="${cri.amount}">
                                 	<input type="hidden" name="page" value="${cri.page}">
                                 	<input type="hidden" name="type" value="${cri.type}">
@@ -109,22 +105,13 @@
                                                 <td>${dto.writer_name}</td>
                                                 <th class="first">작성일</th>
                                                 <td>
-<<<<<<< HEAD
                                                 ${fn:substring(dto.review_reg_date, 0, 11)}
-=======
-                                                ${fn:substring(dto.enquiry_reg_date, 0, 11)}
->>>>>>> 409999c778d5b4b42c16ef162d890bb0cf9c2646
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td colspan="4" style="padding: 8px 0px;">
-<<<<<<< HEAD
                                                     <textarea id="popContent" name="review_content">
                                                     ${dto.review_content}</textarea>
-=======
-                                                    <textarea id="popContent" name="enquiry_content">
-                                                    ${dto.enquiry_content}</textarea>
->>>>>>> 409999c778d5b4b42c16ef162d890bb0cf9c2646
                                                 </td>
                                             </tr>
                                         </tbody>
@@ -139,11 +126,7 @@
                                 </form>
                                 
                                 <div class="list_wrap">
-<<<<<<< HEAD
                                 	<form action="/review/reviewBoardList" method="get">
-=======
-                                	<form action="/board/qnaBoardList" method="get">
->>>>>>> 409999c778d5b4b42c16ef162d890bb0cf9c2646
                                 		<input type="hidden" name="amount" value="${cri.amount}">
                                 		<input type="hidden" name="page" value="${cri.page}">
                                 		<input type="hidden" name="type" value="${cri.type}">
@@ -151,28 +134,7 @@
                                 		<button class="list_btn">목록으로</button>
                                 	</form>
                                 </div>                                
-<<<<<<< HEAD
 
-=======
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
->>>>>>> 409999c778d5b4b42c16ef162d890bb0cf9c2646
                                 
                                 
                                 
@@ -227,14 +189,9 @@
 
                     </div>
                 <div class="review_title">
-<<<<<<< HEAD
                 <h3>REVIEW</h3>
                 <form id="review_form" method="POST" action="/review/reviewBoardWrite"onsubmit="return false;">
                 <input type="submit" class="write_btn" style="cursor: pointer">리뷰작성하기</button>
-=======
-                <h3>REVIEW</h3><button class="write_btn" onclick="location.href='/board/qnaBoardWrite'" style="cursor: pointer">리뷰작성하기</button>
-                <form id="review_form" method="POST" onsubmit="return false;">
->>>>>>> 409999c778d5b4b42c16ef162d890bb0cf9c2646
                 <textarea type="text" class="review_input" name="review_input" placeholder="후기를 작성해주세요." cols="140" rows="10" ></textarea>
                 </form>
                 </div>

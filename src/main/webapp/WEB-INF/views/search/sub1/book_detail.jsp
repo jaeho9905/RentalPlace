@@ -89,7 +89,6 @@
 
 									</tbody>
 
-<<<<<<< HEAD
 								</table>
 
 							</div>
@@ -106,17 +105,6 @@
 							<sec:authorize access="isAuthenticated()">
 								<input type="hidden" class="user_email" name="user_email"
 									value=<sec:authentication property="principal.dto.user_email"/>>
-=======
-                    </div>
-                    
-                  
-                    <div style="display: flex; justify-content: center; align-items: center;">
-                    
-                        <form id="loan" onsubmit="return false;" method="post">
-                        	<sec:authorize access="isAuthenticated()">
-							<input type="hidden" class="user_email" name="user_email" 
-								value=<sec:authentication property="principal.dto.user_email"/>>
->>>>>>> 409999c778d5b4b42c16ef162d890bb0cf9c2646
 							</sec:authorize>
 
 							<sec:authorize access="isAnonymous()">
@@ -167,11 +155,15 @@
 								<span><strong>Review</strong></span> <span id="cCnt"></span>
 							</div>
 
-							<form action="/reviewBoardInsert" method="post"
+							<form action="/review/reviewBoardInsert" method="post"
 								id="review_form" onsubmit="return fn_review_write();">
 								<input type="hidden" class="book_isbn" name="book_isbn"
 									value="${book.book_isbn }"> <input type="submit"
 									class="write_btn" style="cursor: pointer" value="리뷰작성하기">
+								<input type="hidden" name="amount" value="${cri.amount }">
+								<input type="hidden" name="page" value="${cri.page }">
+								<input type="hidden" name="type" value="${cri.type }">
+								<input type="hidden" name="keyword" value="${cri.keyword }">
 								<textarea class="review_input" style="width: 800px" rows="10"
 									cols="30" id="review_input" name="review_content"
 									placeholder="후기를 작성해주세요." cols="140" rows="10"></textarea>
@@ -186,46 +178,15 @@
    							<ol>
                                     	<c:forEach var="list" items="${reviewList}">
                      					<li>
-                     						<div class="review_id">${review.write_id}</div>
-                     						<div class="review_content">${review.review_content }</div>
+                     						<div class="review_id">${list.writer_id}</div>
+                     						<div class="review_content">${list.review_content }</div>
                      					</li>
 										</c:forEach>
 
-<<<<<<< HEAD
                               </ol>
                                 </c:if>
 					
-					
-					
-					
 					<input type="hidden" id="b_code" name="b_code" value="${result.code }" />
-
-=======
-                    </div>
-                    <div class="review_title">
-						<h3>REVIEW</h3>
-						<form action="/review/reviewBoardInsert" method="post" id="review_form" onsubmit="return true;">
-							<input type="hidden" name="writer_name" value="<sec:authentication property="principal.dto.user_name"/>">
-							<input type="hidden" class="book_isbn" name="book_isbn2" value="${book.book_isbn }">
-							
-							<textarea class="review_input" id="popContent"
-											name="review_content" placeholder="후기를 작성해주세요." cols="140"
-											rows="10"></textarea>
-											
-
-							<!-- 글쓰기 btn -->
-							<div class="review_write">
-								<button class="list_btn" type="button"
-									onclick="location.href='/review/reviewBoardList'"
-									style="cursor: pointer">목록으로</button>
-							</div>
-							<button type="submit" class="review_write_btn"
-								style="cursor: pointer">리뷰작성하기</button>
-						</form>
-					</div>
-
-            </div>
->>>>>>> 409999c778d5b4b42c16ef162d890bb0cf9c2646
 
 
 				</div>
@@ -292,39 +253,6 @@
 			$(".sub3").addClass("active");
 			var moveForm = $(".moveForm");
 			var moveForm2 = $(".moveForm2");
-<<<<<<< HEAD
-=======
-
-			$(".pageInfo a").on("click", function(e) {
-				e.preventDefault();
-				moveForm.find("input[name = 'page']").val($(this).attr("href"));
-				moveForm.submit();
-			})
-			
-			$(".answerContentGo a").on("click", function(e) {
-				e.preventDefault();
-				moveForm2.find("input[name = 'answer_no']").val($(this).attr("href"));
-				moveForm2.attr("action", "/review/reviewanswerBoardContent");
-				moveForm2.submit();
-				
-			}); 
-			
-			$(".contentGo a").on("click", function(e) {
-				e.preventDefault();
-				moveForm2.find("input[name = 'review_no']").val($(this).attr("href"));
-				moveForm2.attr("action", "/review/reviewBoardContent");
-				moveForm2.submit();
-				
-			}); 
-			
-			
-			
-			
-			
-		});
-	</script>
-			
->>>>>>> 409999c778d5b4b42c16ef162d890bb0cf9c2646
 
 			$(".pageInfo a").on("click", function(e) {
 				e.preventDefault();
@@ -363,13 +291,10 @@
 			if(review_input){
 				alert('리뷰가 등록되었습니다.');
 				return true;
-				
 			}else{
 				alert('리뷰내용을 입력하세요!');
 				return false;
 			}
-		    
-		 
 		}
 		
 		

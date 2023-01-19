@@ -21,11 +21,7 @@ public interface ReviewBoardService {
 	
 	
 	/* 게시판(페이징) / 총 게시물 / 게시판 정렬 */
-<<<<<<< HEAD
 	public List<ReviewBoardDTO> getListPage(Criteria cri,Long book_isbn);
-=======
-	public List<ReviewBoardDTO> getListPage(Criteria cri);
->>>>>>> 409999c778d5b4b42c16ef162d890bb0cf9c2646
 	public int getTotal(Criteria cri);
 	public void reset();
 	
