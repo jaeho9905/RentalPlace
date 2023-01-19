@@ -76,9 +76,9 @@ public class BookServiceImpl implements BookService {
 	}
 
 	@Override
-	public int modifyCount(int cart_id, int bookCount ) {
+	public int modifyCount(String book_title, int bookCount ) {
 		// TODO Auto-generated method stub
-		return mapper.modifyCount(cart_id, bookCount);
+		return mapper.modifyCount(book_title, bookCount);
 	}
 
 	@Override

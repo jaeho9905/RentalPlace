@@ -87,7 +87,7 @@
 	
 	<update id="modifyCount">
 	
-		update cart set bookCount = #{bookCount} where cart_id = #{cart_id}
+		update cart set bookCount = #{bookCount} where book_title = #{book_title}
 	
 	</update>
 	

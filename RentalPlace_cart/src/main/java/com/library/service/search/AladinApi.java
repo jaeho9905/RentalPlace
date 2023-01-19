@@ -135,6 +135,7 @@ public class AladinApi {
 			book.setBook_pubDate(pubDate);
 			book.setBook_publisher(publisher);
 			book.setPriceStandard(((Long) tmp.get("priceStandard")).intValue());
+			book.setResultpriceStandard(((Long) tmp.get("priceStandard")).intValue());
 			book.setDescription(description);
 			
 

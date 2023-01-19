@@ -38,7 +38,7 @@ public interface BookMapper {
 
 	public int cart_check(@Param("user_id") String user_id, @Param("book_isbn") String book_isbn);
 
-	public int modifyCount (@Param("cart_id")int cart_id, @Param("bookCount")int bookCount  /* BookDTO book */);
+	public int modifyCount (@Param("book_title")String book_title, @Param("bookCount")int bookCount  /* BookDTO book */);
 
 	public int deleteCart(@Param("cart_id") int cart_id);
 

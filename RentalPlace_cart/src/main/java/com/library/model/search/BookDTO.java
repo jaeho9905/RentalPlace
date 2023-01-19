@@ -52,6 +52,9 @@ public class BookDTO {
 	// 도서 가격(AladinAPI에서 받아올 때)
 	private int priceStandard;
 	
+	// 총 가격
+	private int resultpriceStandard;
+	
 	// 도서
 	private String description;
 	

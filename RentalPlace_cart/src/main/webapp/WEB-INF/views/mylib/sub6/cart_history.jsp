@@ -107,35 +107,28 @@
 
 											<c:forEach var="cart" items="${cart_history}">
 												<tr>
-													<td><input type="checkbox" /></td>
+													<td><input type="checkbox" class="individual_cart_checkbox"/></td>
 													<td class=""><img src="${cart.book_cover }"
 														style="width: 200px;"></td>
 													<td>${cart.book_title }</td>
 
 
 													<td>
-													
-																	
-															<input type="text" class="quantity_input" value="${cart.bookCount }">
-																<button type="button" id="plus_btn" >+</button>
-																<button type="button" id="minus_btn">-</button>
 																<!-- <button type="button" class="quantity_modify_btn" value="변경" >변경</button>	 -->	
-                                                			
+
 													<%-- <form action="/search/cart-history/update" method="post" class="quantity_update_form">
 														<input type="hidden" class="bookCount" value="${cart.bookCount }">
 														<input type="hidden" class="cart_id" value="${cart.cart_id }">
 													</form> --%>
-												<form action="/search/cart-history/update" method="post" onsubmit="return false;" class="CartUp">
-                                                	 <input type="hidden" name="cart_id" value="${cart.cart_id }"> 
-                                                	<input type="hidden" name="bookCount" value="${cart.bookCount }"> 
-						                        	<button type="button" class="btn updateBtn" value="변경" style="margin-bottom:3px;">변경</button>
+												<form action="/search/cart-history/update"  method="post" onsubmit="return false;" class="CartUp">
+                                                	 <input type="hidden" name="book_title" value="${cart.book_title }"> 
+                                                	<input type="text" class="cut" name="bookCount" value="${cart.bookCount }"> 
+                                                	<button type="button" id="plus_btn" >+</button>
+													<button type="button" id="minus_btn">-</button>
+						                        	<input type="submit" class="btn updateBtn" value="변경" style="margin-bottom:3px;">
 						                        </form>									
-													
-					
-													</td>
-															
-						                       
 
+													</td>                     
 													<td>${cart.priceStandard }원</td>
 													<td>${cart.book_publisher }</td>
 													<td>
@@ -173,7 +166,16 @@
 								</c:if>
 
 							</div>
-							
+							<div id="p_total">
+								<p class="book1">총 상품 가격 <input type="text" class="individual_totalPrice_input" value="${cart.bookCount * cart.priceStandard}"></p>
+								<p class="book2">총 상품 주문수 <input type="text" class="individual_bookCount_input" value="${cart.bookCount}"></p>
+								<p class="book3">
+									<strong>총 결제 예상 금액</strong>
+								</p>
+							</div>
+							<div>
+								<button class="btn95">주문하기</button>
+							</div>
 						</div>
 						<br>
 						<c:if test="${empty cart_history }">
@@ -183,12 +185,14 @@
 				</div>
 			</div>
 		</div>
+		
 	</div>
 	
 	<form method="get" class="moveForm">
 		<input type="hidden" name="amount" value="${pageMaker.cri.amount }">
 		<input type="hidden" name="page" value="${pageMaker.cri.page }">
 	</form>
+	
 
 	<!-- footer -->
 	<jsp:include page="../../footer.jsp"></jsp:include>
@@ -196,6 +200,7 @@
 
 	<script>
 		$(function() {
+			
 			$(".sub1").addClass("active");
 			$(".submenu1").addClass("active");
 
@@ -210,20 +215,26 @@
 								$(this).attr("href"));
 						moveForm.submit();
 					});
-
+			let CartUp = $(".CartUp");
 			$("#plus_btn").on("click", function() {
-				let quantity = $(this).parent("td").find("input").val();
-				$(this).parent("td").find("input").val(++quantity);
+				let quantity = $(".cut").val();
+				 $(".cut").val(++quantity); 
+				CartUp.attr("onsubmit", "return true;");
+			
+				CartUp.submit();
 			});
 			$("#minus_btn").on("click", function() {
-				let quantity = $(this).parent("td").find("input").val();
+				let quantity = $(".cut").val();
 				if (quantity > 1) {
-					$(this).parent("td").find("input").val(--quantity);
+					 $(".cut").val(--quantity);
 				}
-			});
+				CartUp.attr("onsubmit", "return true;");
 			
-			 let quantity_update_form =$(".quantity_update_form");
-				
+				CartUp.submit();
+			});
+
+			let quantity_update_form = $(".quantity_update_form");
+
 			/* $(".quantity_modify_btn").on("click", function(){
 				
 				
@@ -238,22 +249,21 @@
 					alert("변경이 취소되었습니다.");
 				}
 			}); */
-			let CartUp = $(".CartUp");
-			$(".updateBtn").click(function(){
-				if (confirm("수량을 변경하시겠습니까?")){
+			/* let CartUp = $(".CartUp");
+			$(".updateBtn").click(function() {
+				if (confirm("수량을 변경하시겠습니까?")) {
 					alert("변경되었습니다.");
 					CartUp.attr("onsubmit", "return true;");
 					CartUp.submit();
 				} else {
-					alert("삭제가 취소되었습니다.");
+					alert("변경이 취소되었습니다.");
 				}
 			});
-
-			
+ */
 			let CartDel = $(".CartDel");
-			
-			$(".deleteBtn").click(function(){
-				if (confirm("장바구니를 삭제하시겠습니까?")){
+
+			$(".deleteBtn").click(function() {
+				if (confirm("장바구니를 삭제하시겠습니까?")) {
 					alert("삭제되었습니다.");
 					CartDel.attr("onsubmit", "return true;");
 					CartDel.submit();
