@@ -6,14 +6,14 @@
 	<mapper namespace="com.library.mapper.buy.MyBuyHistoryMapper">
 		
 		
-	    <!--=========== 찜하기 추기 =================-->
-	    <!-- 찜한 도서 건 수 -->
+
+	    <!-- 구매한 도서 건 수 -->
 		<select id="get_total_buy" resultType="int">
 			select count(*) 
 			  from buy_history 
 			 where user_id = #{user_id} 
 		</select>  
-		<!-- 대출 내역 페이징 및 검색 시 --> 
+		<!-- 구매 내역 페이징 및 검색 시 --> 
 		<select id="buy_history" resultType="com.library.model.search.BookDTO">
 			select * 
 			  from buy_history

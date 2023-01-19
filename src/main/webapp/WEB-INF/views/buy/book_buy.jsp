@@ -98,13 +98,14 @@
 						</div>
 						<div id="join_container">
 							<h3>정보 입력</h3>
+							<p>
+								<strong class="point">*</strong> 는 필수입력 항목을 나타냅니다.
+							</p>
 							<form action="/buy/book_buy_api?detail=not" method="get" id="buy">
 								<fieldset>
 									<legend>정보 입력</legend>
-									<p>
-										<strong class="point">*</strong> 는 필수입력 항목을 나타냅니다.
-									</p>
-									<p class="shipping">
+									
+									<!-- <p class="shipping">
 										<label class="tit"><strong class="point">* </strong>배송방법</label>
 										<input type="radio" name="shipping" id="normal" checked>
 										<label for="normal" class="tit">일반 배송</label> <span><input
@@ -112,7 +113,7 @@
 											for="overseas" class="tit">해외 배송</label> <input type="radio"
 											name="shipping" id="convenience"> <label
 											for="convenience" class="tit">편의점 배송</label>
-									</p>
+									</p> -->
 
 									<p>
 										<label class="tit"><strong class="point">*</strong>수령인</label>
@@ -140,21 +141,21 @@
 										<label class="tit"><strong class="point">*</strong>상세
 											주소</label> <input type="text"
 											class="form-control m-input m--margin-top-10"
-											name="detailAddress" />
+											name="detailAddress" id="address_d"/>
 									</p>
 
 									<p>
 										<label class="tit"><strong class="point">*</strong>휴대폰</label>
-										<input type="tel" id="tel1" title="지역번호 입력"> - <input
-											type="tel" id="tel2" title="전화번호 앞자리"> - <input
-											type="tel" id="tel3" title="전화번호 뒷자리">
+										<input type="tel" id="tel1" title="지역번호 입력" maxlength='3'> - 
+										<input type="tel" id="tel2" title="전화번호 앞자리" maxlength='4'> - 
+										<input type="tel" id="tel3" title="전화번호 뒷자리" maxlength='4'>
 									</p>
 
 									<p>
-										<label class="tit">일반전화</label> <input type="tel" id="tel1"
-											title="지역번호 입력"> - <input type="tel" id="tel2"
-											title="전화번호 앞자리"> - <input type="tel" id="tel3"
-											title="전화번호 뒷자리">
+										<label class="tit">일반전화</label>
+										<input type="tel" id="tel1" title="지역번호 입력" maxlength='3'> - 
+										<input type="tel" id="tel2" title="전화번호 앞자리" maxlength='3'> - 
+										<input type="tel" id="tel3"	title="전화번호 뒷자리" maxlength='3'>
 									</p>
 								</fieldset>
 
@@ -167,32 +168,37 @@
 									</p>
 									<hr />
 									<p>
-										선물 포장 <input type="radio" name="present" id="no"> <label
+										<strong class="point">*</strong>선물 포장 <input type="radio" name="present" id="no"> <label
 											for="no">안함</label> <input type="radio" name="present"
-											id="yes"> <label for="yes">요청</label><span>(1,000원)</span>
+											id="yes"> <label for="yes">요청(1,000원)</label>
 									</p>
-									<p>
+									<!-- <p>
 										영수증 <input type="radio" name="receipt" id="chk1"> <label
 											for="chk1">가격표시</label> <input type="radio" name="receipt"
 											id="chk2"> <label for="chk2">가격 표시 안함</label>
-									</p>
+									</p> -->
 									<p>택배사 직원에게</p>
 									<input type="text" class="msg" maxlength='30'
 										placeholder="30자 이내로 작성해주세요">
 									<p>받는분께 메시지</p>
 									<input type="text" class="msg" maxlength='30'
 										placeholder="30자 이내로 작성해주세요">
-									<p>
+									<p class="resultprice">
 										최종 결제금액
-										<%-- <c:if test=></c:if> --%>
 										<fmt:formatNumber value="${book.resultpriceStandard }"
 											type="currency" />
 										원 (배달료 2500원 추가)
 									</p>
+									<p class="packagingprice">
+										최종 결제금액
+										<fmt:formatNumber value="${book.packagingprice }"
+											type="currency" />
+										원 (배달료 2500원 + 선물포장 1000원 추가)
+									</p>
 									<span id="agree">주문하실 상품, 가격, 배송정보, 할인정보 등을 확인하였으며, 구매에
 										동의하시겠습니까?</span>
 									<p id="checkbox">
-										<input type="checkbox"><span>동의합니다.(전자상거래법 제 8조
+										<input type="checkbox" id="l_agree"><span>동의합니다.(전자상거래법 제 8조
 											제 2항)</span>
 									</p>
 								</fieldset>
@@ -249,9 +255,31 @@
 	<!-- footer -->
 	<jsp:include page="../footer.jsp"></jsp:include>
 	<script>
+	$(".packagingprice").hide();
 	$(function(){
-				$(".sub1").addClass("active");
-				 
+				/* $(".sub1").addClass("active"); */
+				let no = false;
+				let yes = false;
+				let l_agree = false;
+				$("#no").change(function(){
+					if($("#no").is(":checked")){
+						no = true;
+						$(".packagingprice").hide();
+						$(".resultprice").show();
+					}
+				});
+				$("#yes").change(function(){
+					if($("#yes").is(":checked")){
+						yes = true;
+						$(".packagingprice").show();
+						$(".resultprice").hide();
+					}
+				});
+				$("#l_agree").change(function(){
+					if($("#l_agree").is(":checked")){
+						l_agree = true;
+					}
+				});
 				$("#apibtn").click(function() {
 					
 					let email = $('.user_email').val(); 
@@ -260,7 +288,21 @@
 					if(email == "") {
 						alert("로그인 후 이용해주세요");
 						location.href="/member/login";
-					} else {
+					} /* else if($("#user_id").val() == ""){
+						alert("필수입력 항목을 입력해주세요");
+					} else if($("#postcode").val() == ""){
+						alert("입력 항목을 입력해주세요");
+					} else if($("#address").val() == ""){
+						alert("입력 항목을 입력해주세요");
+					} else if($("#address_d").val() == ""){
+						alert("입력 항목을 입력해주세요");
+					} else if($("#tel1").val() == ""){
+						alert("입력 항목을 입력해주세요");
+					} else if($("#tel2").val() == ""){
+						alert("입력 항목을 입력해주세요");
+					} else if($("#tel3").val() == ""){
+						alert("입력 항목을 입력해주세요");
+					} */ else if((no == true || yes == true) && l_agree == true){
 						var data = {
 		           				book_isbn: book_isbn
 		           		};
@@ -309,7 +351,9 @@
 						}
 						
 						
-					} 
+					} else {
+						alert("all필수입력 항목을 입력해주세요");
+					}
 						
 				});
 	});

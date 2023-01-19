@@ -300,3 +300,7 @@ th, td{
 .btn3:hover{
     background-color: rgb(228, 228, 222);
 }
+
+#buy{
+	margin-right:14px;
+}

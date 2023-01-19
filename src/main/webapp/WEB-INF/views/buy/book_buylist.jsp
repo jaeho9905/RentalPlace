@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -65,7 +66,7 @@
                                             <th style="">도서명</th>
                                             <th style="">저자</th>
                                             <th style="width: 90px;">구매날짜</th>
-                                            <th style="width: 90px">가격</th>
+                                            <th style="width: 90px">총 비용</th>
                                             <th style="width: 90px">배송예정일</th>
 	                                </tr>
                                     </thead>
@@ -76,15 +77,7 @@
 											<td>${buy_history.book_title}</td> 
 											<td>${buy_history.book_author}</td>
 											<td>${buy_history.buy_date}</td>
-											
-											<c:if test="${empty buy_history.return_date }">
-											<td><span style="color:red; font-weight: bold">미반납</span></td>
-											</c:if>
-											
-											<c:if test="${not empty buy_history.return_date }">
-											<td>${buy_history.return_date }</td>
-											</c:if>
-											
+											<td>${buy_history.book_price}</td>							
 											<td>${buy_history.return_period}</td>
 											
 										</tr>

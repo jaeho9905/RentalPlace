@@ -57,7 +57,8 @@ public class BookDTO {
 	
 	// 구매 가격
 	private int resultpriceStandard;
-	
+	private int packagingprice;
+	private int book_price;
 	// 도서
 	private String description;
 	

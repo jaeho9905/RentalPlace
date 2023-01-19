@@ -221,6 +221,9 @@ public class BuyController {
 			System.out.println("아이디 : " + book.getUser_id());
 			System.out.println("구매 책 제목 : " + book.getBook_title());
 			System.out.println("구매한 책 ISBN : " + book.getBook_isbn());
+			System.out.println("책 가격 : " + book.getPriceStandard());
+			System.out.println("구매한 책 가격 : " + book.getResultpriceStandard());
+			System.out.println("구매한 책 가격 : " + book.getBook_price());
 			System.out.println("========================================================\n");
 
 			
