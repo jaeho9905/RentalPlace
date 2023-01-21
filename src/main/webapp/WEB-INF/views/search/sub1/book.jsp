@@ -15,10 +15,10 @@
 
 <body>
 
-	<div class="header">
+ 	<div class="header">
 		<jsp:include page="../../header.jsp"></jsp:include>
 	</div>
-
+ 
 	<div class="container">
 		<div class="sub_title">
 			<div class="doc-info">
@@ -265,7 +265,7 @@
 	</form>
 
 	<!-- footer -->
-	<jsp:include page="../../footer.jsp"></jsp:include>
+ 	<jsp:include page="../../footer.jsp"></jsp:include> 
 	<script>
 		$(function() {
 			$(".sub1").addClass("active");

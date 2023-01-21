@@ -91,8 +91,8 @@
 					    
 					    <!-- 관리자 권한을 가지고 있을 경우 -->
 					    <sec:authorize access="hasRole('ROLE_ADMIN')">
-					    <span class="text-bar"></span>
-					    <span><a href="/admin/member-list">관리자메뉴</a></span>
+					    <!-- <span class="text-bar"></span> -->
+					    <span> <a href="/admin/member-list">관리자메뉴</a></span>
 					    </sec:authorize>
 						</sec:authorize>
                     </div>
@@ -112,7 +112,7 @@
                     <ul class="gnb-ul">
                         <li class="gnb-li">
                             <a class="Depth" href="/search/book">
-                                <span class="">자료검색</span>
+                                <span class="">도서검색</span>
                             </a>
                             <ul class="sub-menu sm01" style="display: none;">
                                 <li>
@@ -150,7 +150,7 @@
                         </li>
                         <li class="gnb-li">
                             <a class="Depth" href="/intro/greeting">
-                                <span class="">도서관소개</span>
+                                <span class="">회사소개</span>
                             </a>
                             <ul class="sub-menu sm04">
                                 <li>
@@ -162,7 +162,7 @@
                         </li>
                         <li class="gnb-li">
                             <a class="Depth" href="/mylib/loan-history">
-                                <span class="">나의도서관</span>
+                                <span class="">마이페이지</span>
                             </a>
                             <ul class="sub-menu sm05">
                                 <li>
@@ -245,43 +245,91 @@
                 <ul class="icons">
                     <li>
                         <div class="icon_img">
-                            <a href="/search/book"><img src="/resources/imges/info/books.png">
+                            <a href="/search/book"><img src="/resources/imges/info/purchasing.png">
                         </div>
                         <class="contents1_bold">구매내역조회</class></a>
                     <li>
                         <div class="icon_img">
-                            <a href="/mylib/hope"><img src="/resources/imges/index/book.png">
-                        </div>
-                        <class="contents1_bold">희망도서신청</class></a>
-                    </li>
-                    <li>
-                        <div class="icon_img">
-                            <a href="/mylib/loan-history"><img src="/resources/imges/index/my-info.png">
+                            <a href="/mylib/hope"><img src="/resources/imges/info/books.png">
                         </div>
                         <class="contents1_bold">대출내역조회</class></a>
                     </li>
                     <li>
                         <div class="icon_img">
-                            <a href="/board/calendar"><img src="/resources/imges/index/calendar.png">
+                            <a href="/mylib/loan-history"><img src="/resources/imges/info/heart.png">
                         </div>
-                        <class="contents1_bold">도서관 일정</class></a>
+                        <class="contents1_bold">찜한도서</class></a>
                     </li>
                     <li>
                         <div class="icon_img">
-                            <a href="#a"><img src="/resources/imges/index/library.png">
+                            <a href="/board/calendar"><img src="/resources/imges/info/clipboard.png">
+                        </div>
+                        <class="contents1_bold">공지사항</class></a>
+                    </li>
+                    <li>
+                        <div class="icon_img">
+                            <a href="#a"><img src="/resources/imges/info/lightbulb.png">
                         </div>
                         <class="contents1_bold">이용안내</class></a>
-                    </li>
-                    <li>
-                        <div class="icon_img">
-                            <a href="/mylib/reservationRoomPage"><img src="/resources/imges/index/reservation.png">
-                        </div>
-                        <class="contents1_bold">자리예약하기</class></a>
                     </li>
                 </ul>
             </div>
         
-        
+        	<!-- <main 04> : 추천도서 및 대출BEST 작업 시작 -->
+            <div class="book-slide-wrap">
+                <div class="slide-inner">
+                    <!-- bookList Tab 설정 -->
+                    <div class="book-slide-top">
+                        <ul class="book-tab" style="display: block;">
+                            <li class="on book-tab1">
+                                <a href="/search/recommend-book">이 달의 책</a>
+                                <span>EZEN's Pick!</span>
+                            </li>
+                           <!--  <li class="">
+                                <a href="/search/best-book">베스트셀러</a>
+                            </li> -->
+                        </ul>
+                        <h1 class="hide">추천도서</h1>
+                        <ul id="recomended" class="book-slide">
+                            <c:forEach var="rec_list" items="${rec_list}">
+                            	<div><a href="/search/recommend-book-detail?book_isbn=${rec_list.book_isbn }&year=${year}&month=${month}">
+                            	<img class="book_shadow" src="${rec_list.book_cover }" style="width:155px; height: 220px;"></a></div>
+                            </c:forEach>            
+                        </ul>
+                        <div class="bookshelf"></div>
+                        
+                         <ul class="book-tab" style="display: block;">
+                            <!-- <li class="on">
+                                <a href="/search/recommend-book">추천도서</a>
+                            </li> -->
+                            <li class="book-tab1">
+                                <a href="/search/best-book">베스트 셀러</a>
+                                <span>BEST SELLER</span>
+                            </li>
+                        </ul>
+                        <h1 class="hide">대출BEST</h1>
+                        <ul id="bestBook" class="book-slide">
+                           <c:forEach var="best_list" items="${best_list}">
+                            	<div><a href="/search/best-book-detail?book_isbn=${best_list.book_isbn }&year=${year}&month=${month}">
+                            	<img class="book_shadow" src="${best_list.book_cover }" style="width:155px; height: 220px;"></a></div>
+                            </c:forEach>
+                        </ul>
+                        <div class="bookshelf"></div>
+                        
+                        <script>
+                            $('.book-slide').slick({
+                                infinite: true,
+                                slidesToShow: 5,
+                                slidesToScroll: 5,
+                                setPosition: 0, //깨짐 방지
+                                autoplay: false,
+                                autoplaySpeed: 5000
+                            });
+                        </script>
+                    </div>
+                </div>
+            </div>
+            <!-- 추천도서 / 대출 Best 종료 -->
         
             <!-- <main 01> : 공지사항 / 좌석예약 -->
             <div class="library-info">
@@ -309,8 +357,9 @@
                         </ul>
                     </div>
                     <!-- 공지사항 종료 -->
+                    
                     <!-- main01-2 휴관일 및 예약현황 -->
-                    <div class="bbs-box-center">
+ <%--                    <div class="bbs-box-center">
                         <div class="month-wrap">
                             <div class="month-slide-wrap">
                                 <div class="month-slide">
@@ -362,8 +411,10 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> --%>
                     <!-- 휴관일 및 좌석현황 종료 -->
+                    
+                    
                     <!-- <main01-03 : main-banner-box -->
                     <div class="main-banner-box">
                         <div class="slidewrap">
@@ -384,7 +435,8 @@
                     </script>
                 </div>
             </div>
-            <!-- <main 04> : 추천도서 및 대출BEST 작업 시작 -->
+            
+<%--             <!-- <main 04> : 추천도서 및 대출BEST 작업 시작 -->
             <div class="book-slide-wrap">
                 <div class="slide-inner">
                     <!-- bookList Tab 설정 -->
@@ -426,7 +478,8 @@
                     </div>
                 </div>
             </div>
-            <!-- 추천도서 / 대출 Best 종료 -->
+            <!-- 추천도서 / 대출 Best 종료 --> --%>
+            
             <!-- main 06 : sub-banner-box 영역 작업 시작 -->
             <div class="section-sub-banner">
                 <div class="sub-banner-wrap">
@@ -448,7 +501,7 @@
                         <div class="sub-banner-wrapper">
                             <div class="banner-box">
                                 <div class="box-viewport">
-                                    <ul class="banner-roll">
+                                   <!--  <ul class="banner-roll">
                                         <li class="box-clone">
                                             <div>
                                                 <a href="https://www.moe.go.kr/main.do" target="_blank"
@@ -548,7 +601,7 @@
                                             }
                                             );
                                         </script>
-                                    </ul>
+                                    </ul> -->
                                 </div>
                             </div>
                         </div>
@@ -570,23 +623,22 @@
                                     <a href="#a">개인정보처리방침</a><span class="text-bar"></span>
                                     <a href="#a">영상정보처리방침</a><span class="text-bar"></span>
                                     <a href="#a">이용약관</a><span class="text-bar"></span>
-                                    <a href="#a">도서관서비스헌장</a><span class="text-bar"></span>
+                                    <a href="#a">인재채용</a><span class="text-bar"></span>
                                     <a href="#a">저작권보호정책</a><span class="text-bar"></span>
-                                    <a href="#a">뷰어다운로드</a>
+                                    <a href="#a">광고안내</a>
                                 </div>
                             </div><br>
                             <!-- 주소영역 -->
                             <div class="address">
                             
                             	<div class="team" style="float: right;">
-									<p>조장 : 박준모</p>
-									<p>조원 : 김혜인, 신혜리, 장준화, 천종부</p>
+									<p>조원 : 임다혜, 이다혜, 홍진혁, 이재호</p>
 								</div>
 								
-                                <p>대구광역시 서구 서대구로 7길 2(내당동, 대구광역시립라온도서관)
-                                    <span></span>TEL 053-555-1333
-                                    <span></span>FAX 053-566-3318<br>
-                                    Copyright @ 라온도서관.<br>
+                                <p>안산시 상록구 광덕1로(이동, 이젠북컴퍼니)
+                                    <span></span>TEL 031-502-1333
+                                    <span></span>FAX 031-503-3318<br>
+                                    Copyright @ 이젠북컴퍼니.<br>
                                     All right reserved.
                                 </p>
                             </div>

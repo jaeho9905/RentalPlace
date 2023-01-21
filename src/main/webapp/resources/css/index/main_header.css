@@ -288,7 +288,7 @@ a:link {
     color: black;
     font-weight: bold;
     line-height: 54px;
-    font-size: 1.25em;
+    font-size: 1.35em;
     /* border:1px dashed tomato; */
 }
 .gnb-li > a:first-child{
@@ -330,40 +330,36 @@ a:link {
 
 
 .sm01 {
-    width: 10.2em;
+    width: 11em;
 }
 
 
 .sm02 {
-    width: 10.36em;
-    margin-left:-16px;
-    padding-left:15px;
+    width: 11.05em;
+    margin-left:-13.5px;
+    padding-left:11px;
 }
 
 .sm03 {
-    width: 10.2em;
-    margin-left:-15.5px;
+    width: 11em;
+    margin-left:-16px;
     padding-left:13px;
 }
 
-
 .sm04 {
-    width: 10.5em;
-    margin-left:-18.5px;
-    padding-left:25px;
+    width: 13.2em;
+    margin-left:-17px;
 }
 
 .sm05 {
-    width: 10.125em;
-    margin-left:-19.5px;
-    padding-left:23px;
+    width: 11em;
+    margin-left:-4px;
+    padding-left:12px;
 }
-
 
 .sub-menu li {
     line-height: 1.9;
 }
-
 
 .sub-menu > a {
     font-size: 0.875em;
@@ -428,7 +424,7 @@ img, input, select {
     width: 450px;
     border-radius: 10px;
     float:left;
-    border:2px solid #c79d6a;
+    border:2px solid #eaeaea;
     margin-top:12px;
 }
 .searchbox > .box {
@@ -456,14 +452,14 @@ img, input, select {
     height: 2.8125em;
     box-sizing: border-box;
     padding-left: 2.1875em;
-    background-color: ivory;
+    background-color: #eaeaea;
     font-size: 1.125em;
     font-weight: bold;
     color: #3d3d3d;
     border:none;
 }
 input[type="text"] {
-    border-radius: 0px 0px;
+    border-radius: 5px;
 }
 
 .btn-box {
@@ -486,41 +482,41 @@ input[type="text"] {
 /* 퀵메뉴영역*/
 .Quick-area{
     width:100%;
-    height:auto;
+    height:130px;
     /* border: 3px solid gold; */
-    margin-bottom: 2%;
+    margin-bottom: 5%;
 }
 
 
-.Quick-area > h2{
+/* .Quick-area > h2{
     text-align: center;
-    /* border: 3px dashed red; */
+    border: 3px dashed red;
     color: brown;
     font-size:20px;
     border-bottom:2px solid ivory;
     width:150px;
     margin:30px auto;
     padding-bottom:15px;
-}
+} */
   
 .icons{
     display: flex;
     width:78.75em;
-    height: auto;
     /* background: orange; */
-    margin:auto;
+    margin:10px auto;
+    /* border:1px solid black; */
 }
 
 
 .icons > li {
     flex: 1;
-    margin-top:49px;
-    margin-bottom: 49px;
+    margin-top:30px;
+    margin-bottom: 30px;
     height:auto;
     text-align: center;
     color: black;
     font-size: 14px;
-    /* border: 1px solid white; */
+    /* border: 1px solid blue;  */
      /* font-weight: bold; */
 }
 .icon_img>a{
@@ -528,22 +524,23 @@ input[type="text"] {
 	background-color:#eaeaea;
 	border-radius:35%;
 	display:block;
+	margin:0 auto;
 }
 .icon_img>a>img{
 	width:49px;height:49px;
 	padding:10px;
 }
   
-.icons > li:not(:last-child){
-    margin-right: 8%;
-}
+/* .icons > li:not(:last-child){
+    margin-right: 10px;
+} */
   
-  
+/*   
 .icons .contents2 {
     width:280px;
     margin:auto;
     letter-spacing: -1px;
-}
+} */
 
 
 

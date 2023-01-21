@@ -29,16 +29,17 @@ ul {
 /* 전체 container */
 .container {
 	margin: 0 auto;
-	width: 1900px;
+	width: 1300px;
 	height: auto;
 }
 
 .sub_title {
-	width: 1900px;
+	width: 1300px;
 	height: 140px;
 	margin: 0 auto;
-	background-image: url(/resources/imges/common/sub-visual.gif);
+	/* background-image: url(/resources/imges/common/sub-visual.gif); */
 	text-align: center;
+	margin-left:-50px;
 }
 
 .doc-info {
@@ -104,20 +105,22 @@ ul {
 .lnb {
 	width: 280px;
 	float: left;
+	margin-left:-70px;
+	margin-top:30px;
 }
 
 .lnb h2 {
 	width: 220px !important;
 	display: block;
-	background: url(/resources/imges/common/lnb-bg-new.gif) repeat-y 1px;
 	height: 140px;
 	margin-top: -140px;
 	margin-bottom: 0px;
+	background-color:beige;
 }
 
 .lnb h2 b {
 	display: block;
-	color: #fff;
+	color: black;
 	font-size: 24px;
 	line-height: 140px;
 	margin: 0;
@@ -143,13 +146,13 @@ ul {
 
 /* 사이드 바 hover */
 .subMenu li a:hover {
-	background-color: #464f56;
+	background-color: #c79d6a;
 	color: #fff;
 	position: relative;
 }
 
 .lnb ul li.active>a {
-	background-color: #464f56;
+	background-color: #c79d6a;
 	color: #fff;
 	position: relative;
 }
@@ -160,7 +163,7 @@ ul {
 	padding-top: 30px;
 	padding-bottom: 100px;
 	width: 971px;
-	margin-left: 280px;
+	margin-left: 240px;
 }
 
 .doc {
@@ -253,10 +256,10 @@ th, td {
 .btn {
 	width: 60px;
 	height: 35px;
-	background-color: #266ac4;
+	background-color: #eaeaea;
 	border: none;
 	border-radius: 5px;
-	color: #fff;
+	color: black;
 	font-size: 15px;
 	cursor: pointer;
 }
@@ -267,13 +270,14 @@ th, td {
 }
 
 .btn:hover {
-	background-color: #215aa3;
+	background-color: #333333;
+	color:white;
 }
 
 .btn2 {
 	width: 80px;
 	height: 30px;
-	background-color: #f1b55c;
+	background-color: #c79d6a;
 	border: none;
 	border-radius: 5px;
 	color: #fff;
@@ -287,7 +291,8 @@ th, td {
 }
 
 .btn2:hover {
-	background-color: rgb(255, 185, 70);
+	background-color: brown;
+	color:#fff;
 }
 
 /* 페이지 */
