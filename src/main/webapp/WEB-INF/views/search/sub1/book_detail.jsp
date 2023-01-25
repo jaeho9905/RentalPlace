@@ -200,7 +200,9 @@
 			});
 		});
 	</script>
-			
+	<script type="text/javascript">
+		document.write("222");
+	</script>
 
 </body>
 </html>
