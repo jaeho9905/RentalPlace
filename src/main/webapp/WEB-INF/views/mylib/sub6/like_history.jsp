@@ -1,6 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib uri="http://www.springframework.org/security/tags"
+	prefix="sec"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -126,9 +128,9 @@
 										<!--------------  장바구니 추가 ------------------>
 										 <form id="cart" onsubmit="return false;" method="post">
 				                        
-				                        	<sec:authorize access="isAuthenticated()">
-											<input type="hidden" class="user_email" name="user_email" 
-												value=<sec:authentication property="principal.dto.user_email"/>> 
+											<sec:authorize access="isAuthenticated()">
+												<input type="hidden" class="user_email" name="user_email"
+													value=<sec:authentication property="principal.dto.user_email"/>>
 											</sec:authorize>
 											
 											<sec:authorize access="isAnonymous()">

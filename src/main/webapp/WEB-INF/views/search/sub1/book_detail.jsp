@@ -3,6 +3,7 @@
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%@ page session="false" %>
 <%@ taglib uri="http://www.springframework.org/security/tags" prefix="sec" %>
+
 <html>
 <head>
 	<title>이젠북컴퍼니 > 자료검색 > 도서검색</title>
@@ -211,7 +212,7 @@
                     </div>
                     
                     <!-- 추가 -->
-					<div class="container">
+					<div class="container2">
 						<br> <br>
 						<sec:authorize access="isAuthenticated()">
 						<div>

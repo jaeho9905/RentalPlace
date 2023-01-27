@@ -10,15 +10,17 @@
 
 .header_menu {
     display: flex;
-    justify-content: space-around;
-	height: 90px;    
+	height: 90px;   
 }
+
 .header_submenu ul {
     display: flex;
     justify-content: space-around;
     height: 35px;
 }
-
+.header_menu li{
+	margin-right:30px;
+}
 .header_menu li, .header_submenu ul li  {
     list-style-type: none;
     display: inline-block;
@@ -26,9 +28,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-right: 45px;
+    padding-right: 15px;
 }
-.header_menu>li>div>a>img{width:200px;height:70px;}
+/* .header_menu>li>div>a>img{width:160px;height:70px;} */
 .header_menu li a, .header_submenu ul li a {
     text-decoration: none;
     color: black;

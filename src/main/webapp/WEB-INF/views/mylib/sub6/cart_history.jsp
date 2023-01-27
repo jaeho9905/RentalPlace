@@ -126,9 +126,9 @@
                                        </td>
                                        <td>
                                     <form action="/search/cart-history/update"  method="post" onsubmit="return false;" class="CartUp">
-                                                    <input type="hidden" name="book_title" value="${cart.book_title }"> 
-                                                   
-                                                   <select name="bookCount">
+                                        <input type="hidden" name="book_title" value="${cart.book_title }"> 
+                                       
+                                       <select name="bookCount">
                                           <option value="1">1</option>
                                           <option value="2">2</option>
                                           <option value="3">3</option>
@@ -150,11 +150,13 @@
                                        <td>${cart.book_publisher }</td>
                                        <td>
                                           <form action="/search/cart-history/delete" method="post" onsubmit="return false;" class="CartDel">
-                                                         <input type="hidden" name="cart_id" value="${cart.cart_id }">
+                                                   <input type="hidden" name="cart_id" value="${cart.cart_id }">
                                                    <input type="submit" class="btn deleteBtn" value="삭제" style="margin-bottom:3px;">
-                                                </form>
-                                                <form action="/buy/book_buy_api?detail=not" method="get" id="buy">
-                                                   <sec:authorize access="isAuthenticated()">
+                                          </form>
+                                          
+                                          
+                                          <form method="get" id="buy" onsubmit="return false;">
+                                             <sec:authorize access="isAuthenticated()">
                                                 <input type="hidden" class="user_email" name="user_email"
                                                    value=<sec:authentication property="principal.dto.user_email"/>>
                                              </sec:authorize>
@@ -164,7 +166,7 @@
                                              </sec:authorize>
                                              <input type="hidden" name="book_title" value="${cart.book_title}">
                                              <input type="hidden" name="book_author" value="${cart.book_author}">
-                                             <input type="hidden" class="book_isbn" name="book_isbn"   value="${cart.book_isbn}">
+                                             <input type="hidden" class="book_isbn" name="book_isbn" value="${cart.book_isbn}">
                                              <input type="hidden" name="book_cover" value="${cart.book_cover}">
                                              <input type="hidden" name="book_pubDate" value="${cart.book_pubDate}">
                                              <input type="hidden" name="book_publisher" value="${cart.book_publisher}">
@@ -174,7 +176,7 @@
                                              <input type="hidden" name="type" value="${cri.type}">
                                              <input type="hidden" name="keyword" value="${cri.keyword}"> --%>
                                              <input type="hidden" name="priceStandard" value="${cart.priceStandard}">
-                                             <button type="button" class="apibtn" value="구매하기">구매하기</button>
+                                             <button type="button" class="apibtn" value="구매하기">구매</button>
                                           </form>
                                        </td>
                                     </tr>
@@ -321,11 +323,12 @@
                alert("로그인 후 이용해주세요");
                location.href="/member/login";
             } else {
-               var data = {
-                          book_isbn: book_isbn
-                    };
                
                if (confirm("결제하시겠습니까?")) {
+            	   
+            	   var data = {
+            			   book_isbn: book_isbn
+                     };
                      
                      $.ajax({
                           type: "post",
@@ -335,10 +338,10 @@
                              
                              if (result == "success") {
                                 alert("결제페이지로 넘어갑니다.");
-                                $("#buy").attr("action", "/buy/cart_buybook?detail=not");
+                               $("#buy").attr("action", "/buy/cart_buybook?detail=not");
                                $("#buy").attr("onsubmit", "return true;");
                                $("#buy").submit();
-                               
+
                              }
                           }
                          });
@@ -363,6 +366,7 @@
                } else {
                   alert("결제를 취소했습니다.");
                }
+
             }   
          });
       });

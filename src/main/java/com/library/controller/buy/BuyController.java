@@ -175,7 +175,6 @@ public class BuyController {
    
       @GetMapping("/buybook")
       public String buy(BookDTO book, Principal principal) {
-
          
          // 로그인 된 user_id 받아오기
          String id = principal.getName();
@@ -261,8 +260,6 @@ public class BuyController {
 
          // 로그인 된 user_id 받아오기
          String id = principal.getName();
-
-         
 
 
          // 대출하려는 회원이 대출 중인 도서인지 체크
