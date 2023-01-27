@@ -4,19 +4,7 @@
 <%@ page session="false" %>
 <html>
 <head>
-<<<<<<< HEAD
 	<title>이젠북컴퍼니 > 자료검색 > 추천도서</title>
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-	<title>이젠북컴퍼니 > 자료검색 > 추천도서</title>
-=======
-	<title>라온도서관 > 자료검색 > 추천도서</title>
->>>>>>> buy
-=======
-	<title>라온도서관 > 자료검색 > 추천도서</title>
->>>>>>> front
->>>>>>> review
 </head>
 <link rel="stylesheet" href="/resources/css/search/recommend_book.css">
 <link rel="stylesheet" href="/resources/css/header.css">
@@ -144,19 +132,7 @@
             </div>
             
         </div>
-<<<<<<< HEAD
         <div class="pageInfo" style="text-align: center; width:970px; margin: 0 auto;">
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-        <div class="pageInfo" style="text-align: center; width:970px; margin: 0 auto;">
-=======
-        <div class="pageInfo" style="text-align: center; width:970px; margin-left: 600px;">
->>>>>>> buy
-=======
-        <div class="pageInfo" style="text-align: center; width:970px; margin: 0 auto;">
->>>>>>> front
->>>>>>> review
 								
 	         <c:if test="${pageMaker.prev }">
 	             <a class="not" href="${pageMaker.startPage - 1}">이전</a>

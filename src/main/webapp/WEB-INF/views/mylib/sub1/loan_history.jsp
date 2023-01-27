@@ -5,19 +5,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<<<<<<< HEAD
 <title>이젠북컴퍼니 > 나의도서관 > 도서관련 > 대출내역조회</title>
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<title>이젠북컴퍼니 > 나의도서관 > 도서관련 > 대출내역조회</title>
-=======
-<title>라온도서관 > 나의도서관 > 도서관련 > 대출내역조회</title>
->>>>>>> buy
-=======
-<title>라온도서관 > 나의도서관 > 도서관련 > 대출내역조회</title>
->>>>>>> front
->>>>>>> review
 <link rel="stylesheet" href="/resources/css/mylib/sub1/loan_history.css">
 <link rel="stylesheet" href="/resources/css/header.css">
 <link rel="stylesheet" href="/resources/css/footer.css">

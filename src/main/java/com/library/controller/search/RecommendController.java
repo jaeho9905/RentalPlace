@@ -160,19 +160,7 @@ public class RecommendController {
 	}
 
 	// 추천도서 등록
-<<<<<<< HEAD
 	@PostMapping("/regist")
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-	@PostMapping("/regist")
-=======
-	@PostMapping("regist")
->>>>>>> buy
-=======
-	@PostMapping("regist")
->>>>>>> front
->>>>>>> review
 	public String regist(BookDTO book, Principal principal) {
 		System.out.println("regist 진입");
 		

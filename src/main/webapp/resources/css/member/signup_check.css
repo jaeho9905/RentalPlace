@@ -25,7 +25,6 @@ ul{
 /* 전체 container */
 .container{
     margin: 0 auto;
-<<<<<<< HEAD
     width: 1300px;
     height: auto;
 }
@@ -37,38 +36,6 @@ ul{
 	/* background-image: url(/resources/imges/common/sub-visual.gif); */
 	text-align: center;
 	margin-left:-50px;
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-    width: 1300px;
-    height: auto;
-}
-
-.sub_title {
-	width: 1300px;
-	height: 140px;
-	margin: 0 auto;
-	/* background-image: url(/resources/imges/common/sub-visual.gif); */
-	text-align: center;
-	margin-left:-50px;
-=======
-=======
->>>>>>> front
-    width: 1900px;
-    height: auto;
-}
-
-.sub_title{
-    width: 1900px;
-    height: 140px;
-    margin: 0 auto;
-    background-image: url(/resources/imges/common/sub-visual.gif);
-    text-align: center;
-<<<<<<< HEAD
->>>>>>> buy
-=======
->>>>>>> front
->>>>>>> review
 }
 
 .doc-info{
@@ -128,17 +95,10 @@ ul{
 .section::after {content: "";display: block; clear: both;}
 
 .lnb {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> review
 	width: 280px;
 	float: left;
 	margin-left:-50px;
 	margin-top:30px;
-<<<<<<< HEAD
-=======
 }
 
 .lnb h2 {
@@ -158,46 +118,6 @@ ul{
 	margin: 0;
 	text-align: center;
 	font-weight: bold;
-=======
-=======
->>>>>>> front
-    width:280px;
-    float:left;
->>>>>>> review
-}
-
-.lnb h2 {
-	width: 220px !important;
-	display: block;
-	height: 140px;
-	margin-top: -140px;
-	margin-bottom: 0px;
-	background-color:beige;
-}
-
-<<<<<<< HEAD
-.lnb h2 b {
-	display: block;
-	color: black;
-	font-size: 24px;
-	line-height: 140px;
-	margin: 0;
-	text-align: center;
-	font-weight: bold;
-=======
-.lnb h2 b{
-    display: block;
-    color: #fff;
-    font-size: 24px;
-    line-height: 140px;
-    margin: 0;
-    text-align: center;
-    font-weight: bold;
-<<<<<<< HEAD
->>>>>>> buy
-=======
->>>>>>> front
->>>>>>> review
 }
 
 .subMenu li{
@@ -218,37 +138,13 @@ ul{
 
 /* 사이드 바 hover */
 .subMenu li a:hover{
-<<<<<<< HEAD
     background-color: #c79d6a;
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-    background-color: #c79d6a;
-=======
-    background-color: #464f56;
->>>>>>> buy
-=======
-    background-color: #464f56;
->>>>>>> front
->>>>>>> review
     color: #fff;
     position: relative;
 }
 
 .lnb ul li.active > a {
-<<<<<<< HEAD
     background-color: #c79d6a;
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-    background-color: #c79d6a;
-=======
-    background-color: #464f56;
->>>>>>> buy
-=======
-    background-color: #464f56;
->>>>>>> front
->>>>>>> review
     color: #fff;
     position: relative;
 }

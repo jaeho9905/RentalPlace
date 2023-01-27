@@ -27,13 +27,6 @@ public class MyLoanHistoryServiceImpl implements MyLoanHistoryService {
 		return mapper.get_total(user_id, start_date, end_date);
 	}
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> front
->>>>>>> review
 	
 	
 	//<!--=========== 찜하기 추기 =================-->
@@ -49,10 +42,6 @@ public class MyLoanHistoryServiceImpl implements MyLoanHistoryService {
 	}
 	
 	
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> review
 	//<!--=========== 장바구니 추기 =================-->
 		@Override
 		public List<BookDTO> cart_history(String user_id, Criteria cri) {
@@ -67,21 +56,14 @@ public class MyLoanHistoryServiceImpl implements MyLoanHistoryService {
 		}
 		
 		@Override
-<<<<<<< HEAD
 		public int get_total_count(String user_id) {
 			// TODO Auto-generated method stub
 			return mapper.get_total_count(user_id);
-=======
-		public int get_total_count(String bookCount) {
-			// TODO Auto-generated method stub
-			return mapper.get_total_count(bookCount);
->>>>>>> review
 		}
 
 
 
 		@Override
-<<<<<<< HEAD
 		public List<BookDTO> get_total_pay(String user_id, String priceStandard) {
 			return mapper.get_total_pay(user_id, priceStandard);
 		}
@@ -91,20 +73,4 @@ public class MyLoanHistoryServiceImpl implements MyLoanHistoryService {
 			return mapper.get_total_final(user_id, priceStandard);
 		} 
 		
-=======
-		public List<BookDTO> get_total_pay(String bookCount, String priceStandard) {
-			return mapper.get_total_pay(bookCount, priceStandard);
-		}
-
-		@Override
-		public int get_total_final(String bookCount, String priceStandard) {
-			return mapper.get_total_final(bookCount, priceStandard);
-		} 
-		
-=======
-
->>>>>>> buy
-=======
->>>>>>> front
->>>>>>> review
 }

@@ -56,33 +56,6 @@ CREATE TABLE `loan_history` (
   CONSTRAINT `loan_history_FK` FOREIGN KEY (`user_id`) REFERENCES `member` (`user_id`)
 );
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
--- 구매 내역 테이블 
-CREATE TABLE `buy_history` (
-  `buy_no` int(11) NOT NULL AUTO_INCREMENT, -- 대출 도서 번호
-  `user_id` varchar(20) NOT NULL, -- 대출 회원 아이디
-  `user_email` varchar(40) not NULL, -- 대출 회원 이메일
-  `book_title` varchar(100) NOT NULL, -- 대출 도서 제목
-  `book_author` varchar(200) NOT NULL, -- 대출 도서 저자
-  `book_isbn` varchar(20) NOT NULL, -- 대출 도서 ISBN
-  `book_cover` varchar(2000) DEFAULT NULL, -- 대출 도서 표지 주소
-  `book_pubdate` varchar(20) NOT NULL, -- 대출 도서 출간일
-  `book_publisher` varchar(50) NOT NULL, -- 대출 도서 출판사
-  `loan_date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP, -- 대출 일자
-  `return_date` timestamp NULL DEFAULT NULL, -- 반납 일자
-  `return_period` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP, -- 도서 반납 기한
-  `return_status` tinyint(1) NOT NULL DEFAULT '0', -- 도서 반납 상태
-  PRIMARY KEY (`buy_no`),
-  KEY `buy_history_FK` (`user_id`),
-  CONSTRAINT `buy_history_FK` FOREIGN KEY (`user_id`) REFERENCES `member` (`user_id`)
-);
-
->>>>>>> buy
-=======
->>>>>>> front
 -- 희망 도서 테이블
 CREATE TABLE `hope` (
   `hope_no` int(11) NOT NULL AUTO_INCREMENT, -- 희망 도서 번호

@@ -38,11 +38,6 @@
 .roomicon
 .inner.icowrap .ico {
     position: absolute;
-<<<<<<< HEAD
-    left: 5px;
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
     left: 5px;
     top: -23px;
     display: inline-block;
@@ -50,45 +45,12 @@
     min-height: 170px;
     background:url(/resources/imges/info/join.png) no-repeat center;
     background-size:70px 70px;
-=======
-=======
->>>>>>> front
-    left: 10px;
->>>>>>> review
-    top: -23px;
-    display: inline-block;
-    width: 150px;
-    min-height: 170px;
-<<<<<<< HEAD
-    background:url(/resources/imges/info/join.png) no-repeat center;
-    background-size:70px 70px;
-=======
-    background:url(https://library.daegu.go.kr/resources/common/img/room_ico.gif)
-<<<<<<< HEAD
->>>>>>> buy
-=======
->>>>>>> front
->>>>>>> review
 }
 
 
 .roomicon .inner strong {
     display: block;
-<<<<<<< HEAD
     margin-left: -70px;
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-    margin-left: -70px;
-=======
-    margin: 0;
-    margin-bottom: 0px;
->>>>>>> buy
-=======
-    margin: 0;
-    margin-bottom: 0px;
->>>>>>> front
->>>>>>> review
     margin-bottom: 5px;
     color: #121212;
     font-size: 28px;
@@ -99,17 +61,7 @@
 
 .roomicon .inner p {
     line-height: 160%;
-<<<<<<< HEAD
     margin-left: -70px;
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-    margin-left: -70px;
-=======
->>>>>>> buy
-=======
->>>>>>> front
->>>>>>> review
 }
 
 
@@ -154,21 +106,8 @@
 .doc-body h3 {
     padding-left: 30px;
     margin: 80px 0 20px 0;
-<<<<<<< HEAD
     background: url(/resources/imges/info/check.png) no-repeat 0 7px;
     background-size:25px 25px;
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-    background: url(/resources/imges/info/check.png) no-repeat 0 7px;
-    background-size:25px 25px;
-=======
-    background: url('https://library.daegu.go.kr/resources/common/img/h3.gif') no-repeat 0 7px;
->>>>>>> buy
-=======
-    background: url('https://library.daegu.go.kr/resources/common/img/h3.gif') no-repeat 0 7px;
->>>>>>> front
->>>>>>> review
     font-size: 23px;
     font-weight: 600;
     color: #222;

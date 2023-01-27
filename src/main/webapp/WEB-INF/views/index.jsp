@@ -8,35 +8,12 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<<<<<<< HEAD
 <title>이젠북컴퍼니</title>
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<title>이젠북컴퍼니</title>
-=======
-<title>라온도서관</title>
->>>>>>> buy
-=======
-<title>라온도서관</title>
->>>>>>> front
->>>>>>> review
 	<link rel="stylesheet" type="text/css" href="/resources/css/index/default.css">
     <link rel="stylesheet" type="text/css" href="/resources/css/index/main_header.css">
     <link rel="stylesheet" type="text/css" href="/resources/css/index/main.css">
     <link rel="stylesheet" type="text/css" href="/resources/css/index/footer.css">
-<<<<<<< HEAD
     <link rel="stylesheet" type="text/css" href="/resources/css/index/jquery.bxslider.css">
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-    <link rel="stylesheet" type="text/css" href="/resources/css/index/jquery.bxslider.css">
-=======
->>>>>>> buy
-=======
-    <link rel="stylesheet" type="text/css" href="/resources/css/index/jquery.bxslider.css">
->>>>>>> front
->>>>>>> review
     <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
     <!-- xeion = 아이콘 사용을 위한 CDN -->
     <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
@@ -47,13 +24,6 @@
     <script type="text/javascript" src="/resources/js/index/main-header.js"></script>
     <script type="text/javascript" src="/resources/js/index/main.js"></script>
     <script type="text/javascript" src="/resources/js/index/tab.js"></script>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> front
->>>>>>> review
 	<script type="text/javascript" src="/resources/js/index/jquery.bxslider.min.js"></script> 
 	
 <script>
@@ -68,8 +38,6 @@
   
   });
  </script>
-<<<<<<< HEAD
-=======
 </head>
 
 <body>
@@ -105,53 +73,6 @@
      	
             
                <!--  <div class="main-section"> -->
-<<<<<<< HEAD
-=======
->>>>>>> review
-</head>
-
-<body>
-
-    <div id="warp">
-<<<<<<< HEAD
-    
-    	<div class="tnb">
-                                
-                <!-- 로고 -->
-                <h1 class="logo">
-                    <a id="logoLink" href="/" title="이젠북컴퍼니 메인화면" role="button"><span
-                            class="hide"></span></a>
-                </h1>
-            	
-            	<!-- 검색박스 -->
-     	        <div class="searchbox">
-                      <div class="box">
-                      	<form action="/search/book" method="get" id="search_form">
-                      		<select id="op-01" class="select-op" title="검색창 옵션" name="type">
-                               <option value="Title">도서명</option>
-                               <option value="Author">저자명</option>
-                           </select>
-                           <input id="inputForm" class="mainInput" type="text" placeholder="검색어를 입력하세요."
-                               title="검색창" name="keyword" autocomplete="off">
-                           <div class="btn-box">
-                               <a class="search-btn" onclick="submit();">
-                                   <span class="hide">검색</span>
-                               </a>
-                           </div>
-                      	</form>
-                      </div>
-                  </div>
-     	
-            
-               <!--  <div class="main-section"> -->
-=======
-        <div id="header">
-            <div class="tnb">
-                <div class="main-section">
->>>>>>> buy
-=======
->>>>>>> front
->>>>>>> review
                     <div class="util">
                     	<sec:authorize access="isAnonymous()">
                         <a href="/member/login">로그인</a><span class="text-bar"></span>
@@ -160,19 +81,7 @@
                         
                         <!-- 로그인 시 -->
 						<sec:authorize access="isAuthenticated()">
-<<<<<<< HEAD
 						<span style="color: black; font-weight: bold; font-size: 0.875em;">
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-						<span style="color: black; font-weight: bold; font-size: 0.875em;">
-=======
-						<span style="color: #fff; font-weight: bold; font-size: 0.875em;">
->>>>>>> buy
-=======
-						<span style="color: black; font-weight: bold; font-size: 0.875em;">
->>>>>>> front
->>>>>>> review
 							<sec:authentication property="principal.dto.user_name"/>님
 						</span>
 						<span class="text-bar"></span>
@@ -182,41 +91,8 @@
 					    
 					    <!-- 관리자 권한을 가지고 있을 경우 -->
 					    <sec:authorize access="hasRole('ROLE_ADMIN')">
-<<<<<<< HEAD
 					    <!-- <span class="text-bar"></span> -->
 					    <span> <a href="/admin/member-list">관리자메뉴</a></span>
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> front
-					    <!-- <span class="text-bar"></span> -->
-					    <span> <a href="/admin/member-list">관리자메뉴</a></span>
-					    </sec:authorize>
-						</sec:authorize>
-                    </div>
-
-                <!-- </div> -->
-            </div>
-            
-        <div id="header">
-
-            <!-- 하단 nav(본 메뉴) 작업 시작하기 -->
-            <div class="gnb">
-                <div class="container">
-                    <!-- <h1 class="logo">
-                        <a id="logoLink" href="/" title="이젠북컴퍼니 메인화면" role="button"><span
-                                class="hide"></span></a>
-                    </h1> -->
-                    <ul class="gnb-ul">
-                        <li class="gnb-li">
-                            <a class="Depth" href="/search/book">
-                                <span class="">도서검색</span>
-<<<<<<< HEAD
-=======
-					    <span class="text-bar"></span>
-					    <span><a href="/admin/member-list">관리자메뉴</a></span>
->>>>>>> review
 					    </sec:authorize>
 						</sec:authorize>
                     </div>
@@ -233,14 +109,7 @@
                     <ul class="gnb-ul">
                         <li class="gnb-li">
                             <a class="Depth" href="/search/book">
-<<<<<<< HEAD
                                 <span class="">도서검색</span>
-=======
-                                <span class="">자료검색</span>
->>>>>>> buy
-=======
->>>>>>> front
->>>>>>> review
                             </a>
                             <ul class="sub-menu sm01" style="display: none;">
                                 <li>
@@ -257,17 +126,6 @@
                             <ul class="sub-menu sm02">
                                 <li>
                                     <a class="" href="/info/signup">회원가입 안내</a>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-                                    <a class="" href="/info/openingHours">이용시간 및 휴관일</a>
->>>>>>> buy
-=======
-                                    <a class="" href="/info/openingHours">이용시간 및 휴관일</a>
->>>>>>> front
->>>>>>> review
                                     <a class="" href="/info/loanBook">도서 대출 및 반납</a>
                                 </li>
                             </ul>
@@ -281,211 +139,36 @@
                                     <a class="" href="/board/noticeList">공지사항</a>
                                     <a class="" href="/board/faq">자주묻는질문</a>
                                     <a class="" href="/board/qnaBoardList">묻고답하기</a>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-                                    <a class="" href="/board/articleList">분실물찾기</a>
-                                    <a class="" href="/board/calendar">도서관일정</a>
->>>>>>> buy
-=======
-                                    <a class="" href="/board/articleList">분실물찾기</a>
-                                    <a class="" href="/board/calendar">도서관일정</a>
->>>>>>> front
->>>>>>> review
                                 </li>
                             </ul>
                         </li>
                         <li class="gnb-li">
                             <a class="Depth" href="/intro/greeting">
-<<<<<<< HEAD
                                 <span class="">회사소개</span>
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-                                <span class="">회사소개</span>
-=======
-                                <span class="">도서관소개</span>
->>>>>>> buy
-=======
-                                <span class="">회사소개</span>
->>>>>>> front
->>>>>>> review
                             </a>
                             <ul class="sub-menu sm04">
                                 <li>
                                     <a class="" href="/intro/greeting">인사말</a>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-                                    <a class="" href="/intro/history">연혁</a>
->>>>>>> buy
-=======
-                                    <a class="" href="/intro/history">연혁</a>
->>>>>>> front
->>>>>>> review
                                     <a class="" href="/intro/road">찾아오시는길</a>
                                 </li>
                             </ul>
                         </li>
                         <li class="gnb-li">
                             <a class="Depth" href="/mylib/loan-history">
-<<<<<<< HEAD
                                 <span class="">마이페이지</span>
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-                                <span class="">마이페이지</span>
-=======
-                                <span class="">나의도서관</span>
->>>>>>> buy
-=======
-                                <span class="">마이페이지</span>
->>>>>>> front
->>>>>>> review
                             </a>
                             <ul class="sub-menu sm05">
                                 <li>
                                     <a class="" href="/mylib/loan-history">도서관련</a>
                                     <a class="" href="/mylib/hope">희망도서신청/조회</a>
-<<<<<<< HEAD
                                     <a class="" href="/mylib/like-history">찜한도서</a>
                                     <a class="" href="/mylib/cart-history">장바구니</a>
                                     <a class="" href="/buy/book_buylist">구매내역</a>
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-                                    <a class="" href="/mylib/mypage">마이페이지</a>
-=======
-                                    <a class="" href="/mylib/reservationRoomPage">좌석예약/조회</a>
-                                    <a class="" href="/mylib/mypage">개인정보</a>
->>>>>>> buy
-=======
-                                    <a class="" href="/mylib/reservationRoomPage">좌석예약/조회</a>
-                                    <a class="" href="/mylib/mypage">개인정보</a>
->>>>>>> front
->>>>>>> review
                                 </li>
                             </ul>
                         </li>
                     </ul>
-<<<<<<< HEAD
                     </nav>
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> front
-<!--                     <a id="site-map-Link" class="site-map" href="#a" title="사이트맵">
-                        <img src="/resources/imges/index/sitemap1.png" alt="사이트맵">
-                    </a> -->
-                </div>
-            </div><!-- gnb -->
-           
-            
-            <!----------------------------- 배너 슬라이더 추가 -->
-<!--         	<div id="header">
-			    <ul class="top_bg">
-			        <li class="top_bg1"></li>
-			        <li class="top_bg2"></li>
-			        <li class="top_bg3"></li>
-			    </ul>photo
-			    <p>
-			        <button type="button" class="prev">&lt;</button>
-			        <button type="button" class="next">&gt;</button>
-			    </p>
-			    <ul id="bx-pager1">
-			        <li><button type="button" title="1번버튼" data-n="1" class="btn btn1 active">1</button></li>
-			        <li><button type="button" title="2번버튼" data-n="2" class="btn btn2">2</button></li>
-			        <li><button type="button" title="3번버튼" data-n="3" class="btn btn3">3</button></li>
-			    </ul>btn_wrap
-			</div>  wrap -->
-			
-			<div id="header2">
-				<ul class="top_bg">
-		          <li class="top_bg1">
-		              <div class="top_bg1_inner">
-		                  <p>NEW BOOK</p> 
-		                  <p>&lt;Stick 스틱!&gt;</p>
-		                  <span>15주년 기념판</span>
-		                  <p><a href="http://localhost:8092/search/book-detail?amount=10&page=1&
-		                  type=Title&keyword=%EC%8A%A4%ED%8B%B1&book_isbn=9788901266091">자세히보기</a></p>
-		              </div>  
-		          </li><!-- top_bg1 -->
-		          <li class="top_bg2">
-		              <div class="top_bg2_inner">
-		                  <p>BEST SELLER</p> 
-		                  <p>&lt;원 청&gt; </p>
-		                  <span>잃어버린 도시</span>
-		                  <p><a href="http://localhost:8092/search/book-detail?amount=10&page=1&
-		                  type=Title&keyword=%EC%9B%90%EC%B2%AD&book_isbn=9791156751298">자세히보기</a></p>
-		              </div> 
-		          </li><!-- top_bg2 -->
-		          <li class="top_bg3">
-		              <div class="top_bg3_inner">
-		                  <p>BEST WRITER</p> 
-		                  <p>&lt;작 별 인 사&gt; </p>
-		                  <span>9년만의 신작</span>
-		                  <p><a href="http://localhost:8092/search/book-detail?amount=10&page=1&
-		                  type=Title&keyword=%EC%9E%91%EB%B3%84%EC%9D%B8%EC%82%AC&book_isbn=9791191114225">자세히보기</a></p>
-		              </div> 
-		          </li><!-- top_bg2 -->
-      		</ul>	
-			
-			</div><!-- header2 -->
-
-        </div><!-- header -->
-        <!-- 헤더영역 끝 -->
-        
-        
-        
-        <!-- 메인영역 시작-->
-        <div id="main">
-        
-        	<!-- Quick메뉴 -->
-            <div class="Quick-area">
-                <ul class="icons">
-                    <li>
-                        <div class="icon_img">
-                            <a href="/search/book"><img src="/resources/imges/info/purchasing.png">
-                        </div>
-                        <class="contents1_bold">구매내역조회</class></a>
-                    <li>
-                        <div class="icon_img">
-                            <a href="/mylib/hope"><img src="/resources/imges/info/books.png">
-<<<<<<< HEAD
-=======
-                    <a id="site-map-Link" class="site-map" href="#a" title="사이트맵">
-                        <img src="/resources/imges/index/sitemap1.png" alt="사이트맵">
-                    </a>
-                </div>
-            </div>
-            <!-- Quick메뉴 -->
-            <div class="search-area">
-                <div class="container">
-                    <div class="search-wrap">
-                        <div class="searchbox">
-                            <div class="box">
-                            	<form action="/search/book" method="get" id="search_form">
-                            		<select id="op-01" class="select-op" title="검색창 옵션" name="type">
-	                                    <option value="Title">도서명</option>
-	                                    <option value="Author">저자명</option>
-	                                </select>
-	                                <input id="inputForm" class="mainInput" type="text" placeholder="검색어를 입력하세요."
-	                                    title="검색창" name="keyword" autocomplete="off">
-	                                <div class="btn-box">
-	                                    <a class="search-btn" onclick="submit();">
-	                                        <span class="hide">검색</span>
-	                                    </a>
-	                                </div>
-                            	</form>
-                            </div>
-                        </div>
-                    </div>
->>>>>>> review
                 </div>
             </div><!-- gnb -->
            
@@ -542,105 +225,13 @@
                         <class="contents1_bold">구매내역조회</class></a>
                     <li>
                         <div class="icon_img">
-<<<<<<< HEAD
                             <a href="/mylib/loan-history"><img src="/resources/imges/info/books.png">
-=======
-                            <a href="/mylib/loan-history"><img src="/resources/imges/index/my-info.png">
->>>>>>> buy
-=======
->>>>>>> front
->>>>>>> review
                         </div>
                         <class="contents1_bold">대출내역조회</class></a>
                     </li>
                     <li>
                         <div class="icon_img">
-<<<<<<< HEAD
                             <a href="/mylib/like-history"><img src="/resources/imges/info/heart.png">
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> front
-                            <a href="/mylib/loan-history"><img src="/resources/imges/info/heart.png">
-                        </div>
-                        <class="contents1_bold">찜한도서</class></a>
-                    </li>
-                    <li>
-                        <div class="icon_img">
-                            <a href="/board/calendar"><img src="/resources/imges/info/clipboard.png">
-                        </div>
-                        <class="contents1_bold">공지사항</class></a>
-                    </li>
-                    <li>
-                        <div class="icon_img">
-                            <a href="#a"><img src="/resources/imges/info/lightbulb.png">
-                        </div>
-                        <class="contents1_bold">이용안내</class></a>
-                    </li>
-                </ul>
-            </div>
-        
-        	<!-- <main 04> : 추천도서 및 대출BEST 작업 시작 -->
-            <div class="book-slide-wrap">
-                <div class="slide-inner">
-                    <!-- bookList Tab 설정 -->
-                    <div class="book-slide-top">
-                        <ul class="book-tab" style="display: block;">
-                            <li class="on book-tab1">
-                                <a href="/search/recommend-book">이 달의 책</a>
-                                <span>EZEN's Pick!</span>
-                            </li>
-                           <!--  <li class="">
-                                <a href="/search/best-book">베스트셀러</a>
-                            </li> -->
-                        </ul>
-                        <h1 class="hide">추천도서</h1>
-                        <ul id="recomended" class="book-slide">
-                            <c:forEach var="rec_list" items="${rec_list}">
-                            	<div><a href="/search/recommend-book-detail?book_isbn=${rec_list.book_isbn }&year=${year}&month=${month}">
-                            	<img class="book_shadow" src="${rec_list.book_cover }" style="width:155px; height: 220px;"></a></div>
-                            </c:forEach>            
-                        </ul>
-                        <div class="bookshelf"></div>
-                        
-                         <ul class="book-tab" style="display: block;">
-                            <!-- <li class="on">
-                                <a href="/search/recommend-book">추천도서</a>
-                            </li> -->
-                            <li class="book-tab1">
-                                <a href="/search/best-book">베스트 셀러</a>
-                                <span>BEST SELLER</span>
-                            </li>
-                        </ul>
-                        <h1 class="hide">대출BEST</h1>
-                        <ul id="bestBook" class="book-slide">
-                           <c:forEach var="best_list" items="${best_list}">
-                            	<div><a href="/search/best-book-detail?book_isbn=${best_list.book_isbn }&year=${year}&month=${month}">
-                            	<img class="book_shadow" src="${best_list.book_cover }" style="width:155px; height: 220px;"></a></div>
-                            </c:forEach>
-                        </ul>
-                        <div class="bookshelf"></div>
-                        
-                        <script>
-                            $('.book-slide').slick({
-                                infinite: true,
-                                slidesToShow: 5,
-                                slidesToScroll: 5,
-                                setPosition: 0, //깨짐 방지
-                                autoplay: false,
-                                autoplaySpeed: 5000
-                            });
-                        </script>
-                    </div>
-                </div>
-            </div>
-            <!-- 추천도서 / 대출 Best 종료 -->
-        
-<<<<<<< HEAD
-=======
-                            <a href="/board/calendar"><img src="/resources/imges/index/calendar.png">
->>>>>>> review
                         </div>
                         <class="contents1_bold">찜한도서</class></a>
                     </li>
@@ -658,7 +249,6 @@
                     </li>
                 </ul>
             </div>
-<<<<<<< HEAD
         
         	<!-- <main 04> : 추천도서 및 대출BEST 작업 시작 -->
             <div class="book-slide-wrap">
@@ -716,15 +306,6 @@
             </div>
             <!-- 추천도서 / 대출 Best 종료 -->
         
-=======
-        </div>
-        <!-- 헤더영역 끝 -->
-        <!-- 메인영역 시작-->
-        <div id="main">
->>>>>>> buy
-=======
->>>>>>> front
->>>>>>> review
             <!-- <main 01> : 공지사항 / 좌석예약 -->
             <div class="library-info">
                 <div class="inner">
@@ -751,26 +332,9 @@
                         </ul>
                     </div>
                     <!-- 공지사항 종료 -->
-<<<<<<< HEAD
                     
                     <!-- main01-2 휴관일 및 예약현황 -->
  <%--                    <div class="bbs-box-center">
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-                    
-                    <!-- main01-2 휴관일 및 예약현황 -->
- <%--                    <div class="bbs-box-center">
-=======
-                    <!-- main01-2 휴관일 및 예약현황 -->
-                    <div class="bbs-box-center">
->>>>>>> buy
-=======
-                    
-                    <!-- main01-2 휴관일 및 예약현황 -->
- <%--                    <div class="bbs-box-center">
->>>>>>> front
->>>>>>> review
                         <div class="month-wrap">
                             <div class="month-slide-wrap">
                                 <div class="month-slide">
@@ -822,28 +386,10 @@
                                 </div>
                             </div>
                         </div>
-<<<<<<< HEAD
                     </div> --%>
                     <!-- 휴관일 및 좌석현황 종료 -->
                     
                     
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> front
-                    </div> --%>
-                    <!-- 휴관일 및 좌석현황 종료 -->
-                    
-                    
-<<<<<<< HEAD
-=======
-                    </div>
-                    <!-- 휴관일 및 좌석현황 종료 -->
->>>>>>> buy
-=======
->>>>>>> front
->>>>>>> review
                     <!-- <main01-03 : main-banner-box -->
                     <div class="main-banner-box">
                         <div class="slidewrap">
@@ -864,22 +410,8 @@
                     </script>
                 </div>
             </div>
-<<<<<<< HEAD
             
 <%--             <!-- <main 04> : 추천도서 및 대출BEST 작업 시작 -->
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-            
-<%--             <!-- <main 04> : 추천도서 및 대출BEST 작업 시작 -->
-=======
-            <!-- <main 04> : 추천도서 및 대출BEST 작업 시작 -->
->>>>>>> buy
-=======
-            
-<%--             <!-- <main 04> : 추천도서 및 대출BEST 작업 시작 -->
->>>>>>> front
->>>>>>> review
             <div class="book-slide-wrap">
                 <div class="slide-inner">
                     <!-- bookList Tab 설정 -->
@@ -921,22 +453,8 @@
                     </div>
                 </div>
             </div>
-<<<<<<< HEAD
             <!-- 추천도서 / 대출 Best 종료 --> --%>
             
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-            <!-- 추천도서 / 대출 Best 종료 --> --%>
-            
-=======
-            <!-- 추천도서 / 대출 Best 종료 -->
->>>>>>> buy
-=======
-            <!-- 추천도서 / 대출 Best 종료 --> --%>
-            
->>>>>>> front
->>>>>>> review
             <!-- main 06 : sub-banner-box 영역 작업 시작 -->
             <div class="section-sub-banner">
                 <div class="sub-banner-wrap">
@@ -958,19 +476,7 @@
                         <div class="sub-banner-wrapper">
                             <div class="banner-box">
                                 <div class="box-viewport">
-<<<<<<< HEAD
                                    <!--  <ul class="banner-roll">
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-                                   <!--  <ul class="banner-roll">
-=======
-                                    <ul class="banner-roll">
->>>>>>> buy
-=======
-                                   <!--  <ul class="banner-roll">
->>>>>>> front
->>>>>>> review
                                         <li class="box-clone">
                                             <div>
                                                 <a href="https://www.moe.go.kr/main.do" target="_blank"
@@ -1070,19 +576,7 @@
                                             }
                                             );
                                         </script>
-<<<<<<< HEAD
                                     </ul> -->
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-                                    </ul> -->
-=======
-                                    </ul>
->>>>>>> buy
-=======
-                                    </ul> -->
->>>>>>> front
->>>>>>> review
                                 </div>
                             </div>
                         </div>
@@ -1091,21 +585,8 @@
             </div>
         </div>
         <!-- main 작업 영역 종료 -->
-<<<<<<< HEAD
         
         
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-        
-        
-=======
->>>>>>> buy
-=======
-        
-        
->>>>>>> front
->>>>>>> review
         <!-- footer영역 작업 시작 -->
         <div id="footer">
             <div class="bottom">
@@ -1117,34 +598,15 @@
                                     <a href="#a">개인정보처리방침</a><span class="text-bar"></span>
                                     <a href="#a">영상정보처리방침</a><span class="text-bar"></span>
                                     <a href="#a">이용약관</a><span class="text-bar"></span>
-<<<<<<< HEAD
                                     <a href="#a">인재채용</a><span class="text-bar"></span>
                                     <a href="#a">저작권보호정책</a><span class="text-bar"></span>
                                     <a href="#a">광고안내</a>
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-                                    <a href="#a">인재채용</a><span class="text-bar"></span>
-                                    <a href="#a">저작권보호정책</a><span class="text-bar"></span>
-                                    <a href="#a">광고안내</a>
-=======
-                                    <a href="#a">도서관서비스헌장</a><span class="text-bar"></span>
-                                    <a href="#a">저작권보호정책</a><span class="text-bar"></span>
-                                    <a href="#a">뷰어다운로드</a>
->>>>>>> buy
-=======
-                                    <a href="#a">인재채용</a><span class="text-bar"></span>
-                                    <a href="#a">저작권보호정책</a><span class="text-bar"></span>
-                                    <a href="#a">광고안내</a>
->>>>>>> front
->>>>>>> review
                                 </div>
                             </div><br>
                             <!-- 주소영역 -->
                             <div class="address">
                             
                             	<div class="team" style="float: right;">
-<<<<<<< HEAD
 									<p>조원 : 임다혜, 이다혜, 홍진혁, 이재호</p>
 								</div>
 								
@@ -1152,32 +614,6 @@
                                     <span></span>TEL 031-502-1333
                                     <span></span>FAX 031-503-3318<br>
                                     Copyright @ 이젠북컴퍼니.<br>
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> front
-									<p>조원 : 임다혜, 이다혜, 홍진혁, 이재호</p>
-								</div>
-								
-                                <p>안산시 상록구 광덕1로(이동, 이젠북컴퍼니)
-                                    <span></span>TEL 031-502-1333
-                                    <span></span>FAX 031-503-3318<br>
-                                    Copyright @ 이젠북컴퍼니.<br>
-<<<<<<< HEAD
-=======
-									<p>조장 : 박준모</p>
-									<p>조원 : 김혜인, 신혜리, 장준화, 천종부</p>
-								</div>
-								
-                                <p>대구광역시 서구 서대구로 7길 2(내당동, 대구광역시립라온도서관)
-                                    <span></span>TEL 053-555-1333
-                                    <span></span>FAX 053-566-3318<br>
-                                    Copyright @ 라온도서관.<br>
->>>>>>> buy
-=======
->>>>>>> front
->>>>>>> review
                                     All right reserved.
                                 </p>
                             </div>
@@ -1197,13 +633,6 @@
 		}
 	}
 </script>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> front
->>>>>>> review
 
 <script>
   $(document).ready(function(){
@@ -1217,12 +646,4 @@
   });
   </script>
  
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> buy
-=======
->>>>>>> front
->>>>>>> review
 </html>

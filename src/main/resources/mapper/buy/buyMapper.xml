@@ -5,7 +5,6 @@
   
 <mapper namespace="com.library.mapper.buy.BuyMapper"> <!-- 인터페이스 참조 -->
 
-<<<<<<< HEAD
    <!-- 도서 구매 -->
    <insert id="buy">
       insert into buy_history(book_price, user_id, user_email, book_title, book_author, book_isbn, book_cover, book_pubDate, book_publisher, return_period, bookCount)
@@ -43,22 +42,4 @@
    
    
    
-=======
-	<!-- 도서 구매 -->
-	<insert id="buy">
-		insert into buy_history(book_price, user_id, user_email, book_title, book_author, book_isbn, book_cover, book_pubDate, book_publisher, return_period)
-		values	(#{priceStandard} + 2500, #{user_id}, #{user_email}, #{book_title}, #{book_author}, #{book_isbn}, #{book_cover}, 
-		#{book_pubDate}, #{book_publisher}, adddate(current_timestamp, 3))
-	</insert>
-
-	<!-- 이미 찜한 도서인지 체크 -->
-	<select id="buy_check" resultType="int">
-		select count(*)
-		  from buy_history
-		 where user_id = #{user_id} and book_isbn = #{book_isbn} 
-	</select>
-	
-	
-	
->>>>>>> review
 </mapper>  
