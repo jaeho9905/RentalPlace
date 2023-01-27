@@ -8,7 +8,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>라온도서관</title>
+<title>이젠북컴퍼니</title>
 	<link rel="stylesheet" type="text/css" href="/resources/css/index/default.css">
     <link rel="stylesheet" type="text/css" href="/resources/css/index/main_header.css">
     <link rel="stylesheet" type="text/css" href="/resources/css/index/main.css">
@@ -129,7 +129,6 @@
                             <ul class="sub-menu sm02">
                                 <li>
                                     <a class="" href="/info/signup">회원가입 안내</a>
-                                    <a class="" href="/info/openingHours">이용시간 및 휴관일</a>
                                     <a class="" href="/info/loanBook">도서 대출 및 반납</a>
                                 </li>
                             </ul>
@@ -143,8 +142,6 @@
                                     <a class="" href="/board/noticeList">공지사항</a>
                                     <a class="" href="/board/faq">자주묻는질문</a>
                                     <a class="" href="/board/qnaBoardList">묻고답하기</a>
-                                    <a class="" href="/board/articleList">분실물찾기</a>
-                                    <a class="" href="/board/calendar">도서관일정</a>
                                 </li>
                             </ul>
                         </li>
@@ -155,7 +152,6 @@
                             <ul class="sub-menu sm04">
                                 <li>
                                     <a class="" href="/intro/greeting">인사말</a>
-                                    <a class="" href="/intro/history">연혁</a>
                                     <a class="" href="/intro/road">찾아오시는길</a>
                                 </li>
                             </ul>
@@ -168,36 +164,15 @@
                                 <li>
                                     <a class="" href="/mylib/loan-history">도서관련</a>
                                     <a class="" href="/mylib/hope">희망도서신청/조회</a>
-                                    <a class="" href="/mylib/reservationRoomPage">좌석예약/조회</a>
-                                    <a class="" href="/mylib/mypage">개인정보</a>
+                                    <a class="" href="/mylib/mypage">마이페이지</a>
                                 </li>
                             </ul>
                         </li>
                     </ul>
-<!--                     <a id="site-map-Link" class="site-map" href="#a" title="사이트맵">
-                        <img src="/resources/imges/index/sitemap1.png" alt="사이트맵">
-                    </a> -->
                 </div>
             </div><!-- gnb -->
            
             
-            <!----------------------------- 배너 슬라이더 추가 -->
-<!--         	<div id="header">
-			    <ul class="top_bg">
-			        <li class="top_bg1"></li>
-			        <li class="top_bg2"></li>
-			        <li class="top_bg3"></li>
-			    </ul>photo
-			    <p>
-			        <button type="button" class="prev">&lt;</button>
-			        <button type="button" class="next">&gt;</button>
-			    </p>
-			    <ul id="bx-pager1">
-			        <li><button type="button" title="1번버튼" data-n="1" class="btn btn1 active">1</button></li>
-			        <li><button type="button" title="2번버튼" data-n="2" class="btn btn2">2</button></li>
-			        <li><button type="button" title="3번버튼" data-n="3" class="btn btn3">3</button></li>
-			    </ul>btn_wrap
-			</div>  wrap -->
 			
 			<div id="header2">
 				<ul class="top_bg">
@@ -245,30 +220,30 @@
                 <ul class="icons">
                     <li>
                         <div class="icon_img">
-                            <a href="/search/book"><img src="/resources/imges/info/purchasing.png">
+                            <a href="/buy/book_buylist"><img src="/resources/imges/info/purchasing.png">
                         </div>
                         <class="contents1_bold">구매내역조회</class></a>
                     <li>
                         <div class="icon_img">
-                            <a href="/mylib/hope"><img src="/resources/imges/info/books.png">
+                            <a href="/mylib/loan-history"><img src="/resources/imges/info/books.png">
                         </div>
                         <class="contents1_bold">대출내역조회</class></a>
                     </li>
                     <li>
                         <div class="icon_img">
-                            <a href="/mylib/loan-history"><img src="/resources/imges/info/heart.png">
+                            <a href="/mylib/like-history"><img src="/resources/imges/info/heart.png">
                         </div>
                         <class="contents1_bold">찜한도서</class></a>
                     </li>
                     <li>
                         <div class="icon_img">
-                            <a href="/board/calendar"><img src="/resources/imges/info/clipboard.png">
+                            <a href="/board/noticeList"><img src="/resources/imges/info/clipboard.png">
                         </div>
                         <class="contents1_bold">공지사항</class></a>
                     </li>
                     <li>
                         <div class="icon_img">
-                            <a href="#a"><img src="/resources/imges/info/lightbulb.png">
+                            <a href="/info/signup"><img src="/resources/imges/info/lightbulb.png">
                         </div>
                         <class="contents1_bold">이용안내</class></a>
                     </li>
