@@ -93,6 +93,13 @@
                      <!-- 테이블 -->
                      <div class="table-wrap">
                         <c:if test="${not empty cart_history }">
+                        	 <div id="p_total">
+		                        <p class="book1">총 상품 가격 ${to_pay}</p>
+		                        <p class="book2">총 상품 주문수: ${to_count}</p>
+		                        <p class="book3"><strong>총 결제 예상 금액 : ${final_pay}</strong>
+		                        </p><br>
+		                        <button class="btn95">주문하기</button>
+		                     </div>
                            <table>
                               <thead>
                                  <tr>
@@ -155,7 +162,7 @@
                                           </form>
                                           
                                           
-                                          <form method="get" id="buy" onsubmit="return false;">
+                                          <form method="get" class="buy" onsubmit="return false;">
                                              <sec:authorize access="isAuthenticated()">
                                                 <input type="hidden" class="user_email" name="user_email"
                                                    value=<sec:authentication property="principal.dto.user_email"/>>
@@ -176,7 +183,7 @@
                                              <input type="hidden" name="type" value="${cri.type}">
                                              <input type="hidden" name="keyword" value="${cri.keyword}"> --%>
                                              <input type="hidden" name="priceStandard" value="${cart.priceStandard}">
-                                             <button type="button" class="apibtn" value="구매하기">구매</button>
+                                             <button type="button" class="apibtn btn" value="구매하기">구매</button>
                                           </form>
                                        </td>
                                     </tr>
@@ -207,13 +214,7 @@
                         </c:if>
 
                      </div>
-                     <div id="p_total">
-                        <p class="book1">총 상품 가격 ${to_pay}</p>
-                        <p class="book2">총 상품 주문수: ${to_count}</p>
-                        <p class="book3"><strong>총 결제 예상 금액 : ${final_pay}</strong>
-                        </p><br>
-                        <button class="btn95">주문하기</button>
-                     </div>
+                    
                      
                         
                      
@@ -242,7 +243,7 @@
    <script>
       $(function() {
          
-         $(".sub1").addClass("active");
+         $(".sub7").addClass("active");
          $(".submenu1").addClass("active");
 
          let moveForm = $(".moveForm");
@@ -338,9 +339,9 @@
                              
                              if (result == "success") {
                                 alert("결제페이지로 넘어갑니다.");
-                               $("#buy").attr("action", "/buy/cart_buybook?detail=not");
-                               $("#buy").attr("onsubmit", "return true;");
-                               $("#buy").submit();
+                               $(".buy").attr("action", "/buy/cart_buybook?detail=not");
+                               $(".buy").attr("onsubmit", "return true;");
+                               $(".buy").submit();
 
                              }
                           }

@@ -105,10 +105,7 @@
             <!-- 하단 nav(본 메뉴) 작업 시작하기 -->
             <div class="gnb">
                 <div class="container">
-                    <!-- <h1 class="logo">
-                        <a id="logoLink" href="/" title="이젠북컴퍼니 메인화면" role="button"><span
-                                class="hide"></span></a>
-                    </h1> -->
+                    <nav id=main_navi>
                     <ul class="gnb-ul">
                         <li class="gnb-li">
                             <a class="Depth" href="/search/book">
@@ -164,11 +161,14 @@
                                 <li>
                                     <a class="" href="/mylib/loan-history">도서관련</a>
                                     <a class="" href="/mylib/hope">희망도서신청/조회</a>
-                                    <a class="" href="/mylib/mypage">마이페이지</a>
+                                    <a class="" href="/mylib/like-history">찜한도서</a>
+                                    <a class="" href="/mylib/cart-history">장바구니</a>
+                                    <a class="" href="/buy/book_buylist">구매내역</a>
                                 </li>
                             </ul>
                         </li>
                     </ul>
+                    </nav>
                 </div>
             </div><!-- gnb -->
            

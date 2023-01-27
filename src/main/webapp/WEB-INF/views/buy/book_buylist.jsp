@@ -50,7 +50,7 @@
             <div class="doc">
 
                 <!-- 왼쪽 사이드바 -->
-                <jsp:include page="../search/lnb.jsp"></jsp:include>
+                <jsp:include page="../mylib/lnb.jsp"></jsp:include>
 
                 <!-- 본문 -->
                 <div class="content" style="">
@@ -133,7 +133,7 @@
    <script>
       
       $(function() {
-         $(".sub1").addClass("active");
+         $(".sub8").addClass("active");
          $(".submenu1").addClass("active");
          
          let moveForm = $(".moveForm");
