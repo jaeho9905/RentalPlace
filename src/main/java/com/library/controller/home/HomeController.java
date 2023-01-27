@@ -11,6 +11,10 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+<<<<<<< HEAD
+=======
+import org.springframework.web.bind.annotation.RequestParam;
+>>>>>>> buy
 
 import com.library.model.admin.BannerDTO;
 import com.library.model.board.CalendarDTO;
@@ -22,6 +26,10 @@ import com.library.service.admin.BannerService;
 import com.library.service.board.CalendarService;
 import com.library.service.board.NoticeService;
 import com.library.service.mylib.ReservationRoomService;
+<<<<<<< HEAD
+=======
+import com.library.service.search.AladinApi;
+>>>>>>> buy
 import com.library.service.search.BookService;
 import com.library.service.search.RecommendService;
 import com.library.util.DateUtil;
@@ -30,6 +38,12 @@ import com.library.util.DateUtil;
 public class HomeController {
 
 	@Autowired
+<<<<<<< HEAD
+=======
+	private AladinApi api;
+	
+	@Autowired
+>>>>>>> buy
 	private NoticeService noticeService;
 
 	@Autowired

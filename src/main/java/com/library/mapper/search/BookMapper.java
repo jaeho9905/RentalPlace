@@ -26,6 +26,7 @@ public interface BookMapper {
 
 	// 회원이 대출 중인 도서인지 체크
 	public int loan_check(@Param("user_id")String user_id, @Param("book_isbn")String book_isbn);
+<<<<<<< HEAD
 	
 	
 	
@@ -48,4 +49,6 @@ public interface BookMapper {
 			 @Param("book_title") String book_title, @Param("bookCount")int bookCount  /* BookDTO book */);
 
 	public int deleteCart(@Param("cart_id") int cart_id);
+=======
+>>>>>>> buy
 }

@@ -34,7 +34,11 @@ ul{
     width: 1900px;
     height: 140px;
     margin: 0 auto;
+<<<<<<< HEAD
     /* background-image: url(/resources/imges/common/sub-visual.gif); */
+=======
+    background-image: url(/resources/imges/common/sub-visual.gif);
+>>>>>>> buy
     text-align: center;
 }
 

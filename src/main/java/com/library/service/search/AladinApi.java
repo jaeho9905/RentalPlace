@@ -140,6 +140,10 @@ public class AladinApi {
 			book.setResultpriceStandard(((Long) tmp.get("priceStandard")).intValue() + 2500);
 			/* 포장 추가 */
 			book.setPackagingprice(((Long) tmp.get("priceStandard")).intValue() + 3500);
+<<<<<<< HEAD
+=======
+			 
+>>>>>>> buy
 			
 
 		}

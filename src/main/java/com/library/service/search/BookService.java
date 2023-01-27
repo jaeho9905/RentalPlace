@@ -24,6 +24,7 @@ public interface BookService {
 	
 	// 회원이 대출 중인 도서인지 체크
 	public int loan_check(String user_id, String book_isbn);
+<<<<<<< HEAD
 	
 	
 	//////////////////////////찜하기 추가 //////////////////////
@@ -47,4 +48,6 @@ public interface BookService {
 	
 	public int deleteCart(int cart_id);
 
+=======
+>>>>>>> buy
 }

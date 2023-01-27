@@ -55,11 +55,19 @@ public class BookDTO {
 	// 도서 가격(AladinAPI에서 받아올 때)
 	private int priceStandard;
 	
+<<<<<<< HEAD
+=======
+	// 구매 가격
+	private int resultpriceStandard;
+	private int packagingprice;
+	private int book_price;
+>>>>>>> buy
 	// 도서
 	private String description;
 	
 	// 연체일
 	private int overdue_date;
+<<<<<<< HEAD
 	
 	//장바구니 
 	private int cart_id;
@@ -70,4 +78,6 @@ public class BookDTO {
 	private int resultpriceStandard;
 	private int packagingprice;
 	private int book_price;
+=======
+>>>>>>> buy
 }

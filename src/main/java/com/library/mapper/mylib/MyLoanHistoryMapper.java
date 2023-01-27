@@ -16,6 +16,7 @@ public interface MyLoanHistoryMapper {
 	// 대출 수 출력
 	public int get_total(@Param("user_id") String user_id, @Param("start_date") String start_date,
 			@Param("end_date") String end_date);
+<<<<<<< HEAD
 	
 	
 	
@@ -41,5 +42,7 @@ public interface MyLoanHistoryMapper {
 	
 	public int get_total_final(@Param("bookCount") String bookCount, @Param("priceStandard") String priceStandard);
 	
+=======
+>>>>>>> buy
 
 }

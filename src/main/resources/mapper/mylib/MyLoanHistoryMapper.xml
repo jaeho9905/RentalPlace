@@ -22,6 +22,7 @@
 			  limit #{cri.skip}, #{cri.amount}
 		</select>
 		
+<<<<<<< HEAD
 		
 	    <!--=========== 찜하기 추기 =================-->
 	    <!-- 찜한 도서 건 수 -->
@@ -71,6 +72,8 @@
 		
 		
  		
+=======
+>>>>>>> buy
 		<sql id="criteria">
 	        <if test="start_date != null">
 			  	<if test="end_date != null">
@@ -79,5 +82,9 @@
 				</if>
 			</if>
 	    </sql>
+<<<<<<< HEAD
 	    
+=======
+ 		
+>>>>>>> buy
 	</mapper>

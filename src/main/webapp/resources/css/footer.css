@@ -1,9 +1,14 @@
 /* footer 영역 */
 footer { 
     height: auto;
+<<<<<<< HEAD
     width: 100%;
     background:#eaeaea;
     min-width:100%;
+=======
+    width: 1900px;
+    background: #3d4252;
+>>>>>>> buy
     /* border: 5px solid red; */
 }
 
@@ -12,7 +17,11 @@ footer .footer_section {
     width: 1250px; 
     height: auto;
     /* border: 3px solid orange; */
+<<<<<<< HEAD
     color:black; 
+=======
+    color:#fff; 
+>>>>>>> buy
 }
 
 
@@ -48,7 +57,11 @@ footer > div .info {
 footer > div .info a { 
     margin: 0 10px 0 0; 
     font-size: 13px; 
+<<<<<<< HEAD
     color:black;
+=======
+    color:#fff;
+>>>>>>> buy
     /* border: 2px solid red; */
 }
 
@@ -68,7 +81,11 @@ footer > div .fsite_type1 {
     border-bottom: 1px 
     olid #7d828a; 
     font-size: 10px; 
+<<<<<<< HEAD
     color:black; 
+=======
+    color:#fff; 
+>>>>>>> buy
     text-indent: 20px; 
     appearance:none; 
     -webkit-appearance:none; 

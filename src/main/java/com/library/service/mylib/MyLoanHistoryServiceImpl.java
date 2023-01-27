@@ -27,6 +27,7 @@ public class MyLoanHistoryServiceImpl implements MyLoanHistoryService {
 		return mapper.get_total(user_id, start_date, end_date);
 	}
 
+<<<<<<< HEAD
 	
 	
 	//<!--=========== 찜하기 추기 =================-->
@@ -73,4 +74,7 @@ public class MyLoanHistoryServiceImpl implements MyLoanHistoryService {
 			return mapper.get_total_final(bookCount, priceStandard);
 		} 
 		
+=======
+
+>>>>>>> buy
 }

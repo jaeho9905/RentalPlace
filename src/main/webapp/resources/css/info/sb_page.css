@@ -29,17 +29,29 @@ ul {
 /* 전체 container */
 .container {
 	margin: 0 auto;
+<<<<<<< HEAD
 	width: 1300px;
+=======
+	width: 1900px;
+>>>>>>> buy
 	height: auto;
 }
 
 .sub_title {
+<<<<<<< HEAD
 	width: 1300px;
 	height: 140px;
 	margin: 0 auto;
 	/* background-image: url(/resources/imges/common/sub-visual.gif); */
 	text-align: center;
 	margin-left:-50px;
+=======
+	width: 1900px;
+	height: 140px;
+	margin: 0 auto;
+	background-image: url(/resources/imges/common/sub-visual.gif);
+	text-align: center;
+>>>>>>> buy
 }
 
 .doc-info {
@@ -105,22 +117,36 @@ ul {
 .lnb {
 	width: 280px;
 	float: left;
+<<<<<<< HEAD
 	margin-left:-50px;
 	margin-top:30px;
+=======
+>>>>>>> buy
 }
 
 .lnb h2 {
 	width: 220px !important;
 	display: block;
+<<<<<<< HEAD
 	height: 140px;
 	margin-top: -140px;
 	margin-bottom: 0px;
 	background-color:beige;
+=======
+	background: url(/resources/imges/common/lnb-bg-new.gif) repeat-y 1px;
+	height: 140px;
+	margin-top: -140px;
+	margin-bottom: 0px;
+>>>>>>> buy
 }
 
 .lnb h2 b {
 	display: block;
+<<<<<<< HEAD
 	color: black;
+=======
+	color: #fff;
+>>>>>>> buy
 	font-size: 24px;
 	line-height: 140px;
 	margin: 0;
@@ -128,10 +154,17 @@ ul {
 	font-weight: bold;
 }
 
+<<<<<<< HEAD
 .lnb ul li.active > a {
     background-color: #c79d6a;
     color: #fff;
     position: relative;
+=======
+.lnb ul li.active>a {
+	background-color: #464f56;
+	color: #fff;
+	position: relative;
+>>>>>>> buy
 }
 
 .subMenu li {
@@ -151,10 +184,17 @@ ul {
 }
 
 /* 사이드 바 hover */
+<<<<<<< HEAD
 .subMenu li a:hover{
     background-color: #c79d6a;
     color: #fff;
     position: relative;
+=======
+.subMenu li a:hover {
+	background-color: #464f56;
+	color: #fff;
+	position: relative;
+>>>>>>> buy
 }
 
 /* 본문 부분 */

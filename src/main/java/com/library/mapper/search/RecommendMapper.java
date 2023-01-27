@@ -18,7 +18,11 @@ public interface RecommendMapper {
 
 	// 추천 도서 등록
 	public void regist_book(@Param("user_id") String user_id, @Param("book") BookDTO book);
+<<<<<<< HEAD
 	
 	// 추천 도서 삭제
+=======
+
+>>>>>>> buy
 	public void delete_book(@Param("book_isbn") String book_isbn, @Param("date") DateDTO date);
 }

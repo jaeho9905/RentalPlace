@@ -25,6 +25,10 @@
 					, book_pubDate, book_publisher, book_author
 		 from loan_history 
 		where loan_date between concat(#{year}, '-', #{month}, '-01') and concat(#{year}, '-', #{month}, '-31' )
+<<<<<<< HEAD
+=======
+			  and return_status = true 
+>>>>>>> buy
 		group by book_isbn 
 		order by total_count desc 
 		limit 10;
@@ -53,6 +57,7 @@
 	</select>
 	
 	
+<<<<<<< HEAD
 	<!--=========================== 찜하기 추가 =========================  -->
 	<!-- 이미 찜한 도서인지 체크 -->
 	<select id="like_check" resultType="int">
@@ -108,4 +113,6 @@
 	
 	</delete>
 	
+=======
+>>>>>>> buy
 </mapper>  

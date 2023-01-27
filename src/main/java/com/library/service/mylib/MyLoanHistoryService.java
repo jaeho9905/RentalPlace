@@ -12,6 +12,7 @@ public interface MyLoanHistoryService {
 
 	// 대출 수 출력
 	public int get_total(String user_id, String start_date, String end_date);
+<<<<<<< HEAD
 	
 	
 	//<!--=========== 찜하기 추기 =================-->
@@ -34,5 +35,7 @@ public interface MyLoanHistoryService {
 	
 
 	public int get_total_final (String bookCount, String priceStandard );
+=======
+>>>>>>> buy
 
 }

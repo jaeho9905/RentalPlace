@@ -75,6 +75,7 @@ public class MyLoanHistoryController {
 		return "/mylib/sub1/loan_history";
 
 	}
+<<<<<<< HEAD
 	
 	
 	
@@ -108,6 +109,8 @@ public class MyLoanHistoryController {
 	
 	
 	
+=======
+>>>>>>> buy
 
 	public String date(String type) {
 		Date now = new Date();
@@ -142,6 +145,7 @@ public class MyLoanHistoryController {
 			return end_date;
 		}
 	}
+<<<<<<< HEAD
 	
 	
 	
@@ -185,5 +189,7 @@ public class MyLoanHistoryController {
 
 	
 
+=======
+>>>>>>> buy
 
 }

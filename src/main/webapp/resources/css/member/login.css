@@ -25,6 +25,7 @@ ul{
 /* 전체 container */
 .container{
     margin: 0 auto;
+<<<<<<< HEAD
     width: 1300px;
     height: auto;
 }
@@ -36,6 +37,18 @@ ul{
 	/* background-image: url(/resources/imges/common/sub-visual.gif); */
 	text-align: center;
 	margin-left:-70px;
+=======
+    width: 1900px;
+    height: auto;
+}
+
+.sub_title{
+    width: 1900px;
+    height: 140px;
+    margin: 0 auto;
+    background-image: url(/resources/imges/common/sub-visual.gif);
+    text-align: center;
+>>>>>>> buy
 }
 
 .doc-info{
@@ -86,7 +99,11 @@ ul{
 }
 
 .section{
+<<<<<<< HEAD
     width: 1250px;
+=======
+    width: 1260px;
+>>>>>>> buy
     height: auto;
     margin: 0 auto;
     position: relative;
@@ -95,6 +112,7 @@ ul{
 .section::after {content: "";display: block; clear: both;}
 
 .lnb {
+<<<<<<< HEAD
 	width: 280px;
 	float: left;
 	margin-left:-50px;
@@ -118,6 +136,29 @@ ul{
 	margin: 0;
 	text-align: center;
 	font-weight: bold;
+=======
+    width:280px;
+    float:left;
+}
+
+.lnb h2{
+    width: 220px !important;
+    display: block;
+    background: url(/resources/imges/common/lnb-bg-new.gif)repeat-y 1px;
+    height: 140px;
+    margin-top: -140px;
+    margin-bottom: 0px;
+}
+
+.lnb h2 b{
+    display: block;
+    color: #fff;
+    font-size: 24px;
+    line-height: 140px;
+    margin: 0;
+    text-align: center;
+    font-weight: bold;
+>>>>>>> buy
 }
 
 .subMenu li{
@@ -138,13 +179,21 @@ ul{
 
 /* 사이드 바 hover */
 .subMenu li a:hover{
+<<<<<<< HEAD
     background-color: #c79d6a;
+=======
+    background-color: #464f56;
+>>>>>>> buy
     color: #fff;
     position: relative;
 }
 
 .lnb ul li.active > a {
+<<<<<<< HEAD
     background-color: #c79d6a;
+=======
+    background-color: #464f56;
+>>>>>>> buy
     color: #fff;
     position: relative;
 }
@@ -164,6 +213,7 @@ ul{
 
 /* 게시판 전체 wrapper */
 .wrapper-bbs {
+<<<<<<< HEAD
 	width:200px;
 	height:300px;
     font-size: 13px;
@@ -180,6 +230,15 @@ ul{
 	height:300px;
 } */
 
+=======
+    font-size: 13px;
+    background: #f7f7f7;
+    padding-top: 40px;
+    padding-left: 100px;
+    padding-bottom: 20px;
+}
+
+>>>>>>> buy
 /* inline => 총 게시물 부분 : 왼쪽 정렬 */
 .inline {
     display: inline-block;
@@ -207,6 +266,7 @@ input{
 }
 
 
+<<<<<<< HEAD
 .loginForm{
     position: absolute;
     top: 50px;
@@ -221,6 +281,25 @@ input{
     border: none;
     border-radius: 5px;
     color: black;
+=======
+
+.loginForm{
+    position: absolute;
+    top: 150px;
+    right: 100px;
+    width: 490px;
+}
+.login_btn{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 115px; 
+    height: 90px;
+    background-color: #266ac4;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+>>>>>>> buy
     font-size: 18px;
     cursor: pointer;
 }
@@ -229,21 +308,31 @@ input{
 
 }
 .login_btn:hover{
+<<<<<<< HEAD
     background-color: #eaeaea;
 	opacity:0.7;
+=======
+    background-color: #215aa3;
+>>>>>>> buy
 }
 .login_menu{
     width: 480px;
     position: absolute;
     top: 270px;
+<<<<<<< HEAD
     right: 25%;
     text-align: center;
+=======
+    right: 100px;
+    
+>>>>>>> buy
 }
 
 .login_menu a {
     font-style: normal;
     font-size: 15px;
     cursor: pointer;
+<<<<<<< HEAD
     font-weight:bold;
 }
 .login_menu span:nth-child(1),.login_menu span:nth-child(2){
@@ -257,17 +346,31 @@ input{
 }
 .login_menu a:hover{
     text-decoration:underline;
+=======
+}
+
+.login_menu a:hover{
+    color: #2b74c0;
+>>>>>>> buy
 }
 
 .tit {
     position: absolute;
     top: 320px;
+<<<<<<< HEAD
     right: 25%;
+=======
+    right: 100px;
+>>>>>>> buy
     width: 490px;
 }
 
 .tit span{
     color: #3f70bc;
     font-weight: bold;
+<<<<<<< HEAD
     padding-left:100px;
+=======
+    
+>>>>>>> buy
 }

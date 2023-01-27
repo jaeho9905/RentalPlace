@@ -26,6 +26,7 @@ ul{
 /* 전체 container */
 .container{
     margin: 0 auto;
+<<<<<<< HEAD
     width: 1300px;
     height: auto;
 }
@@ -40,6 +41,20 @@ ul{
 }
 
 
+=======
+    width: 1900px;
+    height: auto;
+}
+
+.sub_title{
+    width: 1900px;
+    height: 140px;
+    margin: 0 auto;
+    background-image: url(/resources/imges/common/sub-visual.gif);
+    text-align: center;
+}
+
+>>>>>>> buy
 .doc-info{
     width: 1260px;
     margin: 0 auto;
@@ -97,6 +112,7 @@ ul{
 .section::after {content: "";display: block; clear: both;}
 
 .lnb {
+<<<<<<< HEAD
 	width: 280px;
 	float: left;
 	margin-left:-50px;
@@ -124,6 +140,33 @@ ul{
 
 .lnb ul li.active > a {
     background-color: #c79d6a;
+=======
+    width:280px;
+    float:left;
+}
+
+.lnb h2{
+    width: 220px !important;
+    display: block;
+    background: url(/resources/imges/common/lnb-bg-new.gif)repeat-y 1px;
+    height: 140px;
+    margin-top: -140px;
+    margin-bottom: 0px;
+}
+
+.lnb h2 b{
+    display: block;
+    color: #fff;
+    font-size: 24px;
+    line-height: 140px;
+    margin: 0;
+    text-align: center;
+    font-weight: bold;
+}
+
+.lnb ul li.active > a {
+    background-color: #464f56;
+>>>>>>> buy
     color: #fff;
     position: relative;
 }
@@ -146,7 +189,11 @@ ul{
 
 /* 사이드 바 hover */
 .subMenu li a:hover{
+<<<<<<< HEAD
     background-color: #c79d6a;
+=======
+    background-color: #464f56;
+>>>>>>> buy
     color: #fff;
     position: relative;
 }
@@ -243,15 +290,25 @@ table td.left{
 
 /* 글쓰기 btn */
 .write_btn{
+<<<<<<< HEAD
     background-color: #eaeaea;
     color: black;
     padding: 7px 13px;
+=======
+    background-color: #266ac4;
+    color: #fff;
+    padding: 7px 13px;
+    border: 1px solid #1557af;
+>>>>>>> buy
     border-radius: 5px;
     float: right;
     width: 80px;
     margin-top: 20px;
     cursor: pointer;
+<<<<<<< HEAD
     border:none;
+=======
+>>>>>>> buy
 }
 
 
@@ -265,10 +322,17 @@ table td.left{
 .btn {
     width: 60px;
     height: 35px;
+<<<<<<< HEAD
     background-color: #eaeaea;
     border: none;
     border-radius: 5px;
     color: black;
+=======
+    background-color: #266ac4;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+>>>>>>> buy
     font-size: 15px;
     cursor: pointer;
 }
@@ -276,9 +340,14 @@ table td.left{
     border: none; box-shadow: none;
 }
 
+<<<<<<< HEAD
 .btn:hover {
 	background-color: #333333;
 	color:white;
+=======
+.btn:hover{
+    background-color: #215aa3;
+>>>>>>> buy
 }
 
 
@@ -351,8 +420,14 @@ table td.left{
 }
 
 .search_btn{
+<<<<<<< HEAD
 	background-color: #eaeaea;
 	color: black;
+=======
+	background-color: #266ac4;
+	border-color: #1557af;
+	color: #fff;
+>>>>>>> buy
 	width: 80px !important;
 	cursor: pointer;
 }

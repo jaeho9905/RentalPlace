@@ -5,7 +5,11 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<<<<<<< HEAD
 <title>이젠북컴퍼니 > 관리자 > 관리자권한</title>
+=======
+<title>라온도서관 > 관리자 > 관리자권한</title>
+>>>>>>> buy
 <link rel="stylesheet" href="/resources/css/admin/popup.css">
 <link rel="stylesheet" href="/resources/css/footer.css">
 <script src="https://code.jquery.com/jquery-3.6.0.js" 

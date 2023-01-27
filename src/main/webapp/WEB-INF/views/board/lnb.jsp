@@ -13,5 +13,14 @@
         <li class="sub3">
             <a href="/board/qnaBoardList">묻고답하기</a>
         </li>
+<<<<<<< HEAD
+=======
+        <li class="sub4">
+            <a href="/board/articleList">분실물찾기</a>
+        </li>
+        <li class="sub5">
+            <a href="/board/calendar">도서관일정</a>
+        </li>
+>>>>>>> buy
     </ul>
 </div>

@@ -4,7 +4,11 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<<<<<<< HEAD
 <title>이젠북컴퍼니 > 관리자 > 회원관리</title>
+=======
+<title>라온도서관 > 관리자 > 회원관리</title>
+>>>>>>> buy
 <link rel="stylesheet" href="/resources/css/admin/member_modify.css">
 <link rel="stylesheet" href="/resources/css/header.css">
 <link rel="stylesheet" href="/resources/css/footer.css">

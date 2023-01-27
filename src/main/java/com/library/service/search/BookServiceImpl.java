@@ -49,6 +49,7 @@ public class BookServiceImpl implements BookService {
 	public int loan_check(String user_id, String book_isbn) {
 		return mapper.loan_check(user_id, book_isbn);
 	}
+<<<<<<< HEAD
 
 	
 	
@@ -97,4 +98,6 @@ public class BookServiceImpl implements BookService {
 			return mapper.deleteCart(cart_id);
 		}
 		
+=======
+>>>>>>> buy
 }

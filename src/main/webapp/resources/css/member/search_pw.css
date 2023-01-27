@@ -25,6 +25,7 @@ ul{
 /* 전체 container */
 .container{
     margin: 0 auto;
+<<<<<<< HEAD
     width: 1300px;
     height: auto;
 }
@@ -36,6 +37,18 @@ ul{
 	/* background-image: url(/resources/imges/common/sub-visual.gif); */
 	text-align: center;
 	margin-left:-50px;
+=======
+    width: 1900px;
+    height: auto;
+}
+
+.sub_title{
+    width: 1900px;
+    height: 140px;
+    margin: 0 auto;
+    background-image: url(/resources/imges/common/sub-visual.gif);
+    text-align: center;
+>>>>>>> buy
 }
 
 .doc-info{
@@ -95,6 +108,7 @@ ul{
 .section::after {content: "";display: block; clear: both;}
 
 .lnb {
+<<<<<<< HEAD
 	width: 280px;
 	float: left;
 	margin-left:-50px;
@@ -118,6 +132,29 @@ ul{
 	margin: 0;
 	text-align: center;
 	font-weight: bold;
+=======
+    width:280px;
+    float:left;
+}
+
+.lnb h2{
+    width: 220px !important;
+    display: block;
+    background: url(/resources/imges/common/lnb-bg-new.gif)repeat-y 1px;
+    height: 140px;
+    margin-top: -140px;
+    margin-bottom: 0px;
+}
+
+.lnb h2 b{
+    display: block;
+    color: #fff;
+    font-size: 24px;
+    line-height: 140px;
+    margin: 0;
+    text-align: center;
+    font-weight: bold;
+>>>>>>> buy
 }
 
 .subMenu li{
@@ -138,13 +175,21 @@ ul{
 
 /* 사이드 바 hover */
 .subMenu li a:hover{
+<<<<<<< HEAD
     background-color: #c79d6a;
+=======
+    background-color: #464f56;
+>>>>>>> buy
     color: #fff;
     position: relative;
 }
 
 .lnb ul li.active > a {
+<<<<<<< HEAD
     background-color: #c79d6a;
+=======
+    background-color: #464f56;
+>>>>>>> buy
     color: #fff;
     position: relative;
 }
@@ -253,6 +298,7 @@ input:focus{
     background-color: #241e55;
 }
 .search_pw_button{
+<<<<<<< HEAD
     width:300px;
     margin-top: 30px;
     margin-left:300px;
@@ -264,6 +310,16 @@ input:focus{
     font-size: 14px;
     font-weight:bold;
     line-height:5px;
+=======
+    float: right;
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: #266ac4;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 12px;
+>>>>>>> buy
 }
 
 .search_pw_button:focus, .search_pw_button:active{
@@ -271,7 +327,11 @@ input:focus{
 
 }
 .search_pw_button:hover{
+<<<<<<< HEAD
     opacity:0.8;
+=======
+    background-color: #215aa3;
+>>>>>>> buy
 }
 
 /* id */

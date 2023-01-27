@@ -11,7 +11,11 @@
 	<link rel="stylesheet" href="/resources/css/mylib/sub3/reservationRoomPage.css">
 	<link rel="stylesheet" href="/resources/css/header.css">
 	<link rel="stylesheet" href="/resources/css/footer.css">
+<<<<<<< HEAD
 <title>이젠북컴퍼니 > 나의 도서관 > 좌석예약/조회 > 열람실이용안내</title>
+=======
+<title>라온도서관 > 나의 도서관 > 좌석예약/조회 > 열람실이용안내</title>
+>>>>>>> buy
 
 </head>
 <body>
