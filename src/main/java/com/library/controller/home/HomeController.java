@@ -11,6 +11,13 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+import org.springframework.web.bind.annotation.RequestParam;
+>>>>>>> buy
+=======
+>>>>>>> front
 
 import com.library.model.admin.BannerDTO;
 import com.library.model.board.CalendarDTO;
@@ -22,6 +29,13 @@ import com.library.service.admin.BannerService;
 import com.library.service.board.CalendarService;
 import com.library.service.board.NoticeService;
 import com.library.service.mylib.ReservationRoomService;
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+import com.library.service.search.AladinApi;
+>>>>>>> buy
+=======
+>>>>>>> front
 import com.library.service.search.BookService;
 import com.library.service.search.RecommendService;
 import com.library.util.DateUtil;
@@ -30,6 +44,15 @@ import com.library.util.DateUtil;
 public class HomeController {
 
 	@Autowired
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+	private AladinApi api;
+	
+	@Autowired
+>>>>>>> buy
+=======
+>>>>>>> front
 	private NoticeService noticeService;
 
 	@Autowired
@@ -127,6 +150,10 @@ public class HomeController {
 		return "/error/accessError2";
 
 	}
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> review
 	
 	@GetMapping("success")
 	public String success() {
@@ -139,5 +166,10 @@ public class HomeController {
 	public String cancel() {
 		return "buy/cancel";
 	}
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> front
+>>>>>>> review
 
 }

@@ -5,7 +5,19 @@
 <%@ taglib uri="http://www.springframework.org/security/tags" prefix="sec" %>
 <html>
 <head>
+<<<<<<< HEAD
 	<title>이젠북컴퍼니 > 열린공간 > 공지사항</title>
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+	<title>이젠북컴퍼니 > 열린공간 > 공지사항</title>
+=======
+	<title>라온도서관 > 열린공간 > 공지사항</title>
+>>>>>>> buy
+=======
+	<title>라온도서관 > 열린공간 > 공지사항</title>
+>>>>>>> front
+>>>>>>> review
     <link rel="stylesheet" href="/resources/css/board/sub1/notice_write_page.css">
     <link rel="stylesheet" href="/resources/css/header.css">
     <link rel="stylesheet" href="/resources/css/footer.css">

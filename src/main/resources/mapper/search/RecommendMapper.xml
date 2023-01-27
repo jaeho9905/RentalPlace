@@ -27,7 +27,19 @@
 	<insert id="regist_book">
 		insert into recommend_book  
 		values(null, #{user_id}, #{book.book_title}, #{book.book_author}, #{book.book_isbn}, #{book.book_cover},
+<<<<<<< HEAD
 		#{book.book_pubDate}, #{book.book_publisher}, current_timestamp);
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+		#{book.book_pubDate}, #{book.book_publisher}, current_timestamp);
+=======
+		#{book.book_pubDate}, #{book.book_publisher}, null);
+>>>>>>> buy
+=======
+		#{book.book_pubDate}, #{book.book_publisher}, current_timestamp);
+>>>>>>> front
+>>>>>>> review
 	</insert>
 	
 	<delete id="delete_book">

@@ -5,7 +5,19 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<<<<<<< HEAD
 <title>이젠북컴퍼니 > 회원관련 > 로그인</title>
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<title>이젠북컴퍼니 > 회원관련 > 로그인</title>
+=======
+<title>라온도서관 > 회원관련 > 로그인</title>
+>>>>>>> buy
+=======
+<title>라온도서관 > 회원관련 > 로그인</title>
+>>>>>>> front
+>>>>>>> review
 <link rel="stylesheet" href="/resources/css/member/login.css">
 <link rel="stylesheet" href="/resources/css/header.css">
 <link rel="stylesheet" href="/resources/css/footer.css">
@@ -60,9 +72,32 @@
                 <!-- 본문 -->
                 <div class="content">
                     <div class="doc">
+<<<<<<< HEAD
                         <div class="wrapper-bbs">
 
                             <div class="login_wrap">
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+                        <div class="wrapper-bbs">
+
+                            <div class="login_wrap">
+=======
+=======
+>>>>>>> front
+                        <h2><span style="color: rgb(101, 101, 255);">라온도서관</span> 방문을 환영합니다.</h2>
+                        <div class="wrapper-bbs">
+
+                            <div>
+
+                                <div class="login_img">
+                                    <img src="/resources/imges/member/mem_loginimg.png">
+                                </div>
+<<<<<<< HEAD
+>>>>>>> buy
+=======
+>>>>>>> front
+>>>>>>> review
 
                                 <div class="loginForm">
                                     <form action="/login" method="post">
@@ -76,9 +111,27 @@
                                 </div>
 
                                 <div class="login_menu">
+<<<<<<< HEAD
                                     <span><a href="/member/signup-check">회원가입 </a>　</span>
                                     <span><a href="/member/search-id">아이디 찾기 </a>　</span>
                                     <span><a href="/member/search-pw">비밀번호 찾기 </a></span>
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+                                    <span><a href="/member/signup-check">회원가입 </a>　</span>
+                                    <span><a href="/member/search-id">아이디 찾기 </a>　</span>
+                                    <span><a href="/member/search-pw">비밀번호 찾기 </a></span>
+=======
+                                    <span><a href="/member/signup-check">회원가입 ▶</a>　</span>
+                                    <span><a href="/member/search-id">아이디 찾기 ▶</a>　</span>
+                                    <span><a href="/member/search-pw">비밀번호 찾기 ▶</a></span>
+>>>>>>> buy
+=======
+                                    <span><a href="/member/signup-check">회원가입 ▶</a>　</span>
+                                    <span><a href="/member/search-id">아이디 찾기 ▶</a>　</span>
+                                    <span><a href="/member/search-pw">비밀번호 찾기 ▶</a></span>
+>>>>>>> front
+>>>>>>> review
                                     <p style="font-size: 20px;"></p>
                                 </div>
 

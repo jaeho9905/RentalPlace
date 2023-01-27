@@ -16,6 +16,13 @@ public interface MyLoanHistoryMapper {
 	// 대출 수 출력
 	public int get_total(@Param("user_id") String user_id, @Param("start_date") String start_date,
 			@Param("end_date") String end_date);
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> front
+>>>>>>> review
 	
 	
 	
@@ -25,6 +32,10 @@ public interface MyLoanHistoryMapper {
 
 	// 찜한 도서 수 출력
 	public int get_total_like(@Param("user_id") String user_id);
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> review
 	
 	
 	
@@ -35,11 +46,24 @@ public interface MyLoanHistoryMapper {
 	// 대출 수 출력
 	public int get_total_cart(@Param("user_id") String user_id);
 	
+<<<<<<< HEAD
 	public int get_total_count(@Param("user_id") String user_id);
 	
 	public List<BookDTO> get_total_pay(@Param("user_id") String user_id, @Param("priceStandard") String priceStandard);
 	
 	public int get_total_final(@Param("user_id") String user_id, @Param("priceStandard") String priceStandard);
 	
+=======
+	public int get_total_count(@Param("bookCount") String bookCount);
+	
+	public List<BookDTO> get_total_pay(@Param("bookCount") String bookCount, @Param("priceStandard") String priceStandard);
+	
+	public int get_total_final(@Param("bookCount") String bookCount, @Param("priceStandard") String priceStandard);
+	
+=======
+>>>>>>> buy
+=======
+>>>>>>> front
+>>>>>>> review
 
 }

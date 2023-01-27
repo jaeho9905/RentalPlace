@@ -26,6 +26,11 @@ ul{
 /* 전체 container */
 .container{
     margin: 0 auto;
+<<<<<<< HEAD
+    width: 1300px;
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
     width: 1300px;
     height: auto;
 }
@@ -40,6 +45,31 @@ ul{
 }
 
 
+=======
+=======
+>>>>>>> front
+    width: 1900px;
+>>>>>>> review
+    height: auto;
+}
+
+.sub_title {
+	width: 1300px;
+	height: 140px;
+	margin: 0 auto;
+	/* background-image: url(/resources/imges/common/sub-visual.gif); */
+	text-align: center;
+	margin-left:-50px;
+}
+
+<<<<<<< HEAD
+
+=======
+<<<<<<< HEAD
+>>>>>>> buy
+=======
+>>>>>>> front
+>>>>>>> review
 .doc-info{
     width: 1260px;
     margin: 0 auto;
@@ -97,10 +127,17 @@ ul{
 .section::after {content: "";display: block; clear: both;}
 
 .lnb {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> review
 	width: 280px;
 	float: left;
 	margin-left:-50px;
 	margin-top:30px;
+<<<<<<< HEAD
+=======
 }
 
 .lnb h2 {
@@ -124,6 +161,43 @@ ul{
 
 .lnb ul li.active > a {
     background-color: #c79d6a;
+=======
+=======
+>>>>>>> front
+    width:280px;
+    float:left;
+>>>>>>> review
+}
+
+.lnb h2 {
+	width: 220px !important;
+	display: block;
+	height: 140px;
+	margin-top: -140px;
+	margin-bottom: 0px;
+	background-color:beige;
+}
+
+.lnb h2 b {
+	display: block;
+	color: black;
+	font-size: 24px;
+	line-height: 140px;
+	margin: 0;
+	text-align: center;
+	font-weight: bold;
+}
+
+.lnb ul li.active > a {
+<<<<<<< HEAD
+    background-color: #c79d6a;
+=======
+    background-color: #464f56;
+<<<<<<< HEAD
+>>>>>>> buy
+=======
+>>>>>>> front
+>>>>>>> review
     color: #fff;
     position: relative;
 }
@@ -146,7 +220,19 @@ ul{
 
 /* 사이드 바 hover */
 .subMenu li a:hover{
+<<<<<<< HEAD
     background-color: #c79d6a;
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+    background-color: #c79d6a;
+=======
+    background-color: #464f56;
+>>>>>>> buy
+=======
+    background-color: #464f56;
+>>>>>>> front
+>>>>>>> review
     color: #fff;
     position: relative;
 }
@@ -243,15 +329,44 @@ table td.left{
 
 /* 글쓰기 btn */
 .write_btn{
+<<<<<<< HEAD
     background-color: #eaeaea;
     color: black;
     padding: 7px 13px;
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+    background-color: #eaeaea;
+    color: black;
+    padding: 7px 13px;
+=======
+=======
+>>>>>>> front
+    background-color: #266ac4;
+    color: #fff;
+    padding: 7px 13px;
+    border: 1px solid #1557af;
+<<<<<<< HEAD
+>>>>>>> buy
+=======
+>>>>>>> front
+>>>>>>> review
     border-radius: 5px;
     float: right;
     width: 80px;
     margin-top: 20px;
     cursor: pointer;
+<<<<<<< HEAD
     border:none;
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+    border:none;
+=======
+>>>>>>> buy
+=======
+>>>>>>> front
+>>>>>>> review
 }
 
 
@@ -265,10 +380,30 @@ table td.left{
 .btn {
     width: 60px;
     height: 35px;
+<<<<<<< HEAD
     background-color: #eaeaea;
     border: none;
     border-radius: 5px;
     color: black;
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+    background-color: #eaeaea;
+    border: none;
+    border-radius: 5px;
+    color: black;
+=======
+=======
+>>>>>>> front
+    background-color: #266ac4;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+<<<<<<< HEAD
+>>>>>>> buy
+=======
+>>>>>>> front
+>>>>>>> review
     font-size: 15px;
     cursor: pointer;
 }
@@ -276,9 +411,25 @@ table td.left{
     border: none; box-shadow: none;
 }
 
+<<<<<<< HEAD
 .btn:hover {
 	background-color: #333333;
 	color:white;
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+.btn:hover {
+	background-color: #333333;
+	color:white;
+=======
+.btn:hover{
+    background-color: #215aa3;
+>>>>>>> buy
+=======
+.btn:hover{
+    background-color: #215aa3;
+>>>>>>> front
+>>>>>>> review
 }
 
 
@@ -351,8 +502,25 @@ table td.left{
 }
 
 .search_btn{
+<<<<<<< HEAD
 	background-color: #eaeaea;
 	color: black;
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+	background-color: #eaeaea;
+	color: black;
+=======
+	background-color: #266ac4;
+	border-color: #1557af;
+	color: #fff;
+>>>>>>> buy
+=======
+	background-color: #266ac4;
+	border-color: #1557af;
+	color: #fff;
+>>>>>>> front
+>>>>>>> review
 	width: 80px !important;
 	cursor: pointer;
 }

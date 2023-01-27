@@ -1,6 +1,20 @@
 /* 전체 기준 픽셀 : 1920px */
+<<<<<<< HEAD
 /* FONT */
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+/* FONT */
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+=======
+
+>>>>>>> buy
+=======
+/* FONT */
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+>>>>>>> front
+>>>>>>> review
 
 .hide {
     overflow: hidden;
@@ -39,6 +53,12 @@ select, button {
 /* =========== 상단 nav 메뉴 각각의 요소를 하나씩 감싸는 부분 ============ */
 #header {
     /* position: fixed; */
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> front
     width: 100%;
     height:500px;
     top: 0;
@@ -149,23 +169,176 @@ select, button {
 .top_bg>li>div>p:nth-child(4) a:hover{
     color:#ffffff;
     border:3px solid #ffffff;
+<<<<<<< HEAD
+=======
+    z-index: 0;
+>>>>>>> review
+    width: 100%;
+    height:500px;
+    top: 0;
+    left: 0;
+    min-width: 100%; 
+    /* border:1px solid red;  */
+    margin-top:10px;
+}
+
+
+/* #header {
+    background: url(/resources/imges/index/book_banner_03.jpg) no-repeat;
+    background-size:cover; 
+} */
+
+
+<<<<<<< HEAD
+#header2{
+	width:100%; 
+	/* border:1px solid blue; */
+	height:450px;
+	min-width: 100%; 
+	background-size:cover; 
+	z-index: 1;
+    top: 0;
+    left: 0;
+    position: relative;
+    /* margin-top:-50px; */
+}
+
+/* ====================배너슬라이드 추가==================  */
+/* top_bg */
+
+.top_bg{
+	width:100%;
+}
+.top_bg1{
+    height: 450px;
+    background:
+    url(/resources/imges/index/book_banner_01.png) no-repeat; 
+    min-width: 100%; 
+    background-size:cover; 
+}
+.top_bg2{
+    height: 450px;
+    background:
+    url(/resources/imges/index/book_banner_03.jpg) no-repeat; 
+    min-width: 100%;
+    background-size:cover; 
+}
+.top_bg3{
+    width:100%; height: 450px;
+    background:
+    url(/resources/imges/index/book_banner_05.jpg) no-repeat; 
+    min-width: 100%;
+    background-size:cover; 
+}
+
+/* top_bg1_inner  글자내용*/
+.top_bg1_inner,.top_bg2_inner,.top_bg3_inner{
+    width: 650px;
+    position: absolute;top:80px;left:65%;
+    transform: translate(-50%,0);
+     text-align:right;
+}
+/* 영어 타이틀 */
+.top_bg>li>div>p:first-child{
+    font-family: 'Anton', sans-serif;
+    font-size: 90px;
+    color:ivory;
+    letter-spacing: 2px;
+    font-weight:bold;
+    /* border:1px solid black; */
+}
+/* 바닐라 펌킨과 함께하는... */
+.top_bg>li>div>p:nth-child(2){
+    font-size: 35px;
+    color:black;
+    letter-spacing: 7px;
+    margin-right:10px;
+    font-weight:bold;
+    margin-bottom:5px;
+    /* border:1px solid black; */
+}
+.top_bg2_inner>p:nth-child(2){
+	padding-right:30px;
+}
+.top_bg>li>div>span{
+	font-size: 25px;
+	color:black;
+	margin-right:40px;
+	margin-bottom:40px;
+	letter-spacing:5px;
+}
+/* 자세히 보기 */
+.top_bg>li>div>p:nth-child(4) a{
+    border: 3px solid black;
+    width:100px;height:20px;
+    font-size: 15px;
+    color:black;
+    padding: 5px 5px;
+    font-weight: bold;
+    text-align:center;
+    margin-right:45px;
+    margin-top:40px;
+    /* border:1px solid black; */
+    float:right;
+}
+.top_bg>li>div>p:nth-child(4) a:hover{
+    color:#ffffff;
+    border:3px solid #ffffff;
+=======
+>>>>>>> buy
+=======
+>>>>>>> front
+>>>>>>> review
 }
 
 
 /* ----------- 상단 nav가 위치한 부분 전체를 감싸는 부분 -------------- */
 .tnb {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> front
+>>>>>>> review
     margin: 10px auto;
     width:950px;
     height:60px;
     /* overflow: hidden; */
+<<<<<<< HEAD
     box-sizing: border-box;
     text-align: center;
     z-index: 999999;
   /*   border:1px solid black; */
+=======
+    box-sizing: border-box;
+    text-align: center;
+    z-index: 999999;
+  /*   border:1px solid black; */
+<<<<<<< HEAD
+=======
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+    box-sizing: border-box;
+    text-align: center;
+    z-index: 999999;
+}
+
+
+.main-section {
+    position: relative;
+    max-width: 78.75em;
+    margin: 0 auto;
+>>>>>>> buy
+=======
+>>>>>>> front
+>>>>>>> review
 }
 
 /* ----------- 진짜 상단 nav -------------- */
 .tnb .util {
+<<<<<<< HEAD
     float:right;
     width:230px;
     height: 2.5em;
@@ -175,29 +348,95 @@ select, button {
     /* border:1px solid red;  */ 
     margin-top:5px;
     text-align:right;
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> front
+    float:right;
+    width:230px;
+    height: 2.5em;
+    line-height: 2.5em;
+    font-style: normal;
+    padding-top:8px;
+    /* border:1px solid red;  */ 
+    margin-top:5px;
+    text-align:right;
+<<<<<<< HEAD
+=======
+    float: right;
+    height: 2.5em;
+    line-height: 2.5em;
+    font-style: normal;
+>>>>>>> buy
+=======
+>>>>>>> front
+>>>>>>> review
     /* background: wheat; */
 }
 
 
 /* ----------- 상단 nav 메뉴 각각의 요소를 하나씩 감싸는 부분-------------- */
 .tnb .util a {
+<<<<<<< HEAD
     font-size: 1em;
     color:black;
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+    font-size: 1em;
+    color:black;
+=======
+    font-size: 0.875em;
+    color:#fff;
+>>>>>>> buy
+=======
+    font-size: 1em;
+    color:black;
+>>>>>>> front
+>>>>>>> review
     font-weight: bold;
     text-decoration: none;
     display: inline-block;
     margin-top: 0;
     /* border:1px solid tomato; */
 }
+<<<<<<< HEAD
 .tnb .util a:last-child{margin-right:0;}
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+.tnb .util a:last-child{margin-right:0;}
+=======
+
+>>>>>>> buy
+=======
+.tnb .util a:last-child{margin-right:0;}
+>>>>>>> front
+>>>>>>> review
 
 /* ----------- 상단 nav의 각각 요소를 부분 짓는 하나의 쉼표(|) 역할 -------------- */
 .text-bar {
     height: 0.6875em;
     width: 0.0625em;
     margin: 0 0.625em;
+<<<<<<< HEAD
     color: black;
     background: black;
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+    color: black;
+    background: black;
+=======
+    color: #fff;
+    background: #e5e5e5;
+>>>>>>> buy
+=======
+    color: black;
+    background: black;
+>>>>>>> front
+>>>>>>> review
     /* background: red; */
     opacity: 0.5;
     position: relative;
@@ -210,33 +449,101 @@ select, button {
 .gnb {
     height: 4.5625em;
     margin-top: 10px;
+<<<<<<< HEAD
     z-index: 100;
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+    /* border:1px solid black;  */
+    z-index: 100;
+    /* background-color:skyblue; */
+=======
+>>>>>>> buy
+=======
+    /* border:1px solid black;  */
+    z-index: 100;
+    /* background-color:skyblue; */
+>>>>>>> front
+    /* border-top: 0.1875em #d7d7d7 solid;    
+    border-bottom: 0.1875em #d7d7d7 solid; */
+    /* background-color: #FFF;     */
+>>>>>>> review
 }
 
 
 /* ----------- 하단 nav가 시작하는 부분 -------------- */
 .container {
+<<<<<<< HEAD
+    width: 800px;
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> front
     width: 800px;
     height: 4.5625em;
     margin: 0 auto; 
     display: block;
+    /* border:1px solid black; */
+<<<<<<< HEAD
+=======
+    max-width: 78.75em;
+>>>>>>> review
+    height: 4.5625em;
+    margin: 0 auto; 
+    display: block;
+>>>>>>> buy
+=======
+>>>>>>> front
 }
 
 
 /* ----------- logo -------------- */
 .logo {
     float: left;
+<<<<<<< HEAD
     margin-right:100px;
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+    margin-right:100px;
+=======
+>>>>>>> buy
+=======
+    margin-right:100px;
+>>>>>>> front
+>>>>>>> review
     /* border: 1px dashed darkgray; */
 }
 
 
 .logo > a {
     background-repeat: no-repeat;
+<<<<<<< HEAD
     background-image: url(/resources/imges/index/ezen-logo-black.png);
     background-size: cover;
     width: 14.1em;
     height: 6.3em;
+=======
+    /* background-image: url('/images/raon-white.png'); */
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> front
+    background-image: url(/resources/imges/index/ezen-logo-black.png);
+    background-size: cover;
+    width: 14.1em;
+    height: 6.3em;
+<<<<<<< HEAD
+=======
+    background-image: url(/resources/imges/index/raon-white.png);
+    background-size: cover;
+    width: 12.375em;
+    height: 4.3125em;
+>>>>>>> buy
+=======
+>>>>>>> front
+>>>>>>> review
     background-position: center;
 }
 
@@ -258,12 +565,36 @@ a:link {
     display: inline-block;
     vertical-align: top;
     height: 4.5625em;
+<<<<<<< HEAD
     width:800px;
     text-align: center;
     /*background-color: lavenderblush;*/
     transform: none;
     list-style: outside;
     /* border:1px solid blue; */
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> front
+    width:800px;
+    text-align: center;
+    /*background-color: lavenderblush;*/
+    transform: none;
+    list-style: outside;
+    /* border:1px solid blue; */
+<<<<<<< HEAD
+=======
+    width: 57.88em;
+    margin-right: 4.7%;
+    text-align: right;
+    /*background-color: lavenderblush;*/
+    transform: none;
+    list-style: outside;
+>>>>>>> buy
+=======
+>>>>>>> front
+>>>>>>> review
 }
 
 
@@ -274,6 +605,13 @@ a:link {
     text-align: center;
     position: relative;
     font-weight: bold;
+<<<<<<< HEAD
+    margin:auto 15px;
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> front
     margin:auto 15px;
     /* border: 1px solid #fff; */
 }
@@ -294,6 +632,38 @@ a:link {
 .gnb-li > a > span.active {
     color: brown;
     border-bottom:2px solid #c79d6a;
+<<<<<<< HEAD
+=======
+>>>>>>> review
+    /* border: 1px solid #fff; */
+}
+.gnb-li > a {
+    color: black;
+    font-weight: bold;
+    line-height: 54px;
+    font-size: 1.35em;
+    /* border:1px dashed tomato; */
+}
+.gnb-li > a:first-child{
+	margin-left:15px;
+}
+.gnb-li > a:last-child{
+	margin-right:0px;
+}
+
+.gnb-li > a > span.active {
+<<<<<<< HEAD
+    color: brown;
+    border-bottom:2px solid #c79d6a;
+=======
+    background: white;
+    opacity: 0.6;
+    color: black;
+    border-radius: 5px;
+>>>>>>> buy
+=======
+>>>>>>> front
+>>>>>>> review
     /* border:2px solid darkgray; */
 }
 
@@ -317,6 +687,7 @@ a:link {
     padding-top: 0.75em;
     min-height: 15.625em;
     display: none;
+<<<<<<< HEAD
     color:brown;
     background-color:rgba( 255, 255, 241, 0.5 );
 } */
@@ -327,14 +698,49 @@ a:link {
     background-color: rgba(255,255,255,0.8);
     background-size: 300px 380px;
     z-index: 10;
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+    color:brown;
+    background-color:rgba( 255, 255, 241, 0.5 );
+=======
+    color: #fff;
+>>>>>>> buy
+=======
+    color:brown;
+    background-color:rgba( 255, 255, 241, 0.5 );
+>>>>>>> front
+>>>>>>> review
 }
 
 .sm01 {
+<<<<<<< HEAD
     width: 11em;
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+    width: 11em;
+=======
+    width: 10.125em;
+    margin-left: -0.625em;
+>>>>>>> buy
+=======
+    width: 11em;
+>>>>>>> front
+>>>>>>> review
 }
 
 
 .sm02 {
+<<<<<<< HEAD
+    width: 11.05em;
+    margin-left:-13.5px;
+    padding-left:11px;
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> front
     width: 11.05em;
     margin-left:-13.5px;
     padding-left:11px;
@@ -357,19 +763,82 @@ a:link {
     padding-left:12px;
 }
 
+<<<<<<< HEAD
+=======
+    width: 10.125em;
+    margin-left: -0.625em;
+>>>>>>> review
+}
+
+.sm03 {
+    width: 11em;
+    margin-left:-16px;
+    padding-left:13px;
+}
+
+.sm04 {
+    width: 13.2em;
+    margin-left:-17px;
+}
+
+.sm05 {
+    width: 11em;
+    margin-left:-4px;
+    padding-left:12px;
+}
+
+<<<<<<< HEAD
+=======
+
+>>>>>>> buy
+=======
+>>>>>>> front
+>>>>>>> review
 .sub-menu li {
     line-height: 1.9;
 }
 
+<<<<<<< HEAD
 .sub-menu > a {
     font-size: 0.875em;
     color: brown;
     margin:10px 0;
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> front
+.sub-menu > a {
+    font-size: 0.875em;
+    color: brown;
+    margin:10px 0;
+<<<<<<< HEAD
+=======
+
+.sub-menu > a {
+    font-size: 0.875em;
+    color: #000000;
+>>>>>>> buy
+=======
+>>>>>>> front
+>>>>>>> review
 }
 
 
 .sub-menu .sub-active {
+<<<<<<< HEAD
     color: black;
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+    color: black;
+=======
+    color: yellow;
+>>>>>>> buy
+=======
+    color: black;
+>>>>>>> front
+>>>>>>> review
     top: 100%;
     content: '';
     /* background: #fff; */
@@ -396,6 +865,13 @@ img, input, select {
 
 
 /* ----------- 메인검색창 설정영역  -------------- */
+<<<<<<< HEAD
+/* .search-area {
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> front
 /* .search-area {
     margin-top: 108px;
     background-repeat: no-repeat;
@@ -414,10 +890,46 @@ img, input, select {
     margin: 0 auto;
     border: 1px solid yellow;
 } */
+<<<<<<< HEAD
+=======
+.search-area {
+>>>>>>> review
+    margin-top: 108px;
+    background-repeat: no-repeat;
+    height: 100px;
+    width:600px;
+    position: relative;
+    padding-top: 85px;
+    box-sizing: border-box;
+    border: 1px solid red; 
+} */
+
+/* 
+.search-wrap {
+    position: relative;
+    max-width: 54.6875em;
+    margin: 0 auto;
+<<<<<<< HEAD
+    border: 1px solid yellow;
+} */
+=======
+    /*border: 1px solid yellow;*/
+}
+>>>>>>> buy
+=======
+>>>>>>> front
+>>>>>>> review
 
 
 /* ----------- cf_ 현재 검색창은 opacity : 현재 투명도 80%로 설정 중  -------------- */
 .searchbox {
+<<<<<<< HEAD
+	position: relative;
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> front
 	position: relative;
     box-sizing: border-box;
     opacity : 0.9;
@@ -468,20 +980,109 @@ input[type="text"] {
     top: 50%;
     transform: translateY(-50%); 
 }
+<<<<<<< HEAD
+=======
+>>>>>>> review
+    box-sizing: border-box;
+    opacity : 0.9;
+    width: 450px;
+    border-radius: 10px;
+    float:left;
+    border:2px solid #eaeaea;
+    margin-top:12px;
+}
+.searchbox > .box {
+    background: #fff;
+    padding: 0.625em 0;
+    border-radius: 0.8125em;
+    height:35px;
+    /* border: 1px solid blue;*/
+}
+
+.searchbox select {
+    font-size: 1.125em;
+    height: 2.5em;
+    width: 7em;
+    color: #363636;
+    background-repeat: no-repeat;
+    border-right: 1px solid #aaaaaa;
+   /*  padding-left: 1.5625em; */
+    /* background-position: 45%;  */
+    border:none;
+}
+
+.searchbox input {
+    width: 300px;
+    height: 2.8125em;
+    box-sizing: border-box;
+    padding-left: 2.1875em;
+    background-color: #eaeaea;
+    font-size: 1.125em;
+    font-weight: bold;
+    color: #3d3d3d;
+    border:none;
+}
+input[type="text"] {
+    border-radius: 5px;
+}
+
+.btn-box {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%); 
+}
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> buy
+=======
+>>>>>>> front
+>>>>>>> review
 .btn-box a {
     vertical-align: middle;
     background-repeat: no-repeat;
 }
+<<<<<<< HEAD
 .search-btn {
     background-image: url(/resources/imges/index/search2.png);
     width: 35px;
     height: 35px;
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> front
+.search-btn {
+    background-image: url(/resources/imges/index/search2.png);
+    width: 35px;
+    height: 35px;
+<<<<<<< HEAD
+=======
+
+
+.search-btn {
+    background-image: url(/resources/imges/index/search2.png);
+    width: 32px;
+    height: 32px;
+>>>>>>> buy
+=======
+>>>>>>> front
+>>>>>>> review
 }
 
 
 /* 퀵메뉴영역*/
 .Quick-area{
     width:100%;
+<<<<<<< HEAD
+    height:130px;
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> front
     height:130px;
     /* border: 3px solid gold; */
     margin-bottom: 5%;
@@ -498,18 +1099,73 @@ input[type="text"] {
     margin:30px auto;
     padding-bottom:15px;
 } */
+<<<<<<< HEAD
+=======
+    height:auto;
+>>>>>>> review
+    /* border: 3px solid gold; */
+    margin-bottom: 5%;
+}
+
+
+/* .Quick-area > h2{
+    text-align: center;
+<<<<<<< HEAD
+    border: 3px dashed red;
+    color: brown;
+    font-size:20px;
+    border-bottom:2px solid ivory;
+    width:150px;
+    margin:30px auto;
+    padding-bottom:15px;
+} */
+=======
+    /* border: 3px dashed red; */
+    color: white;
+}
+
+>>>>>>> buy
+=======
+>>>>>>> front
+>>>>>>> review
   
 .icons{
     display: flex;
     width:78.75em;
+<<<<<<< HEAD
     /* background: orange; */
     margin:10px auto;
     /* border:1px solid black; */
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+    /* background: orange; */
+    margin:10px auto;
+    /* border:1px solid black; */
+=======
+    height: auto;
+    /* background: orange; */
+    margin:auto;
+>>>>>>> buy
+=======
+    /* background: orange; */
+    margin:10px auto;
+    /* border:1px solid black; */
+>>>>>>> front
+>>>>>>> review
 }
 
 
 .icons > li {
     flex: 1;
+<<<<<<< HEAD
+    margin-top:30px;
+    margin-bottom: 30px;
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> front
     margin-top:30px;
     margin-bottom: 30px;
     height:auto;
@@ -531,3 +1187,56 @@ input[type="text"] {
 	padding:10px;
 }
   
+/* .icons > li:not(:last-child){
+    margin-right: 10px;
+} */
+  
+/*   
+<<<<<<< HEAD
+=======
+    margin-top:49px;
+    margin-bottom: 49px;
+>>>>>>> review
+    height:auto;
+    text-align: center;
+    color: black;
+    font-size: 14px;
+    /* border: 1px solid blue;  */
+     /* font-weight: bold; */
+}
+.icon_img>a{
+	width:70px;height:70px;
+	background-color:#eaeaea;
+	border-radius:35%;
+	display:block;
+	margin:0 auto;
+}
+<<<<<<< HEAD
+.icon_img>a>img{
+	width:49px;height:49px;
+	padding:10px;
+}
+  
+=======
+  
+  
+>>>>>>> buy
+=======
+>>>>>>> front
+.icons .contents2 {
+    width:280px;
+    margin:auto;
+    letter-spacing: -1px;
+<<<<<<< HEAD
+<<<<<<< HEAD
+} */
+=======
+}
+>>>>>>> buy
+=======
+} */
+>>>>>>> front
+
+
+
+>>>>>>> review

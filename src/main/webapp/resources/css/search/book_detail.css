@@ -25,15 +25,47 @@ ul{
 /* 전체 container */
 .container{
     margin: 0 auto;
+<<<<<<< HEAD
     width: 1300px;
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+    width: 1300px;
+=======
+    width: 1900px;
+>>>>>>> buy
+=======
+    width: 1900px;
+>>>>>>> front
+>>>>>>> review
     height: auto;
 }
 
 .sub_title{
+<<<<<<< HEAD
     width: 1300px;
     height: 140px;
     margin: 0 auto;
     /* background-image: url(/resources/imges/common/sub-visual.gif); */
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+    width: 1300px;
+    height: 140px;
+    margin: 0 auto;
+    /* background-image: url(/resources/imges/common/sub-visual.gif); */
+=======
+=======
+>>>>>>> front
+    width: 1900px;
+    height: 140px;
+    margin: 0 auto;
+    background-image: url(/resources/imges/common/sub-visual.gif);
+<<<<<<< HEAD
+>>>>>>> buy
+=======
+>>>>>>> front
+>>>>>>> review
     text-align: center;
 }
 
@@ -94,10 +126,17 @@ ul{
 .section::after {content: "";display: block; clear: both;}
 
 .lnb {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> review
 	width: 280px;
 	float: left;
 	margin-left:-50px;
 	margin-top:30px;
+<<<<<<< HEAD
+=======
 }
 
 
@@ -109,11 +148,47 @@ ul{
     margin-top: -140px;
     margin-bottom: 0px;
     background-color:beige;
+=======
+=======
+>>>>>>> front
+    width:280px;
+    float:left;
+>>>>>>> review
+}
+
+
+.lnb h2{
+    width: 220px !important;
+    display: block;
+    /* background: url(/resources/imges/common/lnb-bg-new.gif)repeat-y 1px; */
+    height: 140px;
+    margin-top: -140px;
+    margin-bottom: 0px;
+<<<<<<< HEAD
+    background-color:beige;
+=======
+<<<<<<< HEAD
+>>>>>>> buy
+=======
+>>>>>>> front
+>>>>>>> review
 }
 
 .lnb h2 b{
     display: block;
+<<<<<<< HEAD
     color: black;
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+    color: black;
+=======
+    color: #fff;
+>>>>>>> buy
+=======
+    color: #fff;
+>>>>>>> front
+>>>>>>> review
     font-size: 24px;
     line-height: 140px;
     margin: 0;
@@ -139,13 +214,37 @@ ul{
 
 /* 사이드 바 hover */
 .subMenu li a:hover{
+<<<<<<< HEAD
     background-color: #c79d6a;
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+    background-color: #c79d6a;
+=======
+    background-color: #464f56;
+>>>>>>> buy
+=======
+    background-color: #464f56;
+>>>>>>> front
+>>>>>>> review
     color: #fff;
     position: relative;
 }
 
 .lnb ul li.active > a {
+<<<<<<< HEAD
     background-color: #c79d6a;
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+    background-color: #c79d6a;
+=======
+    background-color: #464f56;
+>>>>>>> buy
+=======
+    background-color: #464f56;
+>>>>>>> front
+>>>>>>> review
     color: #fff;
     position: relative;
 }
@@ -160,7 +259,19 @@ ul{
 }
 
 .doc{
+<<<<<<< HEAD
     min-height:400px;
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+    min-height:400px;
+=======
+    min-height:450px;
+>>>>>>> buy
+=======
+    min-height:450px;
+>>>>>>> front
+>>>>>>> review
 }
 
 /* 게시판 전체 wrapper */
@@ -223,12 +334,24 @@ th, td{
     text-align: center;
 }
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> review
 .book_img img:hover{
 	opacity:0.3;
 	cursor:pointer;
 }
 
 .book_detail h2{font-size:20px;}
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> buy
+=======
+>>>>>>> front
+>>>>>>> review
 
 
 /* 검색 */
@@ -275,15 +398,42 @@ th, td{
 }
 
 .btn2{
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> review
     width: 130px;
     height: 45px;
     background-color: #c79d6a;
     border: 1px solid #c79d6a;
+<<<<<<< HEAD
+=======
     border-radius: 5px;
     color: #ffffff;
     font-size: 15px;
     cursor: pointer;
     margin-right: 10px;
+=======
+=======
+>>>>>>> front
+    width: 120px;
+    height: 35px;
+    background-color: #f1b55c;
+    border: none;
+>>>>>>> review
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 15px;
+    cursor: pointer;
+<<<<<<< HEAD
+    margin-right: 10px;
+=======
+<<<<<<< HEAD
+>>>>>>> buy
+=======
+>>>>>>> front
+>>>>>>> review
 }
 
 .btn2:focus, .btn2:active{
@@ -291,14 +441,41 @@ th, td{
 }
 
 .btn2:hover{
+<<<<<<< HEAD
     background-color: #b89367;
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+    background-color: #b89367;
+=======
+    background-color: rgb(255, 185, 70);
+>>>>>>> buy
+=======
+    background-color: rgb(255, 185, 70);
+>>>>>>> front
+>>>>>>> review
 }
 
 .btn3{
     width: 120px;
     height: 35px;
+<<<<<<< HEAD
     background-color: #c79d6a;
     border: 1px solid #c79d6a;
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+    background-color: #c79d6a;
+    border: 1px solid #c79d6a;
+=======
+    background-color: rgb(240, 240, 235);
+    border: 1px solid rgb(195, 195, 190);
+>>>>>>> buy
+=======
+    background-color: rgb(240, 240, 235);
+    border: 1px solid rgb(195, 195, 190);
+>>>>>>> front
+>>>>>>> review
     border-radius: 5px;
     color: black;
     font-size: 15px;
@@ -310,8 +487,15 @@ th, td{
 
 .btn3:hover{
     background-color: rgb(228, 228, 222);
+<<<<<<< HEAD
 }
 
+=======
+<<<<<<< HEAD
+}
+
+<<<<<<< HEAD
+>>>>>>> review
 .review_input{
     width: 800px;
     resize: none; 
@@ -338,7 +522,10 @@ input[value=리뷰작성하기]:hover{
     position:relative;
     width: 20px;
     height: 20px;
+<<<<<<< HEAD
     margin-bottom:5px;
+=======
+>>>>>>> review
   }
   .review_id img{
     position:absolute;
@@ -358,4 +545,16 @@ input[value=리뷰작성하기]:hover{
   .review_id:hover img.deletepngopen{
     display:block;
 
+<<<<<<< HEAD
   }
+=======
+  }
+=======
+#buy{
+	margin-right:14px;
+}
+>>>>>>> buy
+=======
+}
+>>>>>>> front
+>>>>>>> review

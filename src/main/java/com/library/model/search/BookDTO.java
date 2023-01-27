@@ -42,9 +42,18 @@ public class BookDTO {
 
 	// 대출 일
 	private String loan_date;
+<<<<<<< HEAD
 	
 	// 구매 일
     private String buy_date;
+=======
+<<<<<<< HEAD
+	
+	// 구매 일
+    private String buy_date;
+=======
+>>>>>>> front
+>>>>>>> review
 
 	// 반납 일
 	private String return_date;
@@ -55,11 +64,26 @@ public class BookDTO {
 	// 도서 가격(AladinAPI에서 받아올 때)
 	private int priceStandard;
 	
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+	// 구매 가격
+	private int resultpriceStandard;
+	private int packagingprice;
+	private int book_price;
+>>>>>>> buy
+=======
+>>>>>>> front
 	// 도서
 	private String description;
 	
 	// 연체일
 	private int overdue_date;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> review
 	
 	//장바구니 
 	private int cart_id;
@@ -70,4 +94,11 @@ public class BookDTO {
 	private int resultpriceStandard;
 	private int packagingprice;
 	private int book_price;
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> buy
+=======
+>>>>>>> front
+>>>>>>> review
 }

@@ -22,6 +22,13 @@
 			  limit #{cri.skip}, #{cri.amount}
 		</select>
 		
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> front
+>>>>>>> review
 		
 	    <!--=========== 찜하기 추기 =================-->
 	    <!-- 찜한 도서 건 수 -->
@@ -40,6 +47,10 @@
 			  limit #{cri.skip}, #{cri.amount}
 		</select>
 		
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> review
 		
 		<!-- 	장바구니 -->
 		<select id="get_total_cart" resultType="int">
@@ -48,6 +59,7 @@
 			 where user_id = #{user_id} 
 		</select>
 		
+<<<<<<< HEAD
 		 <select id="get_total_count" resultType="int">
          <!-- select sum(bookCount) from cart  where user_id = #{user_id}  -->
          SELECT IFNULL(SUM(bookCount), 0) FROM cart where user_id = #{user_id}
@@ -62,6 +74,19 @@
       <!--    select sum( bookCount * priceStandard) from cart where user_id = #{user_id}  -->
          select IFNULL(sum( bookCount * priceStandard),0) from cart where user_id = #{user_id}
       </select> 
+=======
+		<select id="get_total_count" resultType="int">
+			select sum(bookCount) from cart
+		</select>
+		
+		<select id="get_total_pay" resultType="int">
+			select bookCount * priceStandard from cart 
+		</select>
+		
+		<select id="get_total_final" resultType="int">
+			select sum(bookCount * priceStandard) from cart
+		</select>
+>>>>>>> review
 		
 		<!-- 장바구니 페이징 --> 
 		<select id="cart_history" resultType="com.library.model.search.BookDTO">
@@ -74,6 +99,14 @@
 		
 		
  		
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> buy
+=======
+ 		
+>>>>>>> front
+>>>>>>> review
 		<sql id="criteria">
 	        <if test="start_date != null">
 			  	<if test="end_date != null">
@@ -82,5 +115,17 @@
 				</if>
 			</if>
 	    </sql>
+<<<<<<< HEAD
 	    
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+	    
+=======
+ 		
+>>>>>>> buy
+=======
+	    
+>>>>>>> front
+>>>>>>> review
 	</mapper>

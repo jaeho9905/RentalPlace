@@ -13,7 +13,15 @@
 	<bean id="hikariConfig" class="com.zaxxer.hikari.HikariConfig">
       <property name="driverClassName" value="net.sf.log4jdbc.sql.jdbcapi.DriverSpy"/>
       <property name="jdbcUrl" value="jdbc:log4jdbc:mysql://localhost:3306/library?useSSL=false"/>
+<<<<<<< HEAD
+<<<<<<< HEAD
+      <property name="username" value="root"/>
+=======
+      <property name="username" value="libray_test"/>
+>>>>>>> buy
+=======
       <property name="username" value="library_test"/>
+>>>>>>> front
       <property name="password" value="12345"/>
 	</bean>
 

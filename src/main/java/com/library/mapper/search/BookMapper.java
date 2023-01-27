@@ -26,6 +26,13 @@ public interface BookMapper {
 
 	// 회원이 대출 중인 도서인지 체크
 	public int loan_check(@Param("user_id")String user_id, @Param("book_isbn")String book_isbn);
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> front
+>>>>>>> review
 	
 	
 	
@@ -38,6 +45,10 @@ public interface BookMapper {
 	
 	// 찜한 도서 삭제
 	public void delete_like_book(@Param("book_isbn") String book_isbn);
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> review
 	
 	/*------------------------------- 장바구니 구현-------------------------------------- */
 	public void cart(BookDTO dto);
@@ -48,4 +59,11 @@ public interface BookMapper {
 			 @Param("book_title") String book_title, @Param("bookCount")int bookCount  /* BookDTO book */);
 
 	public int deleteCart(@Param("cart_id") int cart_id);
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> buy
+=======
+>>>>>>> front
+>>>>>>> review
 }

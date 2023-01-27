@@ -8,6 +8,7 @@ import com.library.model.search.BookDTO;
 
 @Service
 public class BuyServiceImpl implements BuyService{
+<<<<<<< HEAD
    
    @Autowired
    private BuyMapper mapper;
@@ -49,3 +50,23 @@ public class BuyServiceImpl implements BuyService{
    
    
 }
+=======
+	
+	@Autowired
+	private BuyMapper mapper;
+
+	@Override
+	public void buy(BookDTO dto) {
+		mapper.buy(dto);
+		
+	}
+
+	@Override
+	public int buy_check(String user_id, String book_isbn) {
+		return mapper.buy_check(user_id, book_isbn);
+	}
+
+	
+	
+}
+>>>>>>> review

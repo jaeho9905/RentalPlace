@@ -41,7 +41,19 @@ public class BannerController {
 	// 배너 추가 페이지
 	@GetMapping("/banner-add")
 	public String banner_addGET() {
+<<<<<<< HEAD
 		return "/admin/sub5/banner_add";
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+		return "/admin/sub5/banner_add";
+=======
+		return "/admin/sub5/banner-add";
+>>>>>>> buy
+=======
+		return "/admin/sub5/banner_add";
+>>>>>>> front
+>>>>>>> review
 	}
 	
 	// 배너 추가
@@ -53,7 +65,19 @@ public class BannerController {
 		banner.setUser_id(user_id);
 		
 		bannerService.banner_add(banner);		
+<<<<<<< HEAD
 		return "redirect:/admin/banner-add";
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+		return "redirect:/admin/banner-add";
+=======
+		return "redirect:/admin/banner_add";
+>>>>>>> buy
+=======
+		return "redirect:/admin/banner-add";
+>>>>>>> front
+>>>>>>> review
 	}
 	
 	

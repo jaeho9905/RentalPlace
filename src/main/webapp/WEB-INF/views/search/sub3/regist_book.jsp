@@ -5,7 +5,19 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<<<<<<< HEAD
 <title>이젠북컴퍼니 > 추천도서 > 추천도서등록</title>
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<title>이젠북컴퍼니 > 추천도서 > 추천도서등록</title>
+=======
+<title>라온도서관 > 추천도서 > 추천도서등록</title>
+>>>>>>> buy
+=======
+<title>라온도서관 > 추천도서 > 추천도서등록</title>
+>>>>>>> front
+>>>>>>> review
 <link rel="stylesheet" href="/resources/css/search/popup.css">
 <link rel="stylesheet" href="/resources/css/footer.css">
 <script src="https://code.jquery.com/jquery-3.6.0.js" 
@@ -121,8 +133,20 @@
     </form>
 
     <script>
+<<<<<<< HEAD
     
     
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+    
+    
+=======
+>>>>>>> buy
+=======
+        
+>>>>>>> front
+>>>>>>> review
         $(function () {
             let moveForm = $(".moveForm");
 
@@ -137,6 +161,11 @@
                     alert("추천도서가 등록되었습니다.")
                     $(this).attr("onsubmit", "return true");
                     $(this).submit();
+<<<<<<< HEAD
+=======
+                    window.opener.location.reload();
+                    window.close();  
+>>>>>>> front
                 } else {
                     alert("등록이 취소되었습니다.")
                 }

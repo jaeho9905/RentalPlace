@@ -24,6 +24,13 @@ public interface BookService {
 	
 	// 회원이 대출 중인 도서인지 체크
 	public int loan_check(String user_id, String book_isbn);
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> front
+>>>>>>> review
 	
 	
 	//////////////////////////찜하기 추가 //////////////////////
@@ -35,6 +42,10 @@ public interface BookService {
 	
 	// 찜한 도서 삭제
 	public void delete_like_book(String book_isbn);
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> review
 	
 	/*-------------------------------- 장바구니 구현------------------ */
 	// 장바구니 등록 하기 
@@ -47,4 +58,11 @@ public interface BookService {
 	
 	public int deleteCart(int cart_id);
 
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> buy
+=======
+>>>>>>> front
+>>>>>>> review
 }

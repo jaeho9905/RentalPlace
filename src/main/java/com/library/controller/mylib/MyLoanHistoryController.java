@@ -75,6 +75,13 @@ public class MyLoanHistoryController {
 		return "/mylib/sub1/loan_history";
 
 	}
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> front
+>>>>>>> review
 	
 	
 	
@@ -88,6 +95,10 @@ public class MyLoanHistoryController {
 		// 로그인 된 user_id 받아오기
 		String id = principal.getName();
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> review
 		// 회원의 찜한 내역 받아오기
 		List<BookDTO> like_history = service.like_history(id, cri);
 
@@ -107,6 +118,14 @@ public class MyLoanHistoryController {
 	
 	
 	
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> buy
+=======
+>>>>>>> front
+>>>>>>> review
 
 	public String date(String type) {
 		Date now = new Date();
@@ -141,6 +160,11 @@ public class MyLoanHistoryController {
 			return end_date;
 		}
 	}
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> review
 	
 	
 	
@@ -184,5 +208,12 @@ public class MyLoanHistoryController {
 
 	
 
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> buy
+=======
+>>>>>>> front
+>>>>>>> review
 
 }

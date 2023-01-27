@@ -4,6 +4,7 @@ import com.library.model.search.BookDTO;
 
 public interface BuyService {
 
+<<<<<<< HEAD
    public void buy(BookDTO dto);
    
    public void pre_buy(BookDTO dto);
@@ -16,3 +17,9 @@ public interface BuyService {
    
    public int buy_check(String user_id,String book_isbn);
 }
+=======
+	public void buy(BookDTO dto);
+	
+	public int buy_check(String user_id,String book_isbn);
+}
+>>>>>>> review

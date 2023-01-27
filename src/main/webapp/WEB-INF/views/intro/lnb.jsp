@@ -8,6 +8,21 @@
         <li class="sub1">
             <a href="/intro/greeting">인사말</a>
         </li>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+        <li class="sub2">
+            <a href="/intro/history">연혁</a>
+        </li>
+>>>>>>> buy
+=======
+        <li class="sub2">
+            <a href="/intro/history">연혁</a>
+        </li>
+>>>>>>> front
+>>>>>>> review
         <li class="sub3">
             <a href="/intro/road">찾아오시는길</a>
         </li>

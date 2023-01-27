@@ -29,6 +29,7 @@ ul{
     height: auto;
 }
 
+<<<<<<< HEAD
 .sub_title {
 	width: 1300px;
 	height: 140px;
@@ -36,6 +37,22 @@ ul{
 	/* background-image: url(/resources/imges/common/sub-visual.gif); */
 	text-align: center;
 	margin-left:-50px;
+=======
+.sub_title{
+    width: 1900px;
+    height: 140px;
+    margin: 0 auto;
+<<<<<<< HEAD
+<<<<<<< HEAD
+    /* background-image: url(/resources/imges/common/sub-visual.gif); */
+=======
+    background-image: url(/resources/imges/common/sub-visual.gif);
+>>>>>>> buy
+=======
+    /* background-image: url(/resources/imges/common/sub-visual.gif); */
+>>>>>>> front
+    text-align: center;
+>>>>>>> review
 }
 
 .doc-info{

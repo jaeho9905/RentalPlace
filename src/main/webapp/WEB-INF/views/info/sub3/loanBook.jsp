@@ -4,7 +4,19 @@
 <%@ page session="false" %>
 <html>
 <head>
+<<<<<<< HEAD
    <title>이젠북컴퍼니 > 이용안내 > 도서대출/반납/예약</title>
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+   <title>이젠북컴퍼니 > 이용안내 > 도서대출/반납/예약</title>
+=======
+   <title>라온도서관 > 이용안내 > 도서대출/반납/예약</title>
+>>>>>>> buy
+=======
+   <title>라온도서관 > 이용안내 > 도서대출/반납/예약</title>
+>>>>>>> front
+>>>>>>> review
 <link rel="stylesheet" href="/resources/css/info/sub3/sb_page.css">
 <link rel="stylesheet" href="/resources/css/info/sub3/loanBook.css">
 <link rel="stylesheet" href="/resources/css/header.css">
@@ -90,7 +102,21 @@ p {
                                 <h3>대출자격</h3>
 
                                 <ul class="con">
+<<<<<<< HEAD
                                     <li>이젠북컴퍼니에 가입된 모든 일반회원 및 우수회원</li>
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+                                    <li>이젠북컴퍼니에 가입된 모든 일반회원 및 우수회원</li>
+=======
+                                    <li>주민등록상 대구광역시 거주자</li>
+                                    <li>대구광역시 소재 학교 재학생 및 직장인</li>
+>>>>>>> buy
+=======
+                                    <li>주민등록상 대구광역시 거주자</li>
+                                    <li>대구광역시 소재 학교 재학생 및 직장인</li>
+>>>>>>> front
+>>>>>>> review
                                 </ul>
 
                                 <h3>대출권수 및 대출기간</h3>
@@ -99,7 +125,19 @@ p {
                                     <li>일반회원 : 1인당 1회 10권 (대출일포함 15일)</li>
                                     <li>우수회원 : 1인당 1회 15권 (대출일포함 15일)</li>
                                     <ul>
+<<<<<<< HEAD
                                         <li class="dep01">대출시 본인인증으로만 대출가능</li>
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+                                        <li class="dep01">대출시 본인인증으로만 대출가능</li>
+=======
+                                        <li class="dep01">대출시 본인회원증으로만 대출가능</li>
+>>>>>>> buy
+=======
+                                        <li class="dep01">대출시 본인회원증으로만 대출가능</li>
+>>>>>>> front
+>>>>>>> review
                                         <li class="dep01">대출 연장 불가</li>
                                     </ul>
                                 </ul>
@@ -116,18 +154,52 @@ p {
                                 <h3>도서대출</h3>
 
                                 <ul class="con">
+<<<<<<< HEAD
                                     <li>홈페이지에서 도서 신청 후 매장 방문 수령</li>
                                     <ul>
                                     	<li class="dep01">도서 신청 후 다음 날까지 매장 방문하여 도서 수령 가능</li>
                                     	<li class="dep01">신청 후 도서 미수령 시 도서 대출 불가 7일</li>
                                     	<li class="dep01">부득이한 경우 사이트 직접 문의</li>
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+                                    <li>홈페이지에서 도서 신청 후 매장 방문 수령</li>
+                                    <ul>
+                                    	<li class="dep01">도서 신청 후 다음 날까지 매장 방문하여 도서 수령 가능</li>
+                                    	<li class="dep01">신청 후 도서 미수령 시 도서 대출 불가 7일</li>
+                                    	<li class="dep01">부득이한 경우 사이트 직접 문의</li>
+=======
+=======
+>>>>>>> front
+                                    <li>홈페이지에서 도서 신청 후 방문 수령</li>
+                                    <ul>
+                                    	<li class="dep01">도서 신청 후 다음 날까지 도서 수령 가능</li>
+                                    	<li class="dep01">신청 후 도서 미 수령 시 도서 대출 불가 7일</li>
+                                    	<li class="dep01">부득이한 경우 도서관 문의</li>
+<<<<<<< HEAD
+>>>>>>> buy
+=======
+>>>>>>> front
+>>>>>>> review
                                     </ul>
                                 </ul>
 
                                 <h3>도서반납</h3>
 
                                 <ul class="con">
+<<<<<<< HEAD
                                     <li>직접 매장 방문을 통한 반납</li>
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+                                    <li>직접 매장 방문을 통한 반납</li>
+=======
+                                    <li>직접 도서관 방문을 통한 반납</li>
+>>>>>>> buy
+=======
+                                    <li>직접 도서관 방문을 통한 반납</li>
+>>>>>>> front
+>>>>>>> review
                                     <li>택배를 이용한 도서 반납</li>
                                     <ul>
                                     	<li class="dep01">택배 도착 일 기준 반납 처리</li>
