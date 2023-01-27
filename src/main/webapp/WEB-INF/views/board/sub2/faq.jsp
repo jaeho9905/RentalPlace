@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
@@ -9,6 +10,8 @@
 <head>
 <title>이젠북컴퍼니 > 열린공간 > 자주묻는질문</title>
 =======
+=======
+>>>>>>> front
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
@@ -17,7 +20,10 @@
 <html>
 <head>
    <title>라온도서관 > 열린공간 > 자주묻는질문</title>
+<<<<<<< HEAD
 >>>>>>> buy
+=======
+>>>>>>> front
 </head>
 <link rel="stylesheet" href="/resources/css/board/sub2/faq.css">
 <link rel="stylesheet" href="/resources/css/header.css">
@@ -25,6 +31,7 @@
 <body>
 
 	<div class="header">
+<<<<<<< HEAD
 <<<<<<< HEAD
 		<jsp:include page="../../header.jsp"></jsp:include>
 	</div>
@@ -126,6 +133,8 @@
 		})
 	</script>
 =======
+=======
+>>>>>>> front
     <jsp:include page="../../header.jsp"></jsp:include>
     </div>
 
@@ -219,6 +228,9 @@
    		$(".sub2").addClass("active");  
    })
 </script>
+<<<<<<< HEAD
 >>>>>>> buy
+=======
+>>>>>>> front
 </body>
 </html>

@@ -28,6 +28,9 @@ public class MyLoanHistoryServiceImpl implements MyLoanHistoryService {
 	}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> front
 	
 	
 	//<!--=========== 찜하기 추기 =================-->
@@ -43,6 +46,7 @@ public class MyLoanHistoryServiceImpl implements MyLoanHistoryService {
 	}
 	
 	
+<<<<<<< HEAD
 	//<!--=========== 장바구니 추기 =================-->
 		@Override
 		public List<BookDTO> cart_history(String user_id, Criteria cri) {
@@ -77,4 +81,6 @@ public class MyLoanHistoryServiceImpl implements MyLoanHistoryService {
 =======
 
 >>>>>>> buy
+=======
+>>>>>>> front
 }

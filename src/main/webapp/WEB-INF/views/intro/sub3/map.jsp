@@ -26,6 +26,7 @@
 			var X_point = 128.557111;
 			var zoomLevel = 17;
 <<<<<<< HEAD
+<<<<<<< HEAD
 			var markerTitle = "이젠북컴퍼니";
 			var markerMaxWidth = 500;
 			var contentString = '<b>이젠북컴퍼니</b>'
@@ -34,6 +35,11 @@
 			var markerMaxWidth = 500;
 			var contentString = '<b>라온도서관</b>'
 >>>>>>> buy
+=======
+			var markerTitle = "라온도서관";
+			var markerMaxWidth = 500;
+			var contentString = '<b>라온도서관</b>'
+>>>>>>> front
 			+'<div><a href="https://map.kakao.com/link/to/라온도서관,35.860541,128.557111"'+
 			' style="color:blue" target="_blank">길찾기</a></div>' ;
 

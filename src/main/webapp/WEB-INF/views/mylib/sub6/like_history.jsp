@@ -5,7 +5,11 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<<<<<<< HEAD
 <title>이젠북컴퍼니 > 나의도서관 > 찜한 도서</title>
+=======
+<title>라온도서관 > 나의도서관 > 찜한 도서</title>
+>>>>>>> front
 <link rel="stylesheet" href="/resources/css/mylib/sub1/loan_history.css">
 <link rel="stylesheet" href="/resources/css/header.css">
 <link rel="stylesheet" href="/resources/css/footer.css">
@@ -120,6 +124,7 @@
 											<td>
 												<form action="/search/delete-like" method="post" onsubmit="return false;" class="likeForm">
                                                 	<input type="hidden" name="book_isbn" value="${like_history.book_isbn }">
+<<<<<<< HEAD
 						                        	<input type="submit" class="btn deleteBtn" value="삭제" style="margin-bottom:5px;width:80px;">
 						                        </form>
 												
@@ -149,6 +154,11 @@
 													
 						                            <button id="cart_btn" class="addBagBtn btn btn2" style="width:80px;">  장바구니 </button>
 						                        </form>
+=======
+						                        	<input type="submit" class="btn deleteBtn" value="삭제" style="margin-bottom:3px;">
+						                        </form>
+												<button type="button" class="btn addBagBtn" value="장바구니 담기" style="width:80px;">장바구니</button>
+>>>>>>> front
 											</td>
 										</tr>
 										</c:forEach>
@@ -229,6 +239,7 @@
 			})
 		});
 		
+<<<<<<< HEAD
 	</script>
 <!-- 장바구니  -->		
 <script>
@@ -283,6 +294,10 @@ $(function() {
 
 
 </script>
+=======
+	</script>	
+
+>>>>>>> front
 
 </body>
 </html>

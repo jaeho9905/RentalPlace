@@ -4,10 +4,14 @@
 <html>
 <head>
 <<<<<<< HEAD
+<<<<<<< HEAD
 	<title>이젠북컴퍼니 > 자료검색 > 도서검색</title>
 =======
 	<title>라온도서관 > 자료검색 > 도서검색</title>
 >>>>>>> buy
+=======
+	<title>라온도서관 > 자료검색 > 도서검색</title>
+>>>>>>> front
 </head>
 <link rel="stylesheet" href="/resources/css/search/book.css">
 <link rel="stylesheet" href="/resources/css/header.css">

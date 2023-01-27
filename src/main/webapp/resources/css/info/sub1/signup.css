@@ -39,6 +39,7 @@
 .inner.icowrap .ico {
     position: absolute;
 <<<<<<< HEAD
+<<<<<<< HEAD
     left: 5px;
     top: -23px;
     display: inline-block;
@@ -47,24 +48,34 @@
     background:url(/resources/imges/info/join.png) no-repeat center;
     background-size:70px 70px;
 =======
+=======
+>>>>>>> front
     left: 10px;
     top: -23px;
     display: inline-block;
     width: 170px;
     min-height: 170px;
     background:url(https://library.daegu.go.kr/resources/common/img/room_ico.gif)
+<<<<<<< HEAD
 >>>>>>> buy
+=======
+>>>>>>> front
 }
 
 
 .roomicon .inner strong {
     display: block;
 <<<<<<< HEAD
+<<<<<<< HEAD
     margin-left: -70px;
 =======
     margin: 0;
     margin-bottom: 0px;
 >>>>>>> buy
+=======
+    margin: 0;
+    margin-bottom: 0px;
+>>>>>>> front
     margin-bottom: 5px;
     color: #121212;
     font-size: 28px;
@@ -76,9 +87,12 @@
 .roomicon .inner p {
     line-height: 160%;
 <<<<<<< HEAD
+<<<<<<< HEAD
     margin-left: -70px;
 =======
 >>>>>>> buy
+=======
+>>>>>>> front
 }
 
 
@@ -124,11 +138,15 @@
     padding-left: 30px;
     margin: 80px 0 20px 0;
 <<<<<<< HEAD
+<<<<<<< HEAD
     background: url(/resources/imges/info/check.png) no-repeat 0 7px;
     background-size:25px 25px;
 =======
     background: url('https://library.daegu.go.kr/resources/common/img/h3.gif') no-repeat 0 7px;
 >>>>>>> buy
+=======
+    background: url('https://library.daegu.go.kr/resources/common/img/h3.gif') no-repeat 0 7px;
+>>>>>>> front
     font-size: 23px;
     font-weight: 600;
     color: #222;

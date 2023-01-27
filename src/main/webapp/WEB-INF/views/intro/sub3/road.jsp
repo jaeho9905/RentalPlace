@@ -1,15 +1,21 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 <<<<<<< HEAD
+<<<<<<< HEAD
 	pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 =======
     pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 >>>>>>> buy
+=======
+    pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+>>>>>>> front
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <title>이젠북컴퍼니 > 회사소개 > 찾아오시는길</title>
 <link rel="stylesheet" href="/resources/css/intro/road.css">
@@ -91,6 +97,8 @@
 		});
 	</script>
 =======
+=======
+>>>>>>> front
 <title>라온도서관 > 도서관소개 > 찾아오시는길</title>
 <link rel="stylesheet" href="/resources/css/intro/road.css">
 <link rel="stylesheet" href="/resources/css/header.css">
@@ -160,7 +168,10 @@
         });
 
     </script>
+<<<<<<< HEAD
 >>>>>>> buy
+=======
+>>>>>>> front
 
 </body>
 </html>

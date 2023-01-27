@@ -5,10 +5,14 @@
 <html>
 <head>
 <<<<<<< HEAD
+<<<<<<< HEAD
 	<title>이젠북컴퍼니 > 이용안내 > 회원가입안내</title>
 =======
 	<title>라온도서관 > 이용안내 > 회원가입안내</title>
 >>>>>>> buy
+=======
+	<title>라온도서관 > 이용안내 > 회원가입안내</title>
+>>>>>>> front
 	<link rel="stylesheet" href="/resources/css/info/sub1/signup.css">
 	<link rel="stylesheet" href="/resources/css/info/sb_page.css">
 	<link rel="stylesheet" href="/resources/css/header.css">
@@ -62,15 +66,21 @@
                                             <strong>회원가입 안내</strong>
                                             <p>
 <<<<<<< HEAD
+<<<<<<< HEAD
                                                 이젠북컴퍼니의 회원이 되시면 <br>
                                                 도서 대출 및 구매, 희망 도서 신청 등 다양한 서비스를 
                                                 쉽고 편리하게 이용해보실 수 있습니다.
 =======
+=======
+>>>>>>> front
                                                 "라온도서관에 회원가입하셔서 도서관을 
                                                 편리하게 이용하시고 더불어 다양한 혜택을 누리세요." <br>회원 가입을 하시면
                                                 도서 대출 및 열람실을 이용할 수 있으며 희망 도서를 신청할 수 있으며
                                                 도서관을 쉽고 편리하게 이용할 수 있습니다.
+<<<<<<< HEAD
 >>>>>>> buy
+=======
+>>>>>>> front
                                             </p>
                                             <!-- 회원가입 화면으로 연결 -->
                                             <p class="basic_btn">
@@ -114,7 +124,10 @@
                                             </ul>
                                         </div>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> front
                                         <h3>구비서류</h3>
                                         <div class="rsv-info"></div>
                                         <div class="auto-scroll">
@@ -146,7 +159,10 @@
                                             </table>
                                         </div>
 
+<<<<<<< HEAD
 >>>>>>> buy
+=======
+>>>>>>> front
                                         <!-- 유의사항 -->
                                         <h3>유의사항</h3>
                                         <ul class="con">

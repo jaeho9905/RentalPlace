@@ -5,10 +5,14 @@
 <head>
 <meta charset="UTF-8">
 <<<<<<< HEAD
+<<<<<<< HEAD
 <title>이젠북컴퍼니 > 나의도서관 > 개인정보 > 마이페이지</title>
 =======
 <title>라온도서관 > 나의도서관 > 개인정보 > 마이페이지</title>
 >>>>>>> buy
+=======
+<title>라온도서관 > 나의도서관 > 개인정보 > 마이페이지</title>
+>>>>>>> front
 <link rel="stylesheet" href="/resources/css/mylib/sub5/modify.css">
 <link rel="stylesheet" href="/resources/css/header.css">
 <link rel="stylesheet" href="/resources/css/footer.css">

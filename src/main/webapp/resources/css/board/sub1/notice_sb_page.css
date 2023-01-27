@@ -26,20 +26,29 @@ ul{
 .container{
     margin: 0 auto;
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 1300px;
 =======
     width: 1900px;
 >>>>>>> buy
+=======
+    width: 1900px;
+>>>>>>> front
     height: auto;
 }
 
 .sub_title{
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 1360px;
+=======
+    width: 1900px;
+>>>>>>> front
     height: 140px;
     margin: 0 auto;
     /* background-image: url(/resources/imges/common/sub-visual.gif); */
     text-align: center;
+<<<<<<< HEAD
     margin-left:-50px;
 =======
     width: 1900px;
@@ -48,6 +57,8 @@ ul{
     background-image: url(/resources/imges/common/sub-visual.gif);
     text-align: center;
 >>>>>>> buy
+=======
+>>>>>>> front
 }
 
 .doc-info{
@@ -108,6 +119,7 @@ ul{
 
 .lnb {
 <<<<<<< HEAD
+<<<<<<< HEAD
 	width: 280px;
 	float: left;
 	margin-left:-50px;
@@ -136,6 +148,8 @@ ul{
 .lnb ul li.active > a {
     background-color: #c79d6a;
 =======
+=======
+>>>>>>> front
     width:280px;
     float:left;
 }
@@ -161,7 +175,10 @@ ul{
 
 .lnb ul li.active > a {
     background-color: #464f56;
+<<<<<<< HEAD
 >>>>>>> buy
+=======
+>>>>>>> front
     color: #fff;
     position: relative;
 }
@@ -185,10 +202,14 @@ ul{
 /* 사이드 바 hover */
 .subMenu li a:hover{
 <<<<<<< HEAD
+<<<<<<< HEAD
     background-color: #c79d6a;
 =======
     background-color: #464f56;
 >>>>>>> buy
+=======
+    background-color: #464f56;
+>>>>>>> front
     color: #fff;
     position: relative;
 }
@@ -287,12 +308,17 @@ table td.left{
 
 .write_btn{
 <<<<<<< HEAD
+<<<<<<< HEAD
     background-color: #eaeaea;
     color: black;
 =======
     background-color: #266ac4;
     color: #fff;
 >>>>>>> buy
+=======
+    background-color: #266ac4;
+    color: #fff;
+>>>>>>> front
     padding: 7px 13px;
     border: 1px solid #1557af;
     border-radius: 5px;
@@ -308,16 +334,22 @@ table td.left{
     width: 60px;
     height: 35px;
 <<<<<<< HEAD
+<<<<<<< HEAD
     background-color: #eaeaea;
     border: none;
     border-radius: 5px;
     color: black;
 =======
+=======
+>>>>>>> front
     background-color: #266ac4;
     border: none;
     border-radius: 5px;
     color: #fff;
+<<<<<<< HEAD
 >>>>>>> buy
+=======
+>>>>>>> front
     font-size: 15px;
     cursor: pointer;
 }
@@ -326,6 +358,7 @@ table td.left{
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .btn:hover {
 	background-color: #333333;
 	color:white;
@@ -333,6 +366,10 @@ table td.left{
 .btn:hover{
     background-color: #215aa3;
 >>>>>>> buy
+=======
+.btn:hover{
+    background-color: #215aa3;
+>>>>>>> front
 }
 
 
@@ -411,6 +448,7 @@ table td.left{
 
 .search_btn{
 <<<<<<< HEAD
+<<<<<<< HEAD
    background-color: #eaeaea;
    color: black;
 =======
@@ -418,6 +456,11 @@ table td.left{
    border-color: #1557af;
    color: #fff;
 >>>>>>> buy
+=======
+   background-color: #266ac4;
+   border-color: #1557af;
+   color: #fff;
+>>>>>>> front
    width: 80px !important;
    cursor: pointer;
 }

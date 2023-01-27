@@ -9,18 +9,26 @@
 <head>
 <meta charset="UTF-8">
 <<<<<<< HEAD
+<<<<<<< HEAD
 <title>이젠북컴퍼니</title>
 =======
 <title>라온도서관</title>
 >>>>>>> buy
+=======
+<title>라온도서관</title>
+>>>>>>> front
 	<link rel="stylesheet" type="text/css" href="/resources/css/index/default.css">
     <link rel="stylesheet" type="text/css" href="/resources/css/index/main_header.css">
     <link rel="stylesheet" type="text/css" href="/resources/css/index/main.css">
     <link rel="stylesheet" type="text/css" href="/resources/css/index/footer.css">
 <<<<<<< HEAD
+<<<<<<< HEAD
     <link rel="stylesheet" type="text/css" href="/resources/css/index/jquery.bxslider.css">
 =======
 >>>>>>> buy
+=======
+    <link rel="stylesheet" type="text/css" href="/resources/css/index/jquery.bxslider.css">
+>>>>>>> front
     <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
     <!-- xeion = 아이콘 사용을 위한 CDN -->
     <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
@@ -32,6 +40,9 @@
     <script type="text/javascript" src="/resources/js/index/main.js"></script>
     <script type="text/javascript" src="/resources/js/index/tab.js"></script>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> front
 	<script type="text/javascript" src="/resources/js/index/jquery.bxslider.min.js"></script> 
 	
 <script>
@@ -81,6 +92,7 @@
      	
             
                <!--  <div class="main-section"> -->
+<<<<<<< HEAD
 =======
 </head>
 <body>
@@ -90,6 +102,8 @@
             <div class="tnb">
                 <div class="main-section">
 >>>>>>> buy
+=======
+>>>>>>> front
                     <div class="util">
                     	<sec:authorize access="isAnonymous()">
                         <a href="/member/login">로그인</a><span class="text-bar"></span>
@@ -99,10 +113,14 @@
                         <!-- 로그인 시 -->
 						<sec:authorize access="isAuthenticated()">
 <<<<<<< HEAD
+<<<<<<< HEAD
 						<span style="color: black; font-weight: bold; font-size: 0.875em;">
 =======
 						<span style="color: #fff; font-weight: bold; font-size: 0.875em;">
 >>>>>>> buy
+=======
+						<span style="color: black; font-weight: bold; font-size: 0.875em;">
+>>>>>>> front
 							<sec:authentication property="principal.dto.user_name"/>님
 						</span>
 						<span class="text-bar"></span>
@@ -113,6 +131,9 @@
 					    <!-- 관리자 권한을 가지고 있을 경우 -->
 					    <sec:authorize access="hasRole('ROLE_ADMIN')">
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> front
 					    <!-- <span class="text-bar"></span> -->
 					    <span> <a href="/admin/member-list">관리자메뉴</a></span>
 					    </sec:authorize>
@@ -135,6 +156,7 @@
                         <li class="gnb-li">
                             <a class="Depth" href="/search/book">
                                 <span class="">도서검색</span>
+<<<<<<< HEAD
 =======
 					    <span class="text-bar"></span>
 					    <span><a href="/admin/member-list">관리자메뉴</a></span>
@@ -155,6 +177,8 @@
                             <a class="Depth" href="/search/book">
                                 <span class="">자료검색</span>
 >>>>>>> buy
+=======
+>>>>>>> front
                             </a>
                             <ul class="sub-menu sm01" style="display: none;">
                                 <li>
@@ -172,9 +196,13 @@
                                 <li>
                                     <a class="" href="/info/signup">회원가입 안내</a>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
                                     <a class="" href="/info/openingHours">이용시간 및 휴관일</a>
 >>>>>>> buy
+=======
+                                    <a class="" href="/info/openingHours">이용시간 및 휴관일</a>
+>>>>>>> front
                                     <a class="" href="/info/loanBook">도서 대출 및 반납</a>
                                 </li>
                             </ul>
@@ -189,28 +217,41 @@
                                     <a class="" href="/board/faq">자주묻는질문</a>
                                     <a class="" href="/board/qnaBoardList">묻고답하기</a>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
                                     <a class="" href="/board/articleList">분실물찾기</a>
                                     <a class="" href="/board/calendar">도서관일정</a>
 >>>>>>> buy
+=======
+                                    <a class="" href="/board/articleList">분실물찾기</a>
+                                    <a class="" href="/board/calendar">도서관일정</a>
+>>>>>>> front
                                 </li>
                             </ul>
                         </li>
                         <li class="gnb-li">
                             <a class="Depth" href="/intro/greeting">
 <<<<<<< HEAD
+<<<<<<< HEAD
                                 <span class="">회사소개</span>
 =======
                                 <span class="">도서관소개</span>
 >>>>>>> buy
+=======
+                                <span class="">회사소개</span>
+>>>>>>> front
                             </a>
                             <ul class="sub-menu sm04">
                                 <li>
                                     <a class="" href="/intro/greeting">인사말</a>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
                                     <a class="" href="/intro/history">연혁</a>
 >>>>>>> buy
+=======
+                                    <a class="" href="/intro/history">연혁</a>
+>>>>>>> front
                                     <a class="" href="/intro/road">찾아오시는길</a>
                                 </li>
                             </ul>
@@ -218,26 +259,38 @@
                         <li class="gnb-li">
                             <a class="Depth" href="/mylib/loan-history">
 <<<<<<< HEAD
+<<<<<<< HEAD
                                 <span class="">마이페이지</span>
 =======
                                 <span class="">나의도서관</span>
 >>>>>>> buy
+=======
+                                <span class="">마이페이지</span>
+>>>>>>> front
                             </a>
                             <ul class="sub-menu sm05">
                                 <li>
                                     <a class="" href="/mylib/loan-history">도서관련</a>
                                     <a class="" href="/mylib/hope">희망도서신청/조회</a>
 <<<<<<< HEAD
+<<<<<<< HEAD
                                     <a class="" href="/mylib/mypage">마이페이지</a>
 =======
                                     <a class="" href="/mylib/reservationRoomPage">좌석예약/조회</a>
                                     <a class="" href="/mylib/mypage">개인정보</a>
 >>>>>>> buy
+=======
+                                    <a class="" href="/mylib/reservationRoomPage">좌석예약/조회</a>
+                                    <a class="" href="/mylib/mypage">개인정보</a>
+>>>>>>> front
                                 </li>
                             </ul>
                         </li>
                     </ul>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> front
 <!--                     <a id="site-map-Link" class="site-map" href="#a" title="사이트맵">
                         <img src="/resources/imges/index/sitemap1.png" alt="사이트맵">
                     </a> -->
@@ -315,6 +368,7 @@
                     <li>
                         <div class="icon_img">
                             <a href="/mylib/hope"><img src="/resources/imges/info/books.png">
+<<<<<<< HEAD
 =======
                     <a id="site-map-Link" class="site-map" href="#a" title="사이트맵">
                         <img src="/resources/imges/index/sitemap1.png" alt="사이트맵">
@@ -364,12 +418,17 @@
                         <div class="icon_img">
                             <a href="/mylib/loan-history"><img src="/resources/imges/index/my-info.png">
 >>>>>>> buy
+=======
+>>>>>>> front
                         </div>
                         <class="contents1_bold">대출내역조회</class></a>
                     </li>
                     <li>
                         <div class="icon_img">
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> front
                             <a href="/mylib/loan-history"><img src="/resources/imges/info/heart.png">
                         </div>
                         <class="contents1_bold">찜한도서</class></a>
@@ -445,6 +504,7 @@
             </div>
             <!-- 추천도서 / 대출 Best 종료 -->
         
+<<<<<<< HEAD
 =======
                             <a href="/board/calendar"><img src="/resources/imges/index/calendar.png">
                         </div>
@@ -469,6 +529,8 @@
         <!-- 메인영역 시작-->
         <div id="main">
 >>>>>>> buy
+=======
+>>>>>>> front
             <!-- <main 01> : 공지사항 / 좌석예약 -->
             <div class="library-info">
                 <div class="inner">
@@ -496,6 +558,7 @@
                     </div>
                     <!-- 공지사항 종료 -->
 <<<<<<< HEAD
+<<<<<<< HEAD
                     
                     <!-- main01-2 휴관일 및 예약현황 -->
  <%--                    <div class="bbs-box-center">
@@ -503,6 +566,11 @@
                     <!-- main01-2 휴관일 및 예약현황 -->
                     <div class="bbs-box-center">
 >>>>>>> buy
+=======
+                    
+                    <!-- main01-2 휴관일 및 예약현황 -->
+ <%--                    <div class="bbs-box-center">
+>>>>>>> front
                         <div class="month-wrap">
                             <div class="month-slide-wrap">
                                 <div class="month-slide">
@@ -555,14 +623,20 @@
                             </div>
                         </div>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> front
                     </div> --%>
                     <!-- 휴관일 및 좌석현황 종료 -->
                     
                     
+<<<<<<< HEAD
 =======
                     </div>
                     <!-- 휴관일 및 좌석현황 종료 -->
 >>>>>>> buy
+=======
+>>>>>>> front
                     <!-- <main01-03 : main-banner-box -->
                     <div class="main-banner-box">
                         <div class="slidewrap">
@@ -584,11 +658,16 @@
                 </div>
             </div>
 <<<<<<< HEAD
+<<<<<<< HEAD
             
 <%--             <!-- <main 04> : 추천도서 및 대출BEST 작업 시작 -->
 =======
             <!-- <main 04> : 추천도서 및 대출BEST 작업 시작 -->
 >>>>>>> buy
+=======
+            
+<%--             <!-- <main 04> : 추천도서 및 대출BEST 작업 시작 -->
+>>>>>>> front
             <div class="book-slide-wrap">
                 <div class="slide-inner">
                     <!-- bookList Tab 설정 -->
@@ -631,11 +710,16 @@
                 </div>
             </div>
 <<<<<<< HEAD
+<<<<<<< HEAD
             <!-- 추천도서 / 대출 Best 종료 --> --%>
             
 =======
             <!-- 추천도서 / 대출 Best 종료 -->
 >>>>>>> buy
+=======
+            <!-- 추천도서 / 대출 Best 종료 --> --%>
+            
+>>>>>>> front
             <!-- main 06 : sub-banner-box 영역 작업 시작 -->
             <div class="section-sub-banner">
                 <div class="sub-banner-wrap">
@@ -658,10 +742,14 @@
                             <div class="banner-box">
                                 <div class="box-viewport">
 <<<<<<< HEAD
+<<<<<<< HEAD
                                    <!--  <ul class="banner-roll">
 =======
                                     <ul class="banner-roll">
 >>>>>>> buy
+=======
+                                   <!--  <ul class="banner-roll">
+>>>>>>> front
                                         <li class="box-clone">
                                             <div>
                                                 <a href="https://www.moe.go.kr/main.do" target="_blank"
@@ -762,10 +850,14 @@
                                             );
                                         </script>
 <<<<<<< HEAD
+<<<<<<< HEAD
                                     </ul> -->
 =======
                                     </ul>
 >>>>>>> buy
+=======
+                                    </ul> -->
+>>>>>>> front
                                 </div>
                             </div>
                         </div>
@@ -775,10 +867,15 @@
         </div>
         <!-- main 작업 영역 종료 -->
 <<<<<<< HEAD
+<<<<<<< HEAD
         
         
 =======
 >>>>>>> buy
+=======
+        
+        
+>>>>>>> front
         <!-- footer영역 작업 시작 -->
         <div id="footer">
             <div class="bottom">
@@ -791,6 +888,7 @@
                                     <a href="#a">영상정보처리방침</a><span class="text-bar"></span>
                                     <a href="#a">이용약관</a><span class="text-bar"></span>
 <<<<<<< HEAD
+<<<<<<< HEAD
                                     <a href="#a">인재채용</a><span class="text-bar"></span>
                                     <a href="#a">저작권보호정책</a><span class="text-bar"></span>
                                     <a href="#a">광고안내</a>
@@ -799,6 +897,11 @@
                                     <a href="#a">저작권보호정책</a><span class="text-bar"></span>
                                     <a href="#a">뷰어다운로드</a>
 >>>>>>> buy
+=======
+                                    <a href="#a">인재채용</a><span class="text-bar"></span>
+                                    <a href="#a">저작권보호정책</a><span class="text-bar"></span>
+                                    <a href="#a">광고안내</a>
+>>>>>>> front
                                 </div>
                             </div><br>
                             <!-- 주소영역 -->
@@ -806,6 +909,9 @@
                             
                             	<div class="team" style="float: right;">
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> front
 									<p>조원 : 임다혜, 이다혜, 홍진혁, 이재호</p>
 								</div>
 								
@@ -813,6 +919,7 @@
                                     <span></span>TEL 031-502-1333
                                     <span></span>FAX 031-503-3318<br>
                                     Copyright @ 이젠북컴퍼니.<br>
+<<<<<<< HEAD
 =======
 									<p>조장 : 박준모</p>
 									<p>조원 : 김혜인, 신혜리, 장준화, 천종부</p>
@@ -823,6 +930,8 @@
                                     <span></span>FAX 053-566-3318<br>
                                     Copyright @ 라온도서관.<br>
 >>>>>>> buy
+=======
+>>>>>>> front
                                     All right reserved.
                                 </p>
                             </div>
@@ -843,6 +952,9 @@
 	}
 </script>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> front
 
 <script>
   $(document).ready(function(){
@@ -856,6 +968,9 @@
   });
   </script>
  
+<<<<<<< HEAD
 =======
 >>>>>>> buy
+=======
+>>>>>>> front
 </html>

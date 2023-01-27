@@ -76,6 +76,9 @@ public class MyLoanHistoryController {
 
 	}
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> front
 	
 	
 	
@@ -109,8 +112,11 @@ public class MyLoanHistoryController {
 	
 	
 	
+<<<<<<< HEAD
 =======
 >>>>>>> buy
+=======
+>>>>>>> front
 
 	public String date(String type) {
 		Date now = new Date();
@@ -145,6 +151,7 @@ public class MyLoanHistoryController {
 			return end_date;
 		}
 	}
+<<<<<<< HEAD
 <<<<<<< HEAD
 	
 	
@@ -191,5 +198,7 @@ public class MyLoanHistoryController {
 
 =======
 >>>>>>> buy
+=======
+>>>>>>> front
 
 }

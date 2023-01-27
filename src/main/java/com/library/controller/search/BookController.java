@@ -17,24 +17,33 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 import com.library.model.review.ReviewBoardDTO;
 =======
 >>>>>>> buy
+=======
+>>>>>>> front
 import com.library.model.search.BookDTO;
 import com.library.model.search.DateDTO;
 import com.library.page.Criteria;
 import com.library.page.ViewPage;
 <<<<<<< HEAD
+<<<<<<< HEAD
 import com.library.service.review.ReviewBoardService;
+=======
+>>>>>>> front
 import com.library.service.search.AladinApi;
 import com.library.service.search.BookService;
 import com.library.util.DateUtil;
 import com.sun.tools.javac.code.Preview;
+<<<<<<< HEAD
 =======
 import com.library.service.search.AladinApi;
 import com.library.service.search.BookService;
 import com.library.util.DateUtil;
 >>>>>>> buy
+=======
+>>>>>>> front
 
 @Controller
 @RequestMapping("/search")
@@ -46,6 +55,7 @@ public class BookController {
 	@Autowired
 	private BookService bookService;
 <<<<<<< HEAD
+<<<<<<< HEAD
 	
 	@Autowired
 	private ReviewBoardService reviewService;
@@ -54,6 +64,10 @@ public class BookController {
 =======
 >>>>>>> buy
 
+=======
+
+
+>>>>>>> front
 	// 검색 도서 출력
 	@GetMapping("/book")
 	public String book(Model model, Criteria cri) {
@@ -104,10 +118,13 @@ public class BookController {
 	public String book_detail(Model model, Criteria cri, @RequestParam String book_isbn) {
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 		
 		
 >>>>>>> buy
+=======
+>>>>>>> front
 		// isbn이 null이 아닐 때
 		if (book_isbn != null && book_isbn != "") {
 			try {
@@ -124,12 +141,15 @@ public class BookController {
 					count = 2 - count;
 					model.addAttribute("count", count);
 <<<<<<< HEAD
+<<<<<<< HEAD
 					
 					// 후기
 					List<ReviewBoardDTO> reviewList = reviewService.getListPage(cri,Long.parseLong(book_isbn));
 					model.addAttribute("reviewList", reviewList);
 =======
 >>>>>>> buy
+=======
+>>>>>>> front
 
 				} else {
 
@@ -149,12 +169,16 @@ public class BookController {
 
 		}
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> front
 
 		
 		model.addAttribute("cri", cri);
 		return "/search/sub1/book_detail";
 	}
 
+<<<<<<< HEAD
 =======
 		model.addAttribute("cri", cri);
 		
@@ -176,6 +200,8 @@ public class BookController {
 	
 	
 >>>>>>> buy
+=======
+>>>>>>> front
 	// 책 대출
 	@PostMapping("/loan")
 	public String loan(Model model, Criteria cri, BookDTO book, @RequestParam String detail, Principal principal) {
@@ -206,10 +232,14 @@ public class BookController {
 
 			// 대출
 <<<<<<< HEAD
+<<<<<<< HEAD
 			bookService.loan(book); //insert into loan_history
 =======
 			bookService.loan(book);
 >>>>>>> buy
+=======
+			bookService.loan(book); //insert into loan_history
+>>>>>>> front
 
 			// 대출자 대출 중 도서수 증가
 			bookService.increase_count(book.getUser_id());
@@ -275,6 +305,9 @@ public class BookController {
 		}
 	}
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> front
 	
 	//============================== 찜하기 추가 ==========================================
 	// 대출자 상태 체크
@@ -354,9 +387,12 @@ public class BookController {
 
 	
 	
+<<<<<<< HEAD
 =======
 
 >>>>>>> buy
+=======
+>>>>>>> front
 	// 대출베스트 출력
 	@GetMapping("/best-book")
 	public String best_book(Model model, Criteria cri, DateDTO date) {
@@ -444,6 +480,7 @@ public class BookController {
 		model.addAttribute("cri", cri);
 		return "/search/sub2/best_book_detail";
 	}
+<<<<<<< HEAD
 <<<<<<< HEAD
 	
 	
@@ -540,5 +577,7 @@ public class BookController {
 
 =======
 >>>>>>> buy
+=======
+>>>>>>> front
 
 }

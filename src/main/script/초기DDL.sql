@@ -57,6 +57,7 @@ CREATE TABLE `loan_history` (
 );
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 -- 구매 내역 테이블 
@@ -80,6 +81,8 @@ CREATE TABLE `buy_history` (
 );
 
 >>>>>>> buy
+=======
+>>>>>>> front
 -- 희망 도서 테이블
 CREATE TABLE `hope` (
   `hope_no` int(11) NOT NULL AUTO_INCREMENT, -- 희망 도서 번호

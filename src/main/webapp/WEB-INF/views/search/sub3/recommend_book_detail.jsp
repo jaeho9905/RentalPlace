@@ -6,10 +6,14 @@
 <html>
 <head>
 <<<<<<< HEAD
+<<<<<<< HEAD
 	<title>이젠북컴퍼니 > 자료검색 > 추천도서</title>
 =======
 	<title>라온도서관 > 자료검색 > 추천도서</title>
 >>>>>>> buy
+=======
+	<title>라온도서관 > 자료검색 > 추천도서</title>
+>>>>>>> front
 </head>
 <link rel="stylesheet" href="/resources/css/search/book_detail.css">
 <link rel="stylesheet" href="/resources/css/header.css">
@@ -142,6 +146,9 @@
                         </form>
                         
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> front
                          <span>　</span>
                         
                         <!--============ 찜하기 추가 =========== -->
@@ -169,8 +176,11 @@
                             <button id="like_btn" class=" btn2">찜하기</button>
                         </form>
                         
+<<<<<<< HEAD
 =======
 >>>>>>> buy
+=======
+>>>>>>> front
                         
 
                     </div>
@@ -249,6 +259,9 @@
 					
 			});
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> front
 			
 			/* ==========찜하기 추가========== */
 			$("#like_btn").click(function() {
@@ -291,8 +304,11 @@
 				} 
 					
 			});
+<<<<<<< HEAD
 =======
 >>>>>>> buy
+=======
+>>>>>>> front
 		});
 	</script>
 			

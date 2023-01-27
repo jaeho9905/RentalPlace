@@ -6,10 +6,14 @@
 <head>
 <meta charset="UTF-8">
 <<<<<<< HEAD
+<<<<<<< HEAD
 <title>이젠북컴퍼니 > 관리자 > 일정목록</title>
 =======
 <title>라온도서관 > 관리자 > 일정목록</title>
 >>>>>>> buy
+=======
+<title>라온도서관 > 관리자 > 일정목록</title>
+>>>>>>> front
 <link rel="stylesheet" href="/resources/css/admin/calendar_list.css">
 <link rel="stylesheet" href="/resources/css/header.css">
 <link rel="stylesheet" href="/resources/css/footer.css">

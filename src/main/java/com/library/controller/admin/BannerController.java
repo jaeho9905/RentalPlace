@@ -42,10 +42,14 @@ public class BannerController {
 	@GetMapping("/banner-add")
 	public String banner_addGET() {
 <<<<<<< HEAD
+<<<<<<< HEAD
 		return "/admin/sub5/banner_add";
 =======
 		return "/admin/sub5/banner-add";
 >>>>>>> buy
+=======
+		return "/admin/sub5/banner_add";
+>>>>>>> front
 	}
 	
 	// 배너 추가
@@ -58,10 +62,14 @@ public class BannerController {
 		
 		bannerService.banner_add(banner);		
 <<<<<<< HEAD
+<<<<<<< HEAD
 		return "redirect:/admin/banner-add";
 =======
 		return "redirect:/admin/banner_add";
 >>>>>>> buy
+=======
+		return "redirect:/admin/banner-add";
+>>>>>>> front
 	}
 	
 	

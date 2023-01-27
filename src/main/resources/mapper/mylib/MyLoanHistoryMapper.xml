@@ -23,6 +23,9 @@
 		</select>
 		
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> front
 		
 	    <!--=========== 찜하기 추기 =================-->
 	    <!-- 찜한 도서 건 수 -->
@@ -41,6 +44,7 @@
 			  limit #{cri.skip}, #{cri.amount}
 		</select>
 		
+<<<<<<< HEAD
 		
 		<!-- 	장바구니 -->
 		<select id="get_total_cart" resultType="int">
@@ -74,6 +78,9 @@
  		
 =======
 >>>>>>> buy
+=======
+ 		
+>>>>>>> front
 		<sql id="criteria">
 	        <if test="start_date != null">
 			  	<if test="end_date != null">
@@ -83,8 +90,12 @@
 			</if>
 	    </sql>
 <<<<<<< HEAD
+<<<<<<< HEAD
 	    
 =======
  		
 >>>>>>> buy
+=======
+	    
+>>>>>>> front
 	</mapper>

@@ -136,6 +136,7 @@ public class AladinApi {
 			book.setBook_publisher(publisher);
 			book.setPriceStandard(((Long) tmp.get("priceStandard")).intValue());
 			book.setDescription(description);
+<<<<<<< HEAD
 			/* 택배비 추가 */
 			book.setResultpriceStandard(((Long) tmp.get("priceStandard")).intValue() + 2500);
 			/* 포장 추가 */
@@ -144,6 +145,8 @@ public class AladinApi {
 =======
 			 
 >>>>>>> buy
+=======
+>>>>>>> front
 			
 
 		}

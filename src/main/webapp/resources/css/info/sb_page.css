@@ -30,14 +30,19 @@ ul {
 .container {
 	margin: 0 auto;
 <<<<<<< HEAD
+<<<<<<< HEAD
 	width: 1300px;
 =======
 	width: 1900px;
 >>>>>>> buy
+=======
+	width: 1900px;
+>>>>>>> front
 	height: auto;
 }
 
 .sub_title {
+<<<<<<< HEAD
 <<<<<<< HEAD
 	width: 1300px;
 	height: 140px;
@@ -46,12 +51,17 @@ ul {
 	text-align: center;
 	margin-left:-50px;
 =======
+=======
+>>>>>>> front
 	width: 1900px;
 	height: 140px;
 	margin: 0 auto;
 	background-image: url(/resources/imges/common/sub-visual.gif);
 	text-align: center;
+<<<<<<< HEAD
 >>>>>>> buy
+=======
+>>>>>>> front
 }
 
 .doc-info {
@@ -118,35 +128,48 @@ ul {
 	width: 280px;
 	float: left;
 <<<<<<< HEAD
+<<<<<<< HEAD
 	margin-left:-50px;
 	margin-top:30px;
 =======
 >>>>>>> buy
+=======
+>>>>>>> front
 }
 
 .lnb h2 {
 	width: 220px !important;
 	display: block;
 <<<<<<< HEAD
+<<<<<<< HEAD
 	height: 140px;
 	margin-top: -140px;
 	margin-bottom: 0px;
 	background-color:beige;
 =======
+=======
+>>>>>>> front
 	background: url(/resources/imges/common/lnb-bg-new.gif) repeat-y 1px;
 	height: 140px;
 	margin-top: -140px;
 	margin-bottom: 0px;
+<<<<<<< HEAD
 >>>>>>> buy
+=======
+>>>>>>> front
 }
 
 .lnb h2 b {
 	display: block;
 <<<<<<< HEAD
+<<<<<<< HEAD
 	color: black;
 =======
 	color: #fff;
 >>>>>>> buy
+=======
+	color: #fff;
+>>>>>>> front
 	font-size: 24px;
 	line-height: 140px;
 	margin: 0;
@@ -155,16 +178,22 @@ ul {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .lnb ul li.active > a {
     background-color: #c79d6a;
     color: #fff;
     position: relative;
 =======
+=======
+>>>>>>> front
 .lnb ul li.active>a {
 	background-color: #464f56;
 	color: #fff;
 	position: relative;
+<<<<<<< HEAD
 >>>>>>> buy
+=======
+>>>>>>> front
 }
 
 .subMenu li {
@@ -185,16 +214,22 @@ ul {
 
 /* 사이드 바 hover */
 <<<<<<< HEAD
+<<<<<<< HEAD
 .subMenu li a:hover{
     background-color: #c79d6a;
     color: #fff;
     position: relative;
 =======
+=======
+>>>>>>> front
 .subMenu li a:hover {
 	background-color: #464f56;
 	color: #fff;
 	position: relative;
+<<<<<<< HEAD
 >>>>>>> buy
+=======
+>>>>>>> front
 }
 
 /* 본문 부분 */

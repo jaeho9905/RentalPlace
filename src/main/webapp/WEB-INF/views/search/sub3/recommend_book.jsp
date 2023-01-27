@@ -5,10 +5,14 @@
 <html>
 <head>
 <<<<<<< HEAD
+<<<<<<< HEAD
 	<title>이젠북컴퍼니 > 자료검색 > 추천도서</title>
 =======
 	<title>라온도서관 > 자료검색 > 추천도서</title>
 >>>>>>> buy
+=======
+	<title>라온도서관 > 자료검색 > 추천도서</title>
+>>>>>>> front
 </head>
 <link rel="stylesheet" href="/resources/css/search/recommend_book.css">
 <link rel="stylesheet" href="/resources/css/header.css">
@@ -137,10 +141,14 @@
             
         </div>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <div class="pageInfo" style="text-align: center; width:970px; margin: 0 auto;">
 =======
         <div class="pageInfo" style="text-align: center; width:970px; margin-left: 600px;">
 >>>>>>> buy
+=======
+        <div class="pageInfo" style="text-align: center; width:970px; margin: 0 auto;">
+>>>>>>> front
 								
 	         <c:if test="${pageMaker.prev }">
 	             <a class="not" href="${pageMaker.startPage - 1}">이전</a>

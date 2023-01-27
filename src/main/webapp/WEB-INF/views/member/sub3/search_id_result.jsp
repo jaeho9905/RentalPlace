@@ -5,10 +5,14 @@
 <head>
 <meta charset="UTF-8">
 <<<<<<< HEAD
+<<<<<<< HEAD
 <title>이젠북컴퍼니 > 회원관련 > 아이디찾기</title>
 =======
 <title>라온도서관 > 회원관련 > 아이디찾기</title>
 >>>>>>> buy
+=======
+<title>라온도서관 > 회원관련 > 아이디찾기</title>
+>>>>>>> front
 <link rel="stylesheet" href="/resources/css/member/search_id.css">
 <link rel="stylesheet" href="/resources/css/header.css">
 <link rel="stylesheet" href="/resources/css/footer.css">

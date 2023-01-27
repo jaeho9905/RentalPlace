@@ -26,6 +26,9 @@ ul{
 .container{
     margin: 0 auto;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> front
     width: 1300px;
     height: auto;
 }
@@ -43,6 +46,7 @@ ul{
     margin: 0 auto;
     position: relative;
     padding: 0 0 0 0;
+<<<<<<< HEAD
 =======
     width: 1900px;
     height: auto;
@@ -62,6 +66,8 @@ ul{
     position: relative;
     padding: 0 0 0 270px;
 >>>>>>> buy
+=======
+>>>>>>> front
     box-sizing: border-box;
     z-index: 2;
 }
@@ -106,17 +112,23 @@ ul{
 
 .section{
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> front
     width: 1300px;
     height: auto;
     margin: 0 auto;
     position: relative;
     /* overflow:hidden; */
+<<<<<<< HEAD
 =======
     width: 1260px;
     height: auto;
     margin: 0 auto;
     position: relative;
 >>>>>>> buy
+=======
+>>>>>>> front
 }
 
 .section::after {content: "";display: block; clear: both;}
@@ -125,20 +137,27 @@ ul{
     width:280px;
     float:left;
 <<<<<<< HEAD
+<<<<<<< HEAD
     margin-left:-50px;
 	margin-top:30px;
 =======
 >>>>>>> buy
+=======
+>>>>>>> front
 }
 
 .lnb h2{
     width: 220px !important;
     display: block;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> front
     /* background: url(/resources/imges/common/lnb-bg-new.gif)repeat-y 1px; */
     height: 140px;
     margin-top: -140px;
     margin-bottom: 0px;
+<<<<<<< HEAD
     background-color:beige;
 =======
     background: url(/resources/imges/common/lnb-bg-new.gif)repeat-y 1px;
@@ -146,15 +165,22 @@ ul{
     margin-top: -140px;
     margin-bottom: 0px;
 >>>>>>> buy
+=======
+    background-color:#eaeaea;
+>>>>>>> front
 }
 
 .lnb h2 b{
     display: block;
 <<<<<<< HEAD
+<<<<<<< HEAD
     color: black;
 =======
     color: #fff;
 >>>>>>> buy
+=======
+    color: black;
+>>>>>>> front
     font-size: 24px;
     line-height: 140px;
     margin: 0;
@@ -181,20 +207,28 @@ ul{
 /* 사이드 바 hover */
 .subMenu li a:hover{
 <<<<<<< HEAD
+<<<<<<< HEAD
     background-color: #c79d6a;
 =======
     background-color: #464f56;
 >>>>>>> buy
+=======
+    background-color: #464f56;
+>>>>>>> front
     color: #fff;
     position: relative;
 }
 
 .lnb ul li.active > a {
 <<<<<<< HEAD
+<<<<<<< HEAD
     background-color: #c79d6a;
 =======
     background-color: #464f56;
 >>>>>>> buy
+=======
+    background-color: #464f56;
+>>>>>>> front
     color: #fff;
     position: relative;
 }
@@ -226,9 +260,13 @@ ul{
     float: right;
     padding-bottom: 20px;
 <<<<<<< HEAD
+<<<<<<< HEAD
     margin-right:40px;
 =======
 >>>>>>> buy
+=======
+    margin-right:80px;
+>>>>>>> front
 }
 
 /* 게시물 개수 select */
@@ -279,16 +317,22 @@ ul{
     width: 60px;
     height: 35px;
 <<<<<<< HEAD
+<<<<<<< HEAD
     background-color: #eaeaea;
     border: none;
     border-radius: 5px;
     color: black;
 =======
+=======
+>>>>>>> front
     background-color: #266ac4;
     border: none;
     border-radius: 5px;
     color: #fff;
+<<<<<<< HEAD
 >>>>>>> buy
+=======
+>>>>>>> front
     font-size: 15px;
     cursor: pointer;
 }
@@ -297,6 +341,7 @@ ul{
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .btn:hover {
 	background-color: #333333;
 	color:white;
@@ -304,6 +349,10 @@ ul{
 .btn:hover{
     background-color: #215aa3;
 >>>>>>> buy
+=======
+.btn:hover{
+    background-color: #215aa3;
+>>>>>>> front
 }
 .btn2{
     width: 80px;
@@ -398,6 +447,9 @@ ul{
     width: 118px;
     border: 1px solid #ddd;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> front
 }
 
 .book_info{
@@ -405,6 +457,7 @@ ul{
 	height: 161px;
 	float: right;
 	overflow:hidden;
+<<<<<<< HEAD
 =======
     margin-right: 15px;
 }
@@ -414,6 +467,8 @@ ul{
 	height: 161px;
 	float: right;
 >>>>>>> buy
+=======
+>>>>>>> front
 }
 
 .hide {

@@ -8,11 +8,17 @@
              <a href="/info/signup">회원가입안내</a>
          </li>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
          <li class="sub2">
              <a href="/info/openingHours">이용시간 및 휴관일</a>
          </li>
 >>>>>>> buy
+=======
+         <li class="sub2">
+             <a href="/info/openingHours">이용시간 및 휴관일</a>
+         </li>
+>>>>>>> front
          <li class="sub3">
              <a href="/info/loanBook">도서대출/반납</a>
          </li>

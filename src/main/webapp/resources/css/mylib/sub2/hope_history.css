@@ -27,6 +27,7 @@ ul{
 .container{
     margin: 0 auto;
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 1300px;
     height: auto;
 }
@@ -39,6 +40,8 @@ ul{
 	text-align: center;
 	margin-left:-50px;
 =======
+=======
+>>>>>>> front
     width: 1900px;
     height: auto;
 }
@@ -49,7 +52,10 @@ ul{
     margin: 0 auto;
     background-image: url(/resources/imges/common/sub-visual.gif);
     text-align: center;
+<<<<<<< HEAD
 >>>>>>> buy
+=======
+>>>>>>> front
 }
 
 .doc-info{
@@ -110,6 +116,7 @@ ul{
 
 .lnb {
 <<<<<<< HEAD
+<<<<<<< HEAD
 	width: 280px;
 	float: left;
 	margin-left:-50px;
@@ -134,6 +141,8 @@ ul{
 	text-align: center;
 	font-weight: bold;
 =======
+=======
+>>>>>>> front
     width:280px;
     float:left; 
 }
@@ -155,7 +164,10 @@ ul{
     margin: 0;
     text-align: center;
     font-weight: bold;
+<<<<<<< HEAD
 >>>>>>> buy
+=======
+>>>>>>> front
 }
 
 .subMenu li{
@@ -177,20 +189,28 @@ ul{
 /* 사이드 바 hover */
 .subMenu li a:hover{
 <<<<<<< HEAD
+<<<<<<< HEAD
     background-color: #c79d6a;
 =======
     background-color: #464f56;
 >>>>>>> buy
+=======
+    background-color: #464f56;
+>>>>>>> front
     color: #fff;
     position: relative;
 }
 
 .lnb ul li.active > a {
 <<<<<<< HEAD
+<<<<<<< HEAD
     background-color: #c79d6a;
 =======
     background-color: #464f56;
 >>>>>>> buy
+=======
+    background-color: #464f56;
+>>>>>>> front
     color: #fff;
     position: relative;
 }
@@ -297,6 +317,7 @@ th, td{
 /* 버튼속성 */
 .btn {
 <<<<<<< HEAD
+<<<<<<< HEAD
 	width: 60px;
 	height: 35px;
 	background-color: #eaeaea;
@@ -306,6 +327,8 @@ th, td{
 	font-size: 15px;
 	cursor: pointer;
 =======
+=======
+>>>>>>> front
     width: 60px;
     height: 35px;
     background-color: #266ac4;
@@ -314,23 +337,32 @@ th, td{
     color: #fff;
     font-size: 15px;
     cursor: pointer;
+<<<<<<< HEAD
 >>>>>>> buy
+=======
+>>>>>>> front
 }
 .btn:focus, .btn:active{
     border: none; box-shadow: none;
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .btn:hover {
 	background-color: #333333;
 	color:white;
 }
 =======
+=======
+>>>>>>> front
 .btn:hover{
     background-color: #215aa3;
 }
 
+<<<<<<< HEAD
 >>>>>>> buy
+=======
+>>>>>>> front
 .btn2{
     width: 50px;
     height: 25px;

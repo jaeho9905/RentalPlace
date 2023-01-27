@@ -50,6 +50,9 @@ public class BookServiceImpl implements BookService {
 		return mapper.loan_check(user_id, book_isbn);
 	}
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> front
 
 	
 	
@@ -72,6 +75,7 @@ public class BookServiceImpl implements BookService {
 	public void delete_like_book(String book_isbn) {
 		mapper.delete_like_book(book_isbn);
 	}
+<<<<<<< HEAD
 	
 	//장바구니
 		@Override
@@ -100,4 +104,6 @@ public class BookServiceImpl implements BookService {
 		
 =======
 >>>>>>> buy
+=======
+>>>>>>> front
 }

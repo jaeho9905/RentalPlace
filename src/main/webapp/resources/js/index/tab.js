@@ -1,9 +1,13 @@
 // 의도1: .book-tab > a 태그를 클릭했을 때 다른 Tab으로 넘어가려 이벤트를 걸어주려고 함
 <<<<<<< HEAD
+<<<<<<< HEAD
 /*$(function(e){
 =======
 $(function(e){
 >>>>>>> buy
+=======
+/*$(function(e){
+>>>>>>> front
   $('.book-tab li a').on('click', function(e){
       var idx = $('.book-tab li a').index(this);
       e.preventDefault();
@@ -15,7 +19,11 @@ $(function(e){
       $('.book-slide'). slick('refresh');
     });
 <<<<<<< HEAD
+<<<<<<< HEAD
   });*/
 =======
   });
 >>>>>>> buy
+=======
+  });*/
+>>>>>>> front

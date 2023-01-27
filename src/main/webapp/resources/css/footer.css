@@ -2,6 +2,7 @@
 footer { 
     height: auto;
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 100%;
     background:#eaeaea;
     min-width:100%;
@@ -9,6 +10,11 @@ footer {
     width: 1900px;
     background: #3d4252;
 >>>>>>> buy
+=======
+    width: 100%;
+    background:#eaeaea;
+    min-width:100%;
+>>>>>>> front
     /* border: 5px solid red; */
 }
 
@@ -18,10 +24,14 @@ footer .footer_section {
     height: auto;
     /* border: 3px solid orange; */
 <<<<<<< HEAD
+<<<<<<< HEAD
     color:black; 
 =======
     color:#fff; 
 >>>>>>> buy
+=======
+    color:black; 
+>>>>>>> front
 }
 
 
@@ -58,10 +68,14 @@ footer > div .info a {
     margin: 0 10px 0 0; 
     font-size: 13px; 
 <<<<<<< HEAD
+<<<<<<< HEAD
     color:black;
 =======
     color:#fff;
 >>>>>>> buy
+=======
+    color:black;
+>>>>>>> front
     /* border: 2px solid red; */
 }
 
@@ -82,10 +96,14 @@ footer > div .fsite_type1 {
     olid #7d828a; 
     font-size: 10px; 
 <<<<<<< HEAD
+<<<<<<< HEAD
     color:black; 
 =======
     color:#fff; 
 >>>>>>> buy
+=======
+    color:black; 
+>>>>>>> front
     text-indent: 20px; 
     appearance:none; 
     -webkit-appearance:none; 

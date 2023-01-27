@@ -5,10 +5,14 @@
 <html>
 <head>
 <<<<<<< HEAD
+<<<<<<< HEAD
    <title>이젠북컴퍼니 > 열린공간 > 분실물찾기</title>
 =======
    <title>라온도서관 > 열린공간 > 분실물찾기</title>
 >>>>>>> buy
+=======
+   <title>라온도서관 > 열린공간 > 분실물찾기</title>
+>>>>>>> front
 </head>
 <link rel="stylesheet" href="/resources/css/board/sub4/write_page.css">
 <link rel="stylesheet" href="/resources/css/header.css">

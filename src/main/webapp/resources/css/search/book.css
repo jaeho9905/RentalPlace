@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> front
 body {
 	margin: 0;
 }
@@ -169,6 +172,7 @@ ul {
 
 .doc {
 	min-height: 350px;
+<<<<<<< HEAD
 =======
 body{
     margin: 0;
@@ -330,10 +334,13 @@ ul{
 .doc{
     min-height:350px;
 >>>>>>> buy
+=======
+>>>>>>> front
 }
 
 /* 게시판 전체 wrapper */
 .wrapper-bbs {
+<<<<<<< HEAD
 <<<<<<< HEAD
 	padding: 10px 0 20px;
 	font-size: 13px;
@@ -343,11 +350,19 @@ ul{
     font-size: 13px;
     background: #fff;
 >>>>>>> buy
+=======
+	padding: 10px 0 20px;
+	font-size: 13px;
+	background: #fff;
+>>>>>>> front
 }
 
 /* inline => 총 게시물 부분 : 왼쪽 정렬 */
 .inline {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> front
 	display: inline-block;
 	zoom: 1;
 	vertical-align: middle;
@@ -525,6 +540,7 @@ th, td {
 	font-size: 20px;
 }
 
+<<<<<<< HEAD
 .book_title:hover{text-decoration:underline;}
 =======
     display: inline-block;
@@ -677,3 +693,6 @@ th, td{
    	color: #fff;
 }
 >>>>>>> buy
+=======
+.book_title:hover{text-decoration:underline;}
+>>>>>>> front

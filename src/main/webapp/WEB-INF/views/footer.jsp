@@ -10,6 +10,7 @@
 						<a href="#a">영상정보처리방침</a><span class="text-bar">|</span>
 						<a href="#a">이용약관</a><span class="text-bar">|</span>
 <<<<<<< HEAD
+<<<<<<< HEAD
 						<a href="#a">인재채용</a><span class="text-bar">|</span>
 						<a href="#a">저작권보호정책</a><span class="text-bar">|</span>
 						<a href="#a">광고안내</a>
@@ -18,6 +19,11 @@
 						<a href="#a">저작권보호정책</a><span class="text-bar">|</span>
 						<a href="#a">뷰어다운로드</a>
 >>>>>>> buy
+=======
+						<a href="#a">인재채용</a><span class="text-bar">|</span>
+						<a href="#a">저작권보호정책</a><span class="text-bar">|</span>
+						<a href="#a">광고안내</a>
+>>>>>>> front
 					</div>
 				</div>
 				<div class="bottom">
@@ -25,6 +31,9 @@
 					
 						<div class="team">
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> front
 							<p>조원 : 임다혜, 이다혜, 홍진혁, 이재호</p>
 						</div>
 						
@@ -35,6 +44,7 @@
 						
 						<p>
 							문의사항 : <span>ezenbook_company@gmail.com</span>
+<<<<<<< HEAD
 =======
 							<p>조장 : 박준모</p>
 							<p>조원 : 김혜인, 신혜리, 장준화, 천종부</p>
@@ -48,6 +58,8 @@
 						<p>
 							문의사항 : <span>library.raon@gmail.com</span>
 >>>>>>> buy
+=======
+>>>>>>> front
 						</p>
 						
 					</div>

@@ -36,7 +36,10 @@
         </li>
         
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> front
         <li class="sub3">
             <a href="/mylib/reservationRoomPage">좌석예약/조회 　 　<b>+</b></a>
             
@@ -62,7 +65,10 @@
                </li>
            </ul>
         </li>
+<<<<<<< HEAD
 >>>>>>> buy
+=======
+>>>>>>> front
         
         <li class="sub5">
             <a href="/mylib/mypage">개인정보　　　　　<b>+</b></a>
@@ -82,12 +88,16 @@
            </ul>
         </li>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> front
         
         
         <!--========================== 찜하기 추가 =================================-->
       	<li class="sub6">
             <a href="/mylib/like-history">찜한 도서</a>
        	 </li>
+<<<<<<< HEAD
        	 <li class="sub6">
             <a href="/mylib/cart-history">장바구니</a>
        	 </li>
@@ -95,5 +105,9 @@
         
 =======
 >>>>>>> buy
+=======
+        
+        
+>>>>>>> front
     </ul>
 </div>

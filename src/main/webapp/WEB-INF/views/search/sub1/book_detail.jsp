@@ -6,10 +6,14 @@
 <html>
 <head>
 <<<<<<< HEAD
+<<<<<<< HEAD
 	<title>이젠북컴퍼니 > 자료검색 > 도서검색</title>
 =======
 	<title>라온도서관 > 자료검색 > 도서검색</title>
 >>>>>>> buy
+=======
+	<title>라온도서관 > 자료검색 > 도서검색</title>
+>>>>>>> front
 </head>
 <link rel="stylesheet" href="/resources/css/search/book_detail.css">
 <link rel="stylesheet" href="/resources/css/header.css">
@@ -67,11 +71,16 @@
                                     <thead>
                                         <tr>
                                             <th style="width: 200px;">이미지</th>
+<<<<<<< HEAD
                                             <th style="width: 500px;">도서 정보</th>
+=======
+                                            <th style="">도서 정보</th>
+>>>>>>> front
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
+<<<<<<< HEAD
                                             <td class="book_img">
                                                 <img class="cover" src="${book.book_cover }" style="width: 200px;">
 <<<<<<< HEAD
@@ -82,6 +91,12 @@
 >>>>>>> buy
                                             </td>
                                             <td class="book_detail" style="text-align: left;">
+=======
+                                            <td class="">
+                                                <img src="${book.book_cover }" style="width: 200px;">
+                                            </td>
+                                            <td class="" style="text-align: left;">
+>>>>>>> front
                                                 <h2>${book.book_title }</h2>
                                                 <p><b>저자명</b> : ${book.book_author }</p>
                                                 <p><b>출판사</b>: ${book.book_publisher }</p>
@@ -90,6 +105,7 @@
                                                 <b>가격</b>: 
                                                 <fmt:formatNumber value="${book.priceStandard }" type="currency"/>
                                                 </p>
+<<<<<<< HEAD
 <<<<<<< HEAD
                                                 <div style="display: flex;align-items: flex-end;">
                     
@@ -201,6 +217,10 @@
 =======
 >>>>>>> buy
                                             </td>
+=======
+                                            </td>
+
+>>>>>>> front
                                         </tr>
                                     
                                     </tbody>
@@ -212,6 +232,7 @@
                         </div>
 
                     </div>
+<<<<<<< HEAD
                     
 <<<<<<< HEAD
 =======
@@ -238,6 +259,10 @@
 							</c:if>
 						<!-- 추가 -->
                     
+=======
+                    <div style="display: flex; justify-content: center; align-items: center;">
+                    
+>>>>>>> front
                         <form id="loan" onsubmit="return false;" method="post">
                         
                         	<sec:authorize access="isAuthenticated()">
@@ -300,6 +325,7 @@
 							<input type="hidden" name="keyword" value="${cri.keyword }">
                             <button id="like_btn" class=" btn2">찜하기</button>
                         </form>
+<<<<<<< HEAD
                         
                         <!--------------  장바구니 추가 ------------------>
 						 <form id="cart" onsubmit="return false;" method="post">
@@ -333,6 +359,10 @@
 
                     </div>
 >>>>>>> buy
+=======
+
+                    </div>
+>>>>>>> front
 
                     <h3>책 소개</h3>
                     <div style="border: 1px solid #ccc; height: 500px;">
@@ -340,6 +370,7 @@
                         ${book.description}
 
                     </div>
+<<<<<<< HEAD
                     
                     					<!-- 추가 -->
 					<div class="container">
@@ -435,6 +466,8 @@
 						value="${result.code }" />
 					
 					<!-- 추가 -->
+=======
+>>>>>>> front
 
                 </div>
                 
@@ -546,6 +579,7 @@
 		});
 	});
 	</script>	
+<<<<<<< HEAD
 <script>
 $(function() {
 	$(".sub1").addClass("active"); //왼쪽 카테고리 '도서검색' 활성화
@@ -753,5 +787,8 @@ $(function() {
 });
 >>>>>>> buy
 </script>
+=======
+
+>>>>>>> front
 </body>
 </html>

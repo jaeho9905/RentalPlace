@@ -1,10 +1,14 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> front
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ page session="false"%>
 <html>
 <head>
+<<<<<<< HEAD
 <title>이젠북컴퍼니 > 자료검색 > 도서검색</title>
 =======
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
@@ -14,11 +18,17 @@
 <head>
 	<title>라온도서관 > 자료검색 > 도서검색</title>
 >>>>>>> buy
+=======
+<title>라온도서관 > 자료검색 > 도서검색</title>
+>>>>>>> front
 </head>
 <link rel="stylesheet" href="/resources/css/search/book.css">
 <link rel="stylesheet" href="/resources/css/header.css">
 <link rel="stylesheet" href="/resources/css/footer.css">
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> front
 <script src="https://code.jquery.com/jquery-3.6.0.js"
 	integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
 	crossorigin="anonymous"></script>
@@ -230,6 +240,7 @@
 
 							</c:forEach>
 
+<<<<<<< HEAD
 =======
 <script
   src="https://code.jquery.com/jquery-3.6.0.js"
@@ -425,11 +436,16 @@
 							</c:forEach>
 							
 >>>>>>> buy
+=======
+>>>>>>> front
 							<c:if test="${pageMaker.next }">
 								<a class="not" href="${pageMaker.endPage + 1}">다음</a>
 							</c:if>
 						</div>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> front
 
 						<c:if test="${empty list}">
 
@@ -464,6 +480,7 @@
 
 
 	<form method="get" class="moveForm">
+<<<<<<< HEAD
 =======
                         
                         <c:if test="${empty list}">
@@ -500,12 +517,17 @@
 	
 	<form method="get" class="moveForm"> 
 >>>>>>> buy
+=======
+>>>>>>> front
 		<input type="hidden" name="amount" value="${pageMaker.cri.amount }">
 		<input type="hidden" name="page" value="${pageMaker.cri.page }">
 		<input type="hidden" name="type" value="${pageMaker.cri.type }">
 		<input type="hidden" name="keyword" value="${pageMaker.cri.keyword }">
 	</form>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> front
 
 	<!-- footer -->
  	<jsp:include page="../../footer.jsp"></jsp:include> 
@@ -529,6 +551,7 @@
 			$("#search_btn").on("click", function(e) {
 				let keyword = $("input[name='keyword']").val();
 				if (keyword == "") {
+<<<<<<< HEAD
 =======
 	
 	<!-- footer -->
@@ -552,12 +575,17 @@
 				let keyword = $("input[name='keyword']").val();
 				if(keyword == ""){ 
 >>>>>>> buy
+=======
+>>>>>>> front
 					alert("검색어를 입력해주세요.");
 				} else {
 					$("form").attr("onsubmit", "return true");
 					$("form").submit();
 				}
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> front
 
 			});
 			
@@ -573,11 +601,14 @@
 
 					});
 		});	
+<<<<<<< HEAD
 =======
 				
 			});
 		});
 >>>>>>> buy
+=======
+>>>>>>> front
 	</script>
 
 </body>

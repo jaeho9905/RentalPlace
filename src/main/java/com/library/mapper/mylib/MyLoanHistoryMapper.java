@@ -17,6 +17,9 @@ public interface MyLoanHistoryMapper {
 	public int get_total(@Param("user_id") String user_id, @Param("start_date") String start_date,
 			@Param("end_date") String end_date);
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> front
 	
 	
 	
@@ -26,6 +29,7 @@ public interface MyLoanHistoryMapper {
 
 	// 찜한 도서 수 출력
 	public int get_total_like(@Param("user_id") String user_id);
+<<<<<<< HEAD
 	
 	
 	
@@ -44,5 +48,7 @@ public interface MyLoanHistoryMapper {
 	
 =======
 >>>>>>> buy
+=======
+>>>>>>> front
 
 }

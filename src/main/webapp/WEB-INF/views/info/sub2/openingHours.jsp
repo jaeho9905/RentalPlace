@@ -5,10 +5,14 @@
 <html>
 <head>
 <<<<<<< HEAD
+<<<<<<< HEAD
 	<title>이젠북컴퍼니 > 이용안내 > 이용시간 및 휴관일</title>
 =======
 	<title>라온도서관 > 이용안내 > 이용시간 및 휴관일</title>
 >>>>>>> buy
+=======
+	<title>라온도서관 > 이용안내 > 이용시간 및 휴관일</title>
+>>>>>>> front
 	<link rel="stylesheet" href="/resources/css/info/sb_page.css">
 	<link rel="stylesheet" href="/resources/css/header.css">
 	<link rel="stylesheet" href="/resources/css/footer.css">

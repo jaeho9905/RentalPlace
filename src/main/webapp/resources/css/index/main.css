@@ -1,10 +1,16 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> front
 body{
 	/* background-color: ivory; */
 }
 
+<<<<<<< HEAD
 =======
 >>>>>>> buy
+=======
+>>>>>>> front
 /* ---- 공통으로 적용하는 것들 ----- */
 
 p, div, span, h1, h2, h3, ul, li {
@@ -16,6 +22,7 @@ p, div, span, h1, h2, h3, ul, li {
 /* main01에서 각 part들이 차지하고 있는 공통 영역들(main01의 공통) */
 .library-info .inner > div {
 <<<<<<< HEAD
+<<<<<<< HEAD
     border: 1px solid #d8d8d8;
     border-radius: 5px;
     position: relative;
@@ -26,6 +33,11 @@ p, div, span, h1, h2, h3, ul, li {
     position: relative;
     overflow: hidden;
 >>>>>>> buy
+=======
+    border: 1px solid #d8d8d8;
+    border-radius: 5px;
+    position: relative;
+>>>>>>> front
 }
 
 
@@ -42,10 +54,15 @@ p, div, span, h1, h2, h3, ul, li {
 .library-info {
     position: relative;
 <<<<<<< HEAD
+<<<<<<< HEAD
     margin-bottom:70px;
     margin-top:120px;
 =======
 >>>>>>> buy
+=======
+    margin-bottom:70px;
+    margin-top:120px;
+>>>>>>> front
     /* border: 1px solid steelblue; */
 }
 
@@ -68,14 +85,20 @@ p, div, span, h1, h2, h3, ul, li {
 /* libray-notice : 공지사항 part */
 .libray-notice {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> front
 	width:350px;
     float: left;
     padding: 9px 15px;
     border:1px solid blue;
+<<<<<<< HEAD
 =======
     float: left;
     padding: 9px 15px;
 >>>>>>> buy
+=======
+>>>>>>> front
     /* background-color: #CCE1FF; */
 }
 
@@ -499,6 +522,7 @@ p, div, span, h1, h2, h3, ul, li {
 /* ----- <main01-03 : main-banner> ----- */
 .library-info .inner .main-banner-box {
 <<<<<<< HEAD
+<<<<<<< HEAD
     /* background-size: 100% 100%; */
     height: 245px;
     width:550px;
@@ -507,11 +531,19 @@ p, div, span, h1, h2, h3, ul, li {
     /* border: 1px solid red; */
     height: 245px;
 >>>>>>> buy
+=======
+    /* background-size: 100% 100%; */
+    height: 245px;
+    width:550px;
+>>>>>>> front
 }
 
 
 .main-banner-box {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> front
 	border:1px solid blue;
 	width:500px;
     float: right;
@@ -520,6 +552,7 @@ p, div, span, h1, h2, h3, ul, li {
 
 .main-banner-box .slidewrap {
     height: 245px;
+<<<<<<< HEAD
 =======
     float: right;
 }
@@ -529,15 +562,21 @@ p, div, span, h1, h2, h3, ul, li {
     max-width:100%;
     height: 241px;
 >>>>>>> buy
+=======
+>>>>>>> front
     line-height:150%;
     margin:0 auto;
     /* border: 1px dashed dodgerblue; */
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> front
 .slidewrap {
     position: relative;
 }
 .slidewrap img{height:245px;}
+<<<<<<< HEAD
 =======
 
 
@@ -547,6 +586,8 @@ p, div, span, h1, h2, h3, ul, li {
 
 
 >>>>>>> buy
+=======
+>>>>>>> front
 .slidewrap button {
     position: absolute;
     z-index: 10;
@@ -556,10 +597,14 @@ p, div, span, h1, h2, h3, ul, li {
     height: 50px;
     border-radius: 50%;
 <<<<<<< HEAD
+<<<<<<< HEAD
     opacity: 0.6;
 =======
     opacity: 0.5;
 >>>>>>> buy
+=======
+    opacity: 0.6;
+>>>>>>> front
     cursor: pointer;
 }
 
@@ -609,12 +654,16 @@ p, div, span, h1, h2, h3, ul, li {
 .book-slide-wrap {
     background: #fff;
 <<<<<<< HEAD
+<<<<<<< HEAD
 	}
 =======
     /* border:3px solid #32BEBE; */
     padding: 35px 0 35px 0;
 }
 >>>>>>> buy
+=======
+	}
+>>>>>>> front
 
 
 /* Book-Box의 실질적인 작업공간 영역 */
@@ -624,10 +673,14 @@ p, div, span, h1, h2, h3, ul, li {
     width: 78.75em;
     margin: 0 auto;
 <<<<<<< HEAD
+<<<<<<< HEAD
     /* border: 1px dashed fuchsia; */
 =======
     border: 1px dashed fuchsia;
 >>>>>>> buy
+=======
+    /* border: 1px dashed fuchsia; */
+>>>>>>> front
     height: auto;
 }
 
@@ -643,11 +696,15 @@ p, div, span, h1, h2, h3, ul, li {
 /* Book-Box 테두리 */
 .book-slide-wrap .slide-inner {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> front
 /*     border: 1px solid #d8d8d8;
     border-radius: 5px; */
     /* overflow: hidden; */
 }
 
+<<<<<<< HEAD
 =======
     border: 1px solid #d8d8d8;
     border-radius: 5px;
@@ -657,11 +714,14 @@ p, div, span, h1, h2, h3, ul, li {
 
 
 >>>>>>> buy
+=======
+>>>>>>> front
 /* Book-List 상자 전체 영역의 색깔을 설정 */
 .book-slide-top {
     background-color: rgba(254,254,254,0.5);
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 .book-tab {
     /* background: #fee6d8; */
@@ -670,6 +730,10 @@ p, div, span, h1, h2, h3, ul, li {
 .book-tab {
     background: #fee6d8;
 >>>>>>> buy
+=======
+.book-tab {
+    /* background: #fee6d8; */
+>>>>>>> front
     font-size: 0;
     text-align: left;
     padding: 12px 0 12px 12px;}
@@ -677,6 +741,7 @@ p, div, span, h1, h2, h3, ul, li {
 
 .book-tab li:first-child {
     padding-left: 0;
+<<<<<<< HEAD
 <<<<<<< HEAD
     margin-left: 35px;
 }
@@ -687,6 +752,11 @@ p, div, span, h1, h2, h3, ul, li {
 
 
 >>>>>>> buy
+=======
+    margin-left: 35px;
+}
+
+>>>>>>> front
 .book-tab li {
     display: inline-block;
     padding-left:37px;
@@ -695,6 +765,7 @@ p, div, span, h1, h2, h3, ul, li {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* book-tab에서 활성화(on)된 menu 설정*/
 /* .book-tab li.on a {
 =======
@@ -702,15 +773,23 @@ p, div, span, h1, h2, h3, ul, li {
 /* book-tab에서 활성화(on)된 menu 설정*/
 .book-tab li.on a {
 >>>>>>> buy
+=======
+/* book-tab에서 활성화(on)된 menu 설정*/
+/* .book-tab li.on a {
+>>>>>>> front
     background: #744130;
     color: #fff;
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
  */
 =======
 
 >>>>>>> buy
+=======
+ */
+>>>>>>> front
 .book-tab li::before {
     content: '';
     display: block;
@@ -725,6 +804,9 @@ p, div, span, h1, h2, h3, ul, li {
 /* 탭 오른쪽에 위치한 대출BEST 색 변화 */
 .book-tab li a {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> front
     color:black;
     padding-left: 20px;
     font-size: 30px;
@@ -752,6 +834,7 @@ p, div, span, h1, h2, h3, ul, li {
 	box-shadow: 10px 18px 7px -2px gray;
 }
 
+<<<<<<< HEAD
 =======
     color: #94674E;
     padding-left: 20px;
@@ -765,6 +848,8 @@ p, div, span, h1, h2, h3, ul, li {
 
 
 >>>>>>> buy
+=======
+>>>>>>> front
 /* bookList-Controller 관련한 설정(우선 보류) */
 /*.book-control {
     font-size: 0;
@@ -790,10 +875,14 @@ p, div, span, h1, h2, h3, ul, li {
 .book-slide {
     position: relative;
 <<<<<<< HEAD
+<<<<<<< HEAD
     padding: 30px 40px 0 40px;
 =======
     padding: 30px 40px;
 >>>>>>> buy
+=======
+    padding: 30px 40px 0 40px;
+>>>>>>> front
 }
 
 
