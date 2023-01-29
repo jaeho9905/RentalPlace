@@ -101,7 +101,7 @@
                      <p>
                         <strong class="point">*</strong> 는 필수입력 항목을 나타냅니다.
                      </p>
-                     <form action="/buy/book_buy_api?detail=not" method="get" id="buy">
+                     <form action="/buy/book_buy_api?detail=not" method="post" id="buy">
                         <fieldset>
                            <legend>정보 입력</legend>
                            
@@ -294,7 +294,7 @@
                   location.href="/member/login";
                } else if($("#user_id").val() == ""){
                   alert("필수입력 항목을 입력해주세요");
-               } else if($("#postcode").val() == ""){
+               }  else if($("#postcode").val() == ""){
                   alert("입력 항목을 입력해주세요");
                } else if($("#address").val() == ""){
                   alert("입력 항목을 입력해주세요");
@@ -306,37 +306,23 @@
                   alert("입력 항목을 입력해주세요");
                } else if($("#tel3").val() == ""){
                   alert("입력 항목을 입력해주세요");
-               }  else if((no == true || yes == true) && l_agree == true){
+               }   else if((no == true || yes == true) && l_agree == true){
                   var data = {
                              book_isbn: book_isbn
                        };
                   
                   if (confirm("결제하시겠습니까?")) {
                   
-                     
-                       $.ajax({
-                             type: "post",
-                             url: "/buy/buyChk",
-                             data: data,
-                             success: function(result) {
-                                
-                                if (result == "success") {
-                                   if(no == true){
-                                      alert("결제페이지로 넘어갑니다.");
-                                      $("#buy").attr("action", "/buy/buybook");
-                                      $("#buy").attr("onsubmit", "return true;");
-                                      $("#buy").submit();
-                                   } else if (yes == true){
-                                      alert("결제페이지로 넘어갑니다.");
-                                      $("#buy").attr("action", "/buy/pre_buybook");
-                                      $("#buy").attr("onsubmit", "return true;");
-                                      $("#buy").submit();
-                                   }
-                                   
-                                  
-                                }
-                             }
-                          });   
+                       if(no == true){
+                          $("#buy").attr("action", "/buy/buybook");
+                          $("#buy").attr("onsubmit", "return true;");
+                          $("#buy").submit();
+                       } else if (yes == true){
+                          $("#buy").attr("action", "/buy/pre_buybook");
+                          $("#buy").attr("onsubmit", "return true;");
+                          $("#buy").submit();
+                       }
+
                        $.ajax({
                         type: "get",
                         url:'/buy/book_buy_api',
@@ -347,7 +333,7 @@
                                 
                            var box = data.next_redirect_pc_url;
                            var name = "credit"
-                           var option = "width = 500, height = 650, top = 100, left = 200,location = no";
+                           var option = "width = 500, height = 650, top = 100, left = 200,location = no"; // 팝업창 크기
                            window.open(box,name,option);
                         },
                         error:function(error){

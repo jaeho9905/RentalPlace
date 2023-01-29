@@ -162,7 +162,7 @@
                                           </form>
                                           
                                           
-                                          <form method="get" class="buy" onsubmit="return false;">
+                                          <form action="/buy/cart_buybook" method="post" class="buy" onsubmit="return false;">
                                              <sec:authorize access="isAuthenticated()">
                                                 <input type="hidden" class="user_email" name="user_email"
                                                    value=<sec:authentication property="principal.dto.user_email"/>>
@@ -182,8 +182,10 @@
                                              <input type="hidden" name="page" value="${cri.page}">
                                              <input type="hidden" name="type" value="${cri.type}">
                                              <input type="hidden" name="keyword" value="${cri.keyword}"> --%>
+                                             <input type="hidden" name="keyword" value="${cri.keyword }"> 
                                              <input type="hidden" name="priceStandard" value="${cart.priceStandard}">
-                                             <button type="button" class="apibtn btn" value="구매하기">구매</button>
+                                             <input type="submit" class="apibtn btn" value="구매">
+                                             <!-- <button type="button" class="apibtn btn" value="구매하기11">구1매</button> -->
                                           </form>
                                        </td>
                                     </tr>
@@ -330,8 +332,11 @@
             	   var data = {
             			   book_isbn: book_isbn
                      };
-                     
-                     $.ajax({
+            	   alert("결제가 완료되었습니다.");
+            	   $(".buy").attr("action", "/buy/cart_buybook");
+                   $(".buy").attr("onsubmit", "return true;");
+                   $(".buy").submit();
+                    /*  $.ajax({
                           type: "post",
                           url: "/buy/buyChk",
                           data: data,
@@ -339,13 +344,13 @@
                              
                              if (result == "success") {
                                 alert("결제페이지로 넘어갑니다.");
-                               $(".buy").attr("action", "/buy/cart_buybook?detail=not");
+                               $(".buy").attr("action", "/buy/cart_buybook");
                                $(".buy").attr("onsubmit", "return true;");
                                $(".buy").submit();
 
                              }
                           }
-                         });
+                         }); */
                     
                     /* $.ajax({
                      type: "get",
