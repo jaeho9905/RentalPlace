@@ -102,6 +102,8 @@
 - 이미지 슬라이더, 그리드 레이아웃
 
 ![main.png](github_img/main.png)
+![main1-2.png](github_img/main1-2.png)
+![main1-3.png](github_img/main1-3.png)
 
 ### 로그인 & 회원가입
 
@@ -121,19 +123,12 @@
 |---|---|
 ![search_book.png](github_img/search_book.png)|![book_detail.png](github_img/book_detail.png)
 
-### 열람실
-
-- 열람실 예약 및 확인
-
-열람실정보|열람실
-|---|---|
-![roompage.png](github_img/roompage.png)|![reading_room.png](github_img/reading_room.png)
 
 ### 마이페이지
 
 - 대출내역, 회망도서, 열람실, 개인정보
 
-![my_page.png](github_img/my_page.png)
+![mypage.png](github_img/mypage.png)
 
 ### 관리자 페이지
 
@@ -144,8 +139,6 @@
 ## 외부API
 
 - 주소검색 - [KaKao 주소 API](https://postcode.map.daum.net/guide)
-- 도서검색 - [Aladin API](https://www.apistore.co.kr/generalApi/generalApiView.do?general_service_seq=72)
+- 도서검색 - [Aladin API](https://docs.google.com/document/d/1mX-WxuoGs8Hy-QalhHcvuV17n50uGI2Sg_GHofgiePE/edit)
 - 찾아오는길 - [Google Map API](https://developers.google.com/maps/documentation?hl=ko)
 
-## 참고 사이트
-- 대구광역시 도서관 홈페이지
