@@ -51,6 +51,26 @@ public class MyPageServiceImpl implements MyPageService {
 	public void delete_review(String user_id) {
 		myPageMapper.delete_review(user_id);
 	}
+	@Override
+	public void delete_hope(String user_id) {
+		myPageMapper.delete_hope(user_id);
+	}
+	@Override
+	public void delete_recommend_book(String user_id) {
+		myPageMapper.delete_recommend_book(user_id);
+	}
+	@Override
+	public void delete_notice(String user_id) {
+		myPageMapper.delete_notice(user_id);
+	}
+	@Override
+	public void delete_answer(String user_id) {
+		myPageMapper.delete_answer(user_id);
+	}
+	@Override
+	public void delete_enquiry(String user_id) {
+		myPageMapper.delete_enquiry(user_id);
+	}
 
 	// 탈퇴 회원 테이블에 입력
 	@Override

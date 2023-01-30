@@ -142,6 +142,11 @@ public class MyPageController {
 		myPageService.delete_likehistory(id);
 		myPageService.delete_loanhistory(id);
 		myPageService.delete_review(id);
+		myPageService.delete_hope(id);
+		myPageService.delete_recommend_book(id);
+		myPageService.delete_notice(id);
+		myPageService.delete_answer(id);
+		myPageService.delete_enquiry(id);
 		
 		// 대출 중 도서 수
 		int count = my.getUser_book_count();

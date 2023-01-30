@@ -19,6 +19,11 @@ public interface MyPageService {
 	public void delete_likehistory(String user_id);
 	public void delete_loanhistory(String user_id);
 	public void delete_review(String user_id);
+	public void delete_hope(String user_id);
+	public void delete_recommend_book(String user_id);
+	public void delete_notice(String user_id);
+	public void delete_answer(String user_id);
+	public void delete_enquiry(String user_id);
 	
 	// 탈퇴 회원 테이블에 입력
 	public void insert_secession(MemberDTO member);

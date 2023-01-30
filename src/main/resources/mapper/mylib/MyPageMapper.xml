@@ -42,6 +42,22 @@
  			delete from review
  		</delete>
  		
+ 		<delete id="delete_hope">
+ 			delete from hope
+ 		</delete>
+ 		<delete id="delete_recommend_book">
+ 			delete from recommend_book
+ 		</delete>
+ 		<delete id="delete_notice">
+ 			delete from notice
+ 		</delete>
+ 		<delete id="delete_answer">
+ 			delete from answer
+ 		</delete>
+ 		<delete id="delete_enquiry">
+ 			delete from enquiry
+ 		</delete>
+ 		
  		<!-- 탈퇴회원 테이블에 입력 -->
  		<insert id="insert_secession">
  			insert into secession_member values(#{user_id}, #{user_email});
