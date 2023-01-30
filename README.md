@@ -8,6 +8,10 @@
 - [프로젝트 소개](#mag_right-프로젝트-소개)  
 - [개발환경 및 기술 세부스택](#wrench-개발환경-및-기술-세부스택)    
 - [팀원별 담당 업무](#couple-팀원별-담당-업무) 
+- [요구 사항](#speaker-요구-사항) 
+- [다이어그램](#bar_chart-다이어그램) 
+- [주요 기능](#pager-주요-기능) 
+- [외부 API](#newspaper-외부-API) 
 
 <br>
 
@@ -48,7 +52,7 @@
 <br>
 
 
-## 🔈요구 사항
+## :speaker: 요구 사항
 
 - 관리자 기능
 
@@ -75,7 +79,7 @@
 |후기|상품 후기 작성
 <br>
 
-## 📈다이어그램 (diagram)
+## :bar_chart: 다이어그램 (diagram)
 - [x] 유스케이스
 <img src="github_img/uml.png" width="600" height="400">
 
@@ -136,7 +140,8 @@
 
 ![admin_page.png](github_img/admin_page.png)
 
-## 외부API
+
+## :newspaper: 외부 API
 
 - 주소검색 - [KaKao 주소 API](https://postcode.map.daum.net/guide)
 - 도서검색 - [Aladin API](https://docs.google.com/document/d/1mX-WxuoGs8Hy-QalhHcvuV17n50uGI2Sg_GHofgiePE/edit)
