@@ -29,6 +29,28 @@ public class MyPageServiceImpl implements MyPageService {
 	public void my_secession(String user_id) {
 		myPageMapper.my_secession(user_id);
 	}
+	
+	// 탈퇴 회원 테이블 삭제
+	@Override
+	public void delete_buyhistory(String user_id) {
+		myPageMapper.delete_buyhistory(user_id);
+	}
+	@Override
+	public void delete_cart(String user_id) {
+		myPageMapper.delete_cart(user_id);
+	}
+	@Override
+	public void delete_likehistory(String user_id) {
+		myPageMapper.delete_likehistory(user_id);
+	}
+	@Override
+	public void delete_loanhistory(String user_id) {
+		myPageMapper.delete_loanhistory(user_id);
+	}
+	@Override
+	public void delete_review(String user_id) {
+		myPageMapper.delete_review(user_id);
+	}
 
 	// 탈퇴 회원 테이블에 입력
 	@Override

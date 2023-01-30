@@ -10,6 +10,9 @@ public interface BuyService {
 	// 책 구매(포장)
 	public void pre_buy(BookDTO dto);
 	
+	// 구매 삭제
+	public void buy_not(BookDTO dto);
+	
 	// 장바구니에서 구매하기
 	public void cart_buy(BookDTO dto);
 	

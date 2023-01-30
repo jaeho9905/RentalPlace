@@ -26,6 +26,13 @@ public class BuyServiceImpl implements BuyService{
       
    }
    
+   // 구매 삭제
+   @Override
+   public void buy_not(BookDTO dto) {
+	   mapper.buy_not(dto);
+	   
+   }
+   
    // 장바구니에서 구매하기
    @Override
    public void cart_buy(BookDTO dto) {

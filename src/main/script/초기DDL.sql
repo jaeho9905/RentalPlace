@@ -98,15 +98,16 @@ CREATE TABLE `cart` (
 
 --찜하기 테이블
 CREATE TABLE `like_history` (
-  `like_no` int(11) NOT NULL AUTO_INCREMENT, -- 대출 도서 번호
-  `user_id` varchar(20) NOT NULL, -- 대출 회원 아이디
-  `user_email` varchar(40) not NULL, -- 대출 회원 이메일
-  `book_title` varchar(100) NOT NULL, -- 대출 도서 제목
-  `book_author` varchar(200) NOT NULL, -- 대출 도서 저자
-  `book_isbn` varchar(20) NOT NULL, -- 대출 도서 ISBN
-  `book_cover` varchar(2000) DEFAULT NULL, -- 대출 도서 표지 주소
-  `book_pubdate` varchar(20) NOT NULL, -- 대출 도서 출간일
-  `book_publisher` varchar(50) NOT NULL, -- 대출 도서 출판사
+  `like_no` int(11) NOT NULL AUTO_INCREMENT, -- 찜한 도서 번호
+  `user_id` varchar(20) NOT NULL, -- 찜한 회원 아이디
+  `user_email` varchar(40) not NULL, -- 찜한 회원 이메일
+  `book_title` varchar(100) NOT NULL, -- 찜한 도서 제목
+  `book_author` varchar(200) NOT NULL, -- 찜한 도서 저자
+  `book_isbn` varchar(20) NOT NULL, -- 찜한 도서 ISBN
+  `book_cover` varchar(2000) DEFAULT NULL, -- 찜한 도서 표지 주소
+  `book_pubdate` varchar(20) NOT NULL, -- 찜한 도서 출간일
+  `book_publisher` varchar(50) NOT NULL, -- 찜한 도서 출판사
+  `bookCount` int not null, -- 찜한 도서 수량
   PRIMARY KEY (`like_no`),
   KEY `like_history_FK` (`user_id`),
   CONSTRAINT `like_history_FK` FOREIGN KEY (`user_id`) REFERENCES `member` (`user_id`)

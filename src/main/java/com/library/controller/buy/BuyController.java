@@ -93,6 +93,55 @@ public class BuyController {
 
    }
    
+   @GetMapping("/book_buy_not")
+   public String book_buy_not(Model model, @RequestParam String book_isbn, Principal principal) {
+	   
+	   System.out.println("book_buy_not 실행");
+	   BookDTO book = new BookDTO();
+	   String id = principal.getName();
+	   List<BookDTO> buy_history = service.r_buy_history(id);
+ 	  
+	   model.addAttribute("buy_history", buy_history);
+	   System.out.println("이다" + buy_history + "이다");
+	   // isbn이 null이 아닐 때
+	   if (book_isbn != null && book_isbn != "") {
+		   try {
+			   
+			   book = api.search_detail(book_isbn);
+			   
+			   if (book.getBook_title() != null) {
+				   
+				   System.out.println("선택 책 제목 : " + book.getBook_title());
+				   model.addAttribute("book", book);
+				   
+				   // 구매한 도서의 수를 가져옴
+				   int count = bookService.count(book_isbn);
+				   count = 2 - count;
+				   model.addAttribute("count", count);
+				   
+			   } else {
+				   // 잘못된 검색어 입력시 검색창으로 다시 이동
+				   System.out.println("잘못된 값 입력");
+				   return "redirect:/search/book";
+				   
+			   }
+			   
+		   } catch (ParseException e) {
+			   e.printStackTrace();
+		   }
+		   
+	   } else {
+		   
+		   System.out.println("빈 검색어 입력");
+		   return "redirect:/search/book";
+		   
+	   }
+	   model.addAttribute("book", book);
+	   
+	   return "/buy/book_buy_not";
+	   
+   }
+   
    
    @RequestMapping("/book_buy_api")
    @ResponseBody
@@ -190,6 +239,20 @@ public class BuyController {
          return "redirect:/search/book-detail?book_isbn=" + book.getBook_isbn();
       }
       
+      @PostMapping("/buybook_not")
+      public String buy_not( BookDTO book, Principal principal) {
+    	  
+    	  // 로그인 된 user_id 받아오기
+    	  String id = principal.getName();
+    	  System.out.println("책이름: " + book.getBook_title());
+    	  
+    	  // id 세팅
+    	  book.setUser_id(id);
+    	  
+    	  
+    	  return "redirect:/search/book-detail?book_isbn=" + book.getBook_isbn();
+      }
+      
       @PostMapping("/pre_buybook")
       public String pre_buy(BookDTO book,  Principal principal) {
 
@@ -240,7 +303,7 @@ public class BuyController {
          buyservice.count_buy_update(book);
 
          
-         return "redirect:/buy/book_buy?book_isbn=" + book.getBook_isbn();
+         return "redirect:/buy/book_buy_not?book_isbn=" + book.getBook_isbn();
       }
 
 }

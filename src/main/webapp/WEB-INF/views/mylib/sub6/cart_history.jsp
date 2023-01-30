@@ -332,43 +332,11 @@
             	   var data = {
             			   book_isbn: book_isbn
                      };
-            	   alert("결제가 완료되었습니다.");
+            	   alert("결제 페이지로 넘어갑니다.");
             	   $(".buy").attr("action", "/buy/cart_buybook");
                    $(".buy").attr("onsubmit", "return true;");
                    $(".buy").submit();
-                    /*  $.ajax({
-                          type: "post",
-                          url: "/buy/buyChk",
-                          data: data,
-                          success: function(result) {
-                             
-                             if (result == "success") {
-                                alert("결제페이지로 넘어갑니다.");
-                               $(".buy").attr("action", "/buy/cart_buybook");
-                               $(".buy").attr("onsubmit", "return true;");
-                               $(".buy").submit();
 
-                             }
-                          }
-                         }); */
-                    
-                    /* $.ajax({
-                     type: "get",
-                     url:'/buy/book_buy_api',
-                     dataType:'json',
-                     success:function(data){
-                             $("#buy").attr("onsubmit", "return true;");
-                             $("#buy").submit();
-                             
-                        var box = data.next_redirect_pc_url;
-                        var name = "credit"
-                        var option = "width = 500, height = 650, top = 100, left = 200,location = no ";
-                        window.open(box,name,option);
-                     },
-                     error:function(error){
-                        alert(error);
-                     }
-                    }); */
                } else {
                   alert("결제를 취소했습니다.");
                }
