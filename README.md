@@ -121,7 +121,7 @@
 
 도서검색|도서상세
 |---|---|
-![search_book.png](github_img/search_book.png)|![book_detail.png](github_img/book_detail.png)
+![book_search.png](github_img/book_search.png)|![book_detail.png](github_img/book_detail.png)
 
 
 ### 마이페이지
