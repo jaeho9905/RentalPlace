@@ -9,7 +9,7 @@
 - [개발환경 및 기술 세부스택](#wrench-개발환경-및-기술-세부스택)    
 - [팀원별 담당 업무](#couple-팀원별-담당-업무) 
 - [요구 사항](#speaker-요구-사항) 
-- [다이어그램](#bar_chart-다이어그램) 
+- [다이어그램](#bar_chart-다이어그램-(diagram)) 
 - [주요 기능](#pager-주요-기능) 
 - [외부 API](#newspaper-외부-API) 
 
@@ -145,5 +145,4 @@
 
 - 주소검색 - [KaKao 주소 API](https://postcode.map.daum.net/guide)
 - 도서검색 - [Aladin API](https://docs.google.com/document/d/1mX-WxuoGs8Hy-QalhHcvuV17n50uGI2Sg_GHofgiePE/edit)
-- 찾아오는길 - [Google Map API](https://developers.google.com/maps/documentation?hl=ko)
 
