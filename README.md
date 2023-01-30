@@ -145,4 +145,4 @@
 
 - 주소검색 - [KaKao 주소 API](https://postcode.map.daum.net/guide)
 - 도서검색 - [Aladin API](https://docs.google.com/document/d/1mX-WxuoGs8Hy-QalhHcvuV17n50uGI2Sg_GHofgiePE/edit)
-
+- 카카오 결제 - [Kakao 결제 API](https://developers.kakao.com/docs/latest/ko/kakaopay/common)
